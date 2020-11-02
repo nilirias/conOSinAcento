@@ -1,0 +1,15 @@
+{
+  "Acentos": [
+    {
+      "palabra": "perro",
+      "silabas": [
+        "pe",
+        "rro"
+      ],
+      "idxTonica": 0,
+      "tilde": false,
+      "hiato": false,
+      "contexto": "nill"
+    }
+  ]
+}
