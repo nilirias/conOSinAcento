@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//var de tiempo
 
 class ViewControllerReglaSimple: UIViewController {
     
@@ -14,24 +15,41 @@ class ViewControllerReglaSimple: UIViewController {
     @IBOutlet weak var buttonStack : UIStackView!
     var myButtonArray : [String] = []
     //var de numero de aciertos
+    @IBOutlet weak var lbTimer: UILabel!
     @IBOutlet weak var numAciertos: UILabel!
-    var num : Int!
+    var numAciertosInt : Int!
+    var numPregunta : Int!
+    var counterSecs = 0
+    var counterMinutes = 0
+    var timer: Timer!
     
-    //var de tiempo
+    var arrayPalabras = [PalabrasSimple(word: "Parro", arraySeparado: ["Pe", "rro"], pos: 0, acento: false, contexto: "nil"),
+                         PalabrasSimple(word: "manzana", arraySeparado: ["man", "za", "na"], pos: 1, acento: false, contexto: "nil")]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        //llenar el array
-        num = 0
-        for index in 0...5{
-            myButtonArray.append("Button \(index)")
+        numAciertosInt = 0
+        numPregunta = 9
+        for index in arrayPalabras[0].arraySeparado{
+            myButtonArray.append(index)
         }
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
         //llamar funcion que crea los botones
     }
     
+    @objc func updateCounter(){
+        if counterSecs == 60{
+            counterSecs = 0
+            counterMinutes += 1
+        }
+        counterSecs += 1
+        lbTimer.text = "\(String(counterMinutes)): \(String(counterSecs))"
+        print("\(counterMinutes):\(counterSecs)")
+        
+    }
     //funcion que crea los botones
     func createButtons(){
         for (index,element) in myButtonArray.enumerated(){
@@ -58,6 +76,37 @@ class ViewControllerReglaSimple: UIViewController {
     //funcion al darle click un boton
     @IBAction func buttonAction(sender: UIButton){
         print("Button tapped \(sender.tag)")
+        numPregunta = numPregunta + 1
+        if numPregunta <= 10{
+            //hacer segue
+            for button in buttonStack.arrangedSubviews{
+                button.removeFromSuperview()
+            }
+            if sender.tag ==  arrayPalabras[0].posicion{
+                numAciertosInt = numAciertosInt + 1
+                numAciertos.text = "\(numAciertosInt!)/10"
+            }
+            //esto va a ser una funcion
+            myButtonArray.removeAll()
+            for index in arrayPalabras[1].arraySeparado{
+                myButtonArray.append(index)
+            }
+            createButtons()
+            //limpiar el stack
+            //if para lo de los aciertos
+            //escoger otra palabra
+            //borrar el array de bones
+            //lenarlo con la palabra que tenemos
+            //llamar a la funcion de crear buton
+            
+        }else{
+            //llamar al segue todo
+            //parar el timer
+            timer?.invalidate()
+            timer = nil
+            print("aaaaaaaa")
+        }
+        
         //logica de acertado o no
         
         //randomizar el array de nuevo
@@ -65,7 +114,8 @@ class ViewControllerReglaSimple: UIViewController {
         //borrar botones actuales del stack view y volver a crear con el nuevo array
         
         //todo dentro de un if que cheque en que numero de cosa vamos
-        numAciertos.text = "\(num + 1)/10"
+        //num = num + 1
+        //numAciertos.text = "\(num)/10"
     }
     
     //funcion para reload los botones con algo random

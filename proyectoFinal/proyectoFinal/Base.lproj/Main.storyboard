@@ -236,12 +236,28 @@
                     <navigationItem key="navigationItem" title="Regla Simple" id="l2L-bB-xsW"/>
                     <connections>
                         <outlet property="buttonStack" destination="8aS-xu-SCZ" id="NYW-t1-v4U"/>
+                        <outlet property="lbTimer" destination="eov-Ki-yM8" id="ry5-gb-84j"/>
                         <outlet property="numAciertos" destination="ZTJ-GL-fj9" id="Wi4-h7-fRY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJm-5f-zIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2109.5999999999999" y="-149.77511244377811"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ams-Oq-wjZ">
+            <objects>
+                <viewController id="rQp-Ve-FCX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fss-8q-cOx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KLl-Nd-BnJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO1-NF-BVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="576"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t5z-0F-nZC">
