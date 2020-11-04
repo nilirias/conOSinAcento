@@ -1,22 +1,18 @@
 //
-//  ViewControllerReglaSimple.swift
+//  ViewControllerReglaHiato.swift
 //  proyectoFinal
 //
-//  Created by user178769 on 11/2/20.
+//  Created by user179423 on 11/4/20.
 //  Copyright © 2020 Nina. All rights reserved.
 //
 
 import UIKit
-//var de tiempo
 
-class ViewControllerReglaSimple: UIViewController {
-    
-    //array de la clase de las palabras (mientras tanto tengo un array de puros strings para poder crear los botones)
-    @IBOutlet weak var buttonStack : UIStackView!
+class ViewControllerReglaHiato: UIViewController {
+
     var myButtonArray : [String] = []
-    //var de numero de aciertos
-    @IBOutlet weak var lbTimer: UILabel!
-    @IBOutlet weak var numAciertos: UILabel!
+    @IBOutlet weak var buttonStack: UIStackView!
+    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, contexto: "nill")]
     var numAciertosInt : Int!
     var numPregunta : Int!
     var counterSecs = 0
@@ -24,7 +20,8 @@ class ViewControllerReglaSimple: UIViewController {
     var timer: Timer!
     var index: Int!
     
-    var arrayPalabras = [PalabrasSimple(word: "Parro", arraySeparado: ["Pe", "rro"], pos: 0, acento: false, contexto: "nil"), PalabrasSimple(word: "manzana", arraySeparado: ["man", "za", "na"], pos: 1, acento: false, contexto: "nil")]
+    @IBOutlet weak var lbAciertos: UILabel!
+    @IBOutlet weak var lbTimer: UILabel!
     
     
     override func viewDidLoad() {
@@ -41,6 +38,7 @@ class ViewControllerReglaSimple: UIViewController {
         //llamar funcion que crea los botones
     }
     
+
     @objc func updateCounter(){
         if counterSecs == 60{
             counterSecs = 0
@@ -73,55 +71,25 @@ class ViewControllerReglaSimple: UIViewController {
             
         }
     }
-    
-    //funcion al darle click un boton
-    
-    func doStuff(opcion: Bool,sender: UIButton)
-    {
-        
-        
-            print("Button tapped \(sender.tag)")
-            numPregunta = numPregunta + 1
-            if numPregunta <= 10{
-                //hacer segue
-                for button in buttonStack.arrangedSubviews{
-                    button.removeFromSuperview()
-                }
-                if sender.tag ==  arrayPalabras[index].posicion && opcion == arrayPalabras[index].acento{
-                    
-                    numAciertosInt = numAciertosInt + 1
-                    numAciertos.text = "\(numAciertosInt!)/10"
-                }
-                cambiaPalabra()
-                
-            }
-            
-            else{
-                //llamar al segue todo
-                //parar el timer
-                timer?.invalidate()
-                timer = nil
-                print("aaaaaaaa")
-            }
-
-    }
-    
     @IBAction func buttonAction(sender: UIButton){
-        
-        let alert = UIAlertController(title: "Lleva tilde la silaba", message: "Lleva tilde la silaba", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction (title: "si", style: .default, handler:{
-            action in self.doStuff(opcion: true, sender: sender)
-        }))
-                                        
-        alert.addAction(UIAlertAction (title: "no", style: .default, handler:{
-            action in self.doStuff(opcion: false, sender: sender)
-        }))
-        self.present(alert,animated: true)
-        
-                
-        
+        numPregunta += 1
+        if numPregunta <= 11{
+            for button in buttonStack.arrangedSubviews{
+                button.removeFromSuperview()
+            }
+            if sender.tag ==  arrayPalabras[index].posicion{
+                numAciertosInt = numAciertosInt + 1
+                lbAciertos.text = "\(numAciertosInt!)/10"
+            }
+            //esto va a ser una funcion
+            cambiaPalabra()
+        }else{
+            timer?.invalidate()
+            timer = nil
+            print("aaaaaaaa")
+        }
     }
+    
     func cambiaPalabra(){
         index = index + 1
         if(index < arrayPalabras.count){
@@ -133,8 +101,7 @@ class ViewControllerReglaSimple: UIViewController {
             createButtons()
         }
     }
-    
-    
+
     /*
     // MARK: - Navigation
 
