@@ -1,44 +1,43 @@
 //
-//  ViewControllerReglaSimple.swift
+//  ViewControllerReglaContexto.swift
 //  proyectoFinal
 //
-//  Created by user178769 on 11/2/20.
+//  Created by user178769 on 11/4/20.
 //  Copyright © 2020 Nina. All rights reserved.
 //
 
 import UIKit
-//var de tiempo
 
-class ViewControllerReglaSimple: UIViewController {
+class ViewControllerReglaContexto: UIViewController {
+
     
-    //array de la clase de las palabras (mientras tanto tengo un array de puros strings para poder crear los botones)
-    @IBOutlet weak var buttonStack : UIStackView!
-    var myButtonArray : [String] = []
-    //var de numero de aciertos
+    @IBOutlet weak var lbAciertos: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
-    @IBOutlet weak var numAciertos: UILabel!
+    @IBOutlet weak var buttonStack: UIStackView!
     var numAciertosInt : Int!
     var numPregunta : Int!
     var counterSecs = 0
     var counterMinutes = 0
     var timer: Timer!
+    var myButtonArray : [String] = []
     var index: Int!
     
-    var arrayPalabras = [PalabrasSimple(word: "Parro", arraySeparado: ["Pe", "rro"], pos: 0, acento: false, contexto: "nil"), PalabrasSimple(word: "manzana", arraySeparado: ["man", "za", "na"], pos: 1, acento: false, contexto: "nil")]
-    
+    @IBOutlet weak var tvContexto: UITextView!
+    var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejeercito"], pos: 0, contexto: "En las maana yo me _____"), PalabrasContexto(word: "Publico", arrayPalabras: ["publico","publiico","publicoo"], pos: 0, contexto: "El ____ le aplaudio")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        numAciertosInt = 0
         numPregunta = 0
+        numAciertosInt = 0
         index = 0
-        for index in arrayPalabras[0].arraySeparado{
+        for index in arrayContexto[0].arrayPalabras{
             myButtonArray.append(index)
         }
+        tvContexto.text = arrayContexto[0].contexto
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
-        //llamar funcion que crea los botones
+        // Do any additional setup after loading the view.
     }
     
     @objc func updateCounter(){
@@ -51,7 +50,7 @@ class ViewControllerReglaSimple: UIViewController {
         print("\(counterMinutes):\(counterSecs)")
         
     }
-    //funcion que crea los botones
+    
     func createButtons(){
         for (index,element) in myButtonArray.enumerated(){
             let oneBtn: UIButton = {
@@ -74,43 +73,37 @@ class ViewControllerReglaSimple: UIViewController {
         }
     }
     
-    //funcion al darle click un boton
     @IBAction func buttonAction(sender: UIButton){
-        print("Button tapped \(sender.tag)")
-        numPregunta = numPregunta + 1
-        if numPregunta <= 10{
-            //hacer segue
+        numPregunta += 1
+        if numPregunta <= 11{
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
-            if sender.tag ==  arrayPalabras[0].posicion{
+            if sender.tag ==  arrayContexto[index].posicion{
                 numAciertosInt = numAciertosInt + 1
-                numAciertos.text = "\(numAciertosInt!)/10"
+                lbAciertos.text = "\(numAciertosInt!)/10"
             }
+            //esto va a ser una funcion
             cambiaPalabra()
-            
         }else{
-            //llamar al segue todo
-            //parar el timer
             timer?.invalidate()
             timer = nil
             print("aaaaaaaa")
         }
-        
     }
+    
     func cambiaPalabra(){
         index = index + 1
-        if(index < arrayPalabras.count){
+        if(index < arrayContexto.count){
             myButtonArray.removeAll()
             
-            for i in arrayPalabras[index].arraySeparado{
+            for i in arrayContexto[index].arrayPalabras{
                 myButtonArray.append(i)
             }
+            tvContexto.text = arrayContexto[index].contexto
             createButtons()
         }
     }
-    
-    
     /*
     // MARK: - Navigation
 
