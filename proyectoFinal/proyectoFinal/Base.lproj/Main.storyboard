@@ -148,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="347" width="232" height="30"/>
                                         <state key="normal" title="Continuar"/>
                                         <connections>
-                                            <segue destination="rQp-Ve-FCX" kind="show" id="kNe-bo-nzi"/>
+                                            <segue destination="HFl-Vk-GG6" kind="show" id="DOw-AJ-msC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -181,19 +181,19 @@
                                 <rect key="frame" x="32" y="279" width="311" height="109"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="oH6-jE-a9K" userLabel="controlStack">
-                                <rect key="frame" x="34" y="17" width="307" height="92"/>
+                                <rect key="frame" x="34" y="61" width="307" height="48"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ETt-hT-lr8" userLabel="TimerStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="92"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIQ-Wn-Cgw">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eov-Ki-yM8">
-                                                <rect key="frame" x="0.0" y="48.5" width="44" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="26.5" width="44" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -201,16 +201,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UoL-Ew-HYV" userLabel="AciertosStack">
-                                        <rect key="frame" x="244" y="0.0" width="63" height="92"/>
+                                        <rect key="frame" x="244" y="0.0" width="63" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aciertos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-oM-2eT">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTJ-GL-fj9">
-                                                <rect key="frame" x="0.0" y="48.5" width="63" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="26.5" width="63" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -253,7 +253,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5x-Ba-QJL">
-                                <rect key="frame" x="0.0" y="44" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.3411764706" green="0.45098039220000002" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <items>
