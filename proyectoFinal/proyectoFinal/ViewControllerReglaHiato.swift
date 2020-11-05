@@ -15,6 +15,7 @@ class ViewControllerReglaHiato: UIViewController {
     var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, contexto: "nill")]
     var numAciertosInt : Int!
     var numPregunta : Int!
+    var tiempoTotal = 0
     var counterSecs = 0
     var counterMinutes = 0
     var timer: Timer!
@@ -23,6 +24,9 @@ class ViewControllerReglaHiato: UIViewController {
     @IBOutlet weak var lbAciertos: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
     
+    // colores
+    let colorFondo = UIColor(red:189/255, green: 213/255, blue: 235/255, alpha: 0)
+    let colorTexto = UIColor(red: 73/255, green: 88/255, blue: 103/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,27 +44,28 @@ class ViewControllerReglaHiato: UIViewController {
     
 
     @objc func updateCounter(){
-        if counterSecs == 60{
-            counterSecs = 0
-            counterMinutes += 1
-        }
-        counterSecs += 1
-        lbTimer.text = "\(String(counterMinutes)): \(String(counterSecs))"
+        tiempoTotal += 1
+        
+        counterSecs = tiempoTotal % 60
+        counterMinutes = tiempoTotal / 60
+
         print("\(counterMinutes):\(counterSecs)")
         
+        lbTimer.text = String(format: "%d:%02d", counterMinutes, counterSecs)
     }
+    
     //funcion que crea los botones
     func createButtons(){
         for (index,element) in myButtonArray.enumerated(){
             let oneBtn: UIButton = {
                 let button = UIButton()
                 button.setTitle(element, for: .normal)
-                button.backgroundColor = UIColor.gray
-                button.layer.borderColor = UIColor.black.cgColor
-                button.setTitleColor(UIColor.black, for: .normal)
+                button.backgroundColor = colorFondo
+                button.layer.borderWidth = 0
+                button.setTitleColor(colorTexto, for: .normal)
                 button.contentHorizontalAlignment = .center
                 button.contentVerticalAlignment = .center
-                button.titleLabel?.font = UIFont(name: "Arial", size: 12)
+                button.titleLabel?.font = UIFont(name: "Arial", size: 40)
                 button.layer.cornerRadius = 5
                 button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
                 button.tag = index

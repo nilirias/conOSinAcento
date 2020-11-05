@@ -56,7 +56,6 @@
 		38209A562537CE8000CA2E4F = {
 			isa = PBXGroup;
 			children = (
-				8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */,
 				38209A612537CE8000CA2E4F /* proyectoFinal */,
 				38209A602537CE8000CA2E4F /* Products */,
 			);
@@ -73,6 +72,7 @@
 		38209A612537CE8000CA2E4F /* proyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */,
 				38209A622537CE8000CA2E4F /* AppDelegate.swift */,
 				38209A642537CE8000CA2E4F /* SceneDelegate.swift */,
 				38209A662537CE8000CA2E4F /* ViewController.swift */,

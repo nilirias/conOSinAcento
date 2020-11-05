@@ -22,8 +22,13 @@ class ViewControllerReglaContexto: UIViewController {
     var myButtonArray : [String] = []
     var index: Int!
     
+    // colores
+    let colorFondo = UIColor(red:189/255, green: 213/255, blue: 235/255, alpha: 0)
+    let colorTexto = UIColor(red: 73/255, green: 88/255, blue: 103/255, alpha: 1)
+    let colorOrilla = UIColor(red: 41/255, green: 50/255, blue: 65/255, alpha: 1)
+    
     @IBOutlet weak var tvContexto: UITextView!
-    var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejeercito"], pos: 0, contexto: "En las maana yo me _____"), PalabrasContexto(word: "Publico", arrayPalabras: ["publico","publiico","publicoo"], pos: 0, contexto: "El ____ le aplaudio")]
+    var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejército"], pos: 0, contexto: "En las mañana yo me _____."), PalabrasContexto(word: "Publico", arrayPalabras: ["público","publico","publicó"], pos: 0, contexto: "El ____ le aplaudió.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,14 +46,14 @@ class ViewControllerReglaContexto: UIViewController {
     }
     
     @objc func updateCounter(){
-        if counterSecs == 60{
-            counterSecs = 0
-            counterMinutes += 1
-        }
-        counterSecs += 1
-        lbTimer.text = "\(String(counterMinutes)): \(String(counterSecs))"
+        tiempoTotal += 1
+        
+        counterSecs = tiempoTotal % 60
+        counterMinutes = tiempoTotal / 60
+
         print("\(counterMinutes):\(counterSecs)")
         
+        lbTimer.text = String(format: "%d:%02d", counterMinutes, counterSecs)
     }
     
     func createButtons(){
@@ -56,12 +61,13 @@ class ViewControllerReglaContexto: UIViewController {
             let oneBtn: UIButton = {
                 let button = UIButton()
                 button.setTitle(element, for: .normal)
-                button.backgroundColor = UIColor.gray
-                button.layer.borderColor = UIColor.black.cgColor
-                button.setTitleColor(UIColor.black, for: .normal)
+                button.backgroundColor = colorFondo
+                button.layer.borderWidth = 2
+                button.layer.borderColor = UIColor.init(red: 41/255, green: 50/255, blue: 65/255, alpha: 1).cgColor
+                button.setTitleColor(colorTexto, for: .normal)
                 button.contentHorizontalAlignment = .center
                 button.contentVerticalAlignment = .center
-                button.titleLabel?.font = UIFont(name: "Arial", size: 12)
+                button.titleLabel?.font = UIFont(name: "Arial", size: 40)
                 button.layer.cornerRadius = 5
                 button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
                 button.tag = index
