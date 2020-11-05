@@ -10,11 +10,39 @@ import UIKit
 
 class ViewControllerVideoExplicatorio: UIViewController {
 
+    @IBOutlet weak var btnContinuarSEGA: UIButton!
+    @IBOutlet weak var btnContinuarContexto: UIButton!
+    @IBOutlet weak var btnContinuarHiato: UIButton!
+    
+    var seleccion = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //si selecciona SEGA
+        if seleccion == 0{
+            btnContinuarContexto.isHidden = true
+            btnContinuarHiato.isHidden = true
+        }
+        
+        //si selecciona Contexto
+        if seleccion == 1{
+            btnContinuarSEGA.isHidden = true
+            btnContinuarHiato.isHidden = true
+        
+        }
+        
+        //si selecciona Hiato
+        if seleccion == 2{
+            btnContinuarSEGA.isHidden = true
+            btnContinuarContexto.isHidden = true
+        
+        }
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*
