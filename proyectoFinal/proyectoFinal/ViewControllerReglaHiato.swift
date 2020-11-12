@@ -25,8 +25,9 @@ class ViewControllerReglaHiato: UIViewController {
     @IBOutlet weak var lbTimer: UILabel!
     
     // colores
-    let colorFondo = UIColor(red:189/255, green: 213/255, blue: 235/255, alpha: 0)
-    let colorTexto = UIColor(red: 73/255, green: 88/255, blue: 103/255, alpha: 1)
+    let colorFondo = UIColor(red:240/255, green: 244/255, blue: 245/255, alpha: 0)
+    let colorTexto = UIColor(red: 35/255, green: 2/255, blue: 46/255, alpha: 1)
+    let colorOrilla = UIColor(red: 166/255, green: 52/255, blue: 70/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +62,8 @@ class ViewControllerReglaHiato: UIViewController {
                 let button = UIButton()
                 button.setTitle(element, for: .normal)
                 button.backgroundColor = colorFondo
-                button.layer.borderWidth = 0
+                button.layer.borderWidth = 2
+                button.layer.borderColor = UIColor.init(red: 166/255, green: 52/255, blue: 70/255, alpha: 1).cgColor
                 button.setTitleColor(colorTexto, for: .normal)
                 button.contentHorizontalAlignment = .center
                 button.contentVerticalAlignment = .center

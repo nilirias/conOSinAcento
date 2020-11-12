@@ -21,11 +21,12 @@ class ViewControllerReglaContexto: UIViewController {
     var timer: Timer!
     var myButtonArray : [String] = []
     var index: Int!
+    var tiempoTotal = 0
     
     // colores
-    let colorFondo = UIColor(red:189/255, green: 213/255, blue: 235/255, alpha: 0)
-    let colorTexto = UIColor(red: 73/255, green: 88/255, blue: 103/255, alpha: 1)
-    let colorOrilla = UIColor(red: 41/255, green: 50/255, blue: 65/255, alpha: 1)
+    let colorFondo = UIColor(red:240/255, green: 244/255, blue: 245/255, alpha: 0)
+    let colorTexto = UIColor(red: 35/255, green: 2/255, blue: 46/255, alpha: 1)
+    let colorOrilla = UIColor(red: 166/255, green: 52/255, blue: 70/255, alpha: 1)
     
     @IBOutlet weak var tvContexto: UITextView!
     var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejército"], pos: 0, contexto: "En las mañana yo me _____."), PalabrasContexto(word: "Publico", arrayPalabras: ["público","publico","publicó"], pos: 0, contexto: "El ____ le aplaudió.")]
@@ -63,7 +64,7 @@ class ViewControllerReglaContexto: UIViewController {
                 button.setTitle(element, for: .normal)
                 button.backgroundColor = colorFondo
                 button.layer.borderWidth = 2
-                button.layer.borderColor = UIColor.init(red: 41/255, green: 50/255, blue: 65/255, alpha: 1).cgColor
+                button.layer.borderColor = UIColor.init(red: 166/255, green: 52/255, blue: 70/255, alpha: 1).cgColor
                 button.setTitleColor(colorTexto, for: .normal)
                 button.contentHorizontalAlignment = .center
                 button.contentVerticalAlignment = .center
