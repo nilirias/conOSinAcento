@@ -12,7 +12,7 @@ class ViewControllerReglaHiato: UIViewController {
 
     var myButtonArray : [String] = []
     @IBOutlet weak var buttonStack: UIStackView!
-    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, contexto: "nill")]
+    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, contexto: "nill", cantSilabas: 3)]
     var numAciertosInt : Int!
     var numPregunta : Int!
     var tiempoTotal = 0
@@ -37,6 +37,7 @@ class ViewControllerReglaHiato: UIViewController {
         for index in arrayPalabras[0].arraySeparado{
             myButtonArray.append(index)
         }
+        lbAciertos.text = "0/10"
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
@@ -93,7 +94,7 @@ class ViewControllerReglaHiato: UIViewController {
         }else{
             timer?.invalidate()
             timer = nil
-            print("aaaaaaaa")
+            //print("aaaaaaaa")
         }
     }
     

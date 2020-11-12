@@ -27,7 +27,6 @@ class ViewControllerReglaContexto: UIViewController {
     let colorFondo = UIColor(red:240/255, green: 244/255, blue: 245/255, alpha: 0)
     let colorTexto = UIColor(red: 35/255, green: 2/255, blue: 46/255, alpha: 1)
     let colorOrilla = UIColor(red: 166/255, green: 52/255, blue: 70/255, alpha: 1)
-    
     @IBOutlet weak var tvContexto: UITextView!
     var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejército"], pos: 0, contexto: "En las mañana yo me _____."), PalabrasContexto(word: "Publico", arrayPalabras: ["público","publico","publicó"], pos: 0, contexto: "El ____ le aplaudió.")]
     

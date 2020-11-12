@@ -15,13 +15,15 @@ class PalabrasHiato: NSObject {
     var posicion: Int //posicion del hiato
     var acento: Bool
     var contexto:String
+    var cantSilabas: Int
     
-    init(word: String, arraySeparado:[String], pos:Int, acento: Bool, contexto: String){
+    init(word: String, arraySeparado:[String], pos:Int, acento: Bool, contexto: String, cantSilabas: Int){
         self.word = word
         self.arraySeparado = arraySeparado
         self.posicion = pos
         self.acento = acento
         self.contexto = contexto
+        self.cantSilabas = cantSilabas
     }
 
 
