@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    @IBOutlet weak var tfSeleccionDeRegla: UILabel!
+    @IBOutlet weak var lbSeleccionRegla: UILabel!
     @IBOutlet weak var bttnDerecha: UIButton!
     @IBOutlet weak var bttnIzquierda: UIButton!
     
     var i = 0
+    var seleccion : Int!
     
     let listaDeReglas = ["Regla general", "Palabras en contexto", "Hiatos y diptongos"]
     
@@ -23,13 +23,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
-    @IBAction func swipeDerecha(_ sender: UISwipeGestureRecognizer) {
-    }
-    
-    @IBAction func swipeIzquierda(_ sender: UISwipeGestureRecognizer) {
-    }
-    
     
     @IBAction func seleccionDerecha(_ sender: UIButton) {
         if i == listaDeReglas.count-1 {
@@ -37,7 +30,7 @@ class ViewController: UIViewController {
         } else {
             i += 1
         }
-        tfSeleccionDeRegla.text = listaDeReglas[i]
+        lbSeleccionRegla.text = listaDeReglas[i]
     }
     
     @IBAction func seleccionIzquierda(_ sender: UIButton) {
@@ -46,7 +39,15 @@ class ViewController: UIViewController {
         } else {
             i -= 1
         }
-        tfSeleccionDeRegla.text = listaDeReglas[i]
+        lbSeleccionRegla.text = listaDeReglas[i]
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue"{
+            let destinationController = segue.destination as! ViewControllerVideoExplicatorio
+            destinationController.seleccion = i
+        }
+    }
+    
 }
 

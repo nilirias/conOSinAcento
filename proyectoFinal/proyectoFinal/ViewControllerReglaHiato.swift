@@ -1,50 +1,48 @@
 //
-//  ViewControllerReglaContexto.swift
+//  ViewControllerReglaHiato.swift
 //  proyectoFinal
 //
-//  Created by user178769 on 11/4/20.
+//  Created by user179423 on 11/4/20.
 //  Copyright © 2020 Nina. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerReglaContexto: UIViewController {
+class ViewControllerReglaHiato: UIViewController {
 
-    
-    @IBOutlet weak var lbAciertos: UILabel!
-    @IBOutlet weak var lbTimer: UILabel!
+    var myButtonArray : [String] = []
     @IBOutlet weak var buttonStack: UIStackView!
+    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, contexto: "nill")]
     var numAciertosInt : Int!
     var numPregunta : Int!
+    var tiempoTotal = 0
     var counterSecs = 0
     var counterMinutes = 0
     var timer: Timer!
-    var myButtonArray : [String] = []
     var index: Int!
+    
+    @IBOutlet weak var lbAciertos: UILabel!
+    @IBOutlet weak var lbTimer: UILabel!
     
     // colores
     let colorFondo = UIColor(red:189/255, green: 213/255, blue: 235/255, alpha: 0)
     let colorTexto = UIColor(red: 73/255, green: 88/255, blue: 103/255, alpha: 1)
-    let colorOrilla = UIColor(red: 41/255, green: 50/255, blue: 65/255, alpha: 1)
-    
-    @IBOutlet weak var tvContexto: UITextView!
-    var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejército"], pos: 0, contexto: "En las mañana yo me _____."), PalabrasContexto(word: "Publico", arrayPalabras: ["público","publico","publicó"], pos: 0, contexto: "El ____ le aplaudió.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        numPregunta = 0
         numAciertosInt = 0
+        numPregunta = 0
         index = 0
-        for index in arrayContexto[0].arrayPalabras{
+        for index in arrayPalabras[0].arraySeparado{
             myButtonArray.append(index)
         }
-        tvContexto.text = arrayContexto[0].contexto
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
-        // Do any additional setup after loading the view.
+        //llamar funcion que crea los botones
     }
     
+
     @objc func updateCounter(){
         tiempoTotal += 1
         
@@ -56,14 +54,14 @@ class ViewControllerReglaContexto: UIViewController {
         lbTimer.text = String(format: "%d:%02d", counterMinutes, counterSecs)
     }
     
+    //funcion que crea los botones
     func createButtons(){
         for (index,element) in myButtonArray.enumerated(){
             let oneBtn: UIButton = {
                 let button = UIButton()
                 button.setTitle(element, for: .normal)
                 button.backgroundColor = colorFondo
-                button.layer.borderWidth = 2
-                button.layer.borderColor = UIColor.init(red: 41/255, green: 50/255, blue: 65/255, alpha: 1).cgColor
+                button.layer.borderWidth = 0
                 button.setTitleColor(colorTexto, for: .normal)
                 button.contentHorizontalAlignment = .center
                 button.contentVerticalAlignment = .center
@@ -78,14 +76,13 @@ class ViewControllerReglaContexto: UIViewController {
             
         }
     }
-    
     @IBAction func buttonAction(sender: UIButton){
         numPregunta += 1
         if numPregunta <= 11{
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
-            if sender.tag ==  arrayContexto[index].posicion{
+            if sender.tag ==  arrayPalabras[index].posicion{
                 numAciertosInt = numAciertosInt + 1
                 lbAciertos.text = "\(numAciertosInt!)/10"
             }
@@ -100,16 +97,16 @@ class ViewControllerReglaContexto: UIViewController {
     
     func cambiaPalabra(){
         index = index + 1
-        if(index < arrayContexto.count){
+        if(index < arrayPalabras.count){
             myButtonArray.removeAll()
             
-            for i in arrayContexto[index].arrayPalabras{
+            for i in arrayPalabras[index].arraySeparado{
                 myButtonArray.append(i)
             }
-            tvContexto.text = arrayContexto[index].contexto
             createButtons()
         }
     }
+
     /*
     // MARK: - Navigation
 
