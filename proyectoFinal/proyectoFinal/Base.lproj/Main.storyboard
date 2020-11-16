@@ -534,7 +534,7 @@
                         <outlet property="buttonStack" destination="egO-5j-U54" id="Pay-N2-mpD"/>
                         <outlet property="lbAciertos" destination="a5R-re-wXx" id="nOd-5D-ext"/>
                         <outlet property="lbTimer" destination="hUo-O7-42x" id="3fc-rc-ZxR"/>
-                        <segue destination="PAD-Da-tGr" kind="show" id="a9y-S0-Wt9"/>
+                        <segue destination="PAD-Da-tGr" kind="show" identifier="final" id="a9y-S0-Wt9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1v3-WT-Hke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

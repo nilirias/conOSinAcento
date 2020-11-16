@@ -1,0 +1,234 @@
+[
+ {
+   "Palabra": "ejercito",
+   "Opcion 1": "ejército",
+   "Opcion 2": "ejercito",
+   "Opcion 3": "ejercitó",
+   "Opcion Correcta": 2,
+   "Contexto": "En las mañanas yo ____."
+ },
+ {
+   "Palabra": "ejercito",
+   "Opcion 1": "ejército",
+   "Opcion 2": "ejercito",
+   "Opcion 3": "ejercitó",
+   "Opcion Correcta": 3,
+   "Contexto": "Él ____ ayer en el gimnasio."
+ },
+ {
+   "Palabra": "ejercito",
+   "Opcion 1": "ejército",
+   "Opcion 2": "ejercito",
+   "Opcion 3": "ejercitó",
+   "Opcion Correcta": 1,
+   "Contexto": "El ____ mexicano esta preparado para ayudar."
+ },
+ {
+   "Palabra": "publico",
+   "Opcion 1": "público",
+   "Opcion 2": "publico",
+   "Opcion 3": "publicó",
+   "Opcion Correcta": 1,
+   "Contexto": "El ____ le aplaudió."
+ },
+ {
+   "Palabra": "publico",
+   "Opcion 1": "público",
+   "Opcion 2": "publico",
+   "Opcion 3": "publicó",
+   "Opcion Correcta": 3,
+   "Contexto": "El libro se _____."
+ },
+ {
+   "Palabra": "publico",
+   "Opcion 1": "público",
+   "Opcion 2": "publico",
+   "Opcion 3": "publicó",
+   "Opcion Correcta": 2,
+   "Contexto": "Yo ____ mis propios libros."
+ },
+ {
+   "Palabra": "afectó",
+   "Opcion 1": "afectó",
+   "Opcion 2": "afecto",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "El nuevo sistema de prestaciones _____ el comportamiento de las concesionarias."
+ },
+ {
+   "Palabra": "afetcto",
+   "Opcion 1": "afectó ",
+   "Opcion 2": "afecto",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "Después de trabajar tanto tiempo juntos, siento _____ por ellos."
+ },
+ {
+   "Palabra": "cómo",
+   "Opcion 1": "cómo",
+   "Opcion 2": "como",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "Analizaremos _____ el nuevo sistema de prestaciones afecto el comportamiento de las concesionarias"
+ },
+ {
+   "Palabra": "como",
+   "Opcion 1": "cómo",
+   "Opcion 2": "como",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "Como el sistema de prestaciones es nuevo, el comportamiento de las concesionarias cambió."
+ },
+ {
+   "Palabra": "qué",
+   "Opcion 1": "qué",
+   "Opcion 2": "que",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "Se debe especificar  _____  materiales reciclables deben ser o no utilizados, que sean sustentables y duraderos."
+ },
+ {
+   "Palabra": "que",
+   "Opcion 1": "qué",
+   "Opcion 2": "que",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "Se debe especificar qué materiales reciclables deben ser o no utilizados, _____ sean sustentables y duraderos."
+ },
+ {
+   "Palabra": "artículo",
+   "Opcion 1": "artículo",
+   "Opcion 2": "articulo",
+   "Opcion 3": "articuló",
+   "Opcion Correcta": 1,
+   "Contexto": "El _____ de Vélez  se refiere a cómo la iluminación, el ruido y la temperatura donde se crea la edificación deben de tomarse en cuenta para tomara decisiones sobre los materiales que se utilizarán"
+ },
+ {
+   "Palabra": "articulo",
+   "Opcion 1": "artículo",
+   "Opcion 2": "articulo",
+   "Opcion 3": "articuló",
+   "Opcion Correcta": 2,
+   "Contexto": "He notado que _____ mejor desde que practico los ejercicios de dicción"
+ },
+ {
+   "Palabra": "articuló",
+   "Opcion 1": "artículo",
+   "Opcion 2": "articulo",
+   "Opcion 3": "articuló",
+   "Opcion Correcta": 3,
+   "Contexto": "_____ un discurso claro y emotivo; consiguió su objetivo."
+ },
+ {
+   "Palabra": "donde",
+   "Opcion 1": "donde",
+   "Opcion 2": "dónde",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "La iluminación, el ruido y la temperatura del sitio _____ se edificará deben de tomarse en cuenta para elegir los materiales"
+ },
+ {
+   "Palabra": "dónde",
+   "Opcion 1": "donde",
+   "Opcion 2": "dónde",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "No tiene claro _____ se hará la edificación, por ese motivo todavía no puede hacer un proyecto."
+ },
+ {
+   "Palabra": "qué",
+   "Opcion 1": "qué",
+   "Opcion 2": "que",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "Analizaremos en _____ maneras la pandemia mundial del COVID-19 ha afectado a las diferentes empresas."
+ },
+ {
+   "Palabra": "que",
+   "Opcion 1": "qué",
+   "Opcion 2": "que",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "Algunas de las medidas de emergencia _____ tuvieron que tomar los gobiernos fueron muy drásticas."
+ },
+ {
+   "Palabra": "está",
+   "Opcion 1": "está",
+   "Opcion 2": "esta",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "La crisis económica originada por la pandemia _____ afectando a los dos tercios de los habitantes del mundo."
+ },
+ {
+   "Palabra": "esta",
+   "Opcion 1": "está",
+   "Opcion 2": "esta",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "_____ crisis ha afectado a dos tercios de los habitantes del planeta."
+ },
+ {
+   "Palabra": "disminuyó",
+   "Opcion 1": "disminuyó",
+   "Opcion 2": "disminuyo",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "Hubo disminución en la capacidad productiva y _____ la demanda interna, además de que cayó el precio del petróleo en los mercados internacionales."
+ },
+ {
+   "Palabra": "disminuyo",
+   "Opcion 1": "disminuyó",
+   "Opcion 2": "disminuyo",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "Por seguridad, _____ la velocidad cuando voy a girar."
+ },
+ {
+   "Palabra": "último",
+   "Opcion 1": "último",
+   "Opcion 2": "ultimo",
+   "Opcion 3": "ultimó",
+   "Opcion Correcta": 1,
+   "Contexto": " El beneficio del videojuego abarca varios ámbitos:  desarrollo motor y la mejora de las habilidades psicomotrices, desarrollo intelectual o cognitivo, capacidad de motivación al aprender y, por _____, las destrezas sociales, la capacidad de negociación, adaptarse para improvisar y el trabajo en equipo."
+ },
+ {
+   "Palabra": "ultimo",
+   "Opcion 1": "último",
+   "Opcion 2": "ultimo",
+   "Opcion 3": "ultimó",
+   "Opcion Correcta": 2,
+   "Contexto": "______ un par de detalles y estaré lista."
+ },
+ {
+   "Palabra": "ultimó",
+   "Opcion 1": "último",
+   "Opcion 2": "ultimo",
+   "Opcion 3": "ultimó",
+   "Opcion Correcta": 3,
+   "Contexto": "El asesino _____ a la víctima a las 11:20 pm."
+ },
+ {
+   "Palabra": "fascinó",
+   "Opcion 1": "gráficas",
+   "Opcion 2": "fascino",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "A la mayoría de los alumnos encuestados les _____ la nueva opción de juegos."
+ },
+ {
+   "Palabra": "gráficas",
+   "Opcion 1": "gráficas",
+   "Opcion 2": "graficas",
+   "Opcion 3": "",
+   "Opcion Correcta": 1,
+   "Contexto": "El artículo incluye _____ que muestran un análisis detallado de la relación costo-beneficio."
+ },
+ {
+   "Palabra": "graficas",
+   "Opcion 1": "",
+   "Opcion 2": "graficas",
+   "Opcion 3": "",
+   "Opcion Correcta": 2,
+   "Contexto": "Cuando _____ los resultados de la  ecuación, ¿cuáles son los pasos que sigues?"
+ }
+]
