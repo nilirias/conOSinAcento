@@ -1,6 +1,8 @@
-{
-  "Game": {
-    "words": [],
-    "leaderboard": []
-  }
-}
+[
+   {
+      "date":"11.6.20",
+      "score":"600",
+      "aciertos":"6/10",
+      "time":"1:23"
+   }
+]

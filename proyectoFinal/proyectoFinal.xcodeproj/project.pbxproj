@@ -22,6 +22,7 @@
 		38CE2B102561F91100794A31 /* palabrasContexto.json in Resources */ = {isa = PBXBuildFile; fileRef = 38CE2B0F2561F91100794A31 /* palabrasContexto.json */; };
 		38FA42FD25531E9E008CBB51 /* ViewControllerReglaContexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */; };
 		38FA430025531F82008CBB51 /* PalabrasContexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */; };
+		8F1F33F125633BF30054E24D /* Game.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F1F33F025633BF30054E24D /* Game.json */; };
 		8F569C1C25534F6200314A5E /* ViewControllerReglaHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */; };
 		8F569C1F2553524A00314A5E /* PalabrasHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1E2553524A00314A5E /* PalabrasHiato.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		38CE2B0F2561F91100794A31 /* palabrasContexto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasContexto.json; sourceTree = "<group>"; };
 		38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaContexto.swift; sourceTree = "<group>"; };
 		38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasContexto.swift; sourceTree = "<group>"; };
+		8F1F33F025633BF30054E24D /* Game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Game.json; sourceTree = SOURCE_ROOT; };
 		8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaHiato.swift; sourceTree = "<group>"; };
 		8F569C1E2553524A00314A5E /* PalabrasHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasHiato.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				38209A662537CE8000CA2E4F /* ViewController.swift */,
 				38209A682537CE8000CA2E4F /* Main.storyboard */,
 				381C5FFD2563079700D74696 /* ViewControllerFinal.swift */,
+				8F1F33F025633BF30054E24D /* Game.json */,
 				38AFAA3F25535E37007676B9 /* ViewControllerVideoExplicatorio.swift */,
 				38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */,
 				8F569C1E2553524A00314A5E /* PalabrasHiato.swift */,
@@ -163,6 +166,7 @@
 				38209A6C2537CE8A00CA2E4F /* Assets.xcassets in Resources */,
 				38209A6A2537CE8000CA2E4F /* Main.storyboard in Resources */,
 				38CE2B102561F91100794A31 /* palabrasContexto.json in Resources */,
+				8F1F33F125633BF30054E24D /* Game.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
