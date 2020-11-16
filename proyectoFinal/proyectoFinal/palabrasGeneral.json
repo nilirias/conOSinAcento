@@ -1,0 +1,1255 @@
+[
+    {
+        "Palabra": "accion",
+        "palabraDiv": [
+            "ac",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "arbol",
+        "palabraDiv": [
+            "ar",
+            "bol"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "Sepulveda",
+        "palabraDiv": [
+            "Se",
+            "pul",
+            "ve",
+            "da"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "perro",
+        "palabraDiv": [
+            "pe",
+            "rro"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "computadora",
+        "palabraDiv": [
+            "com",
+            "pu",
+            "ta",
+            "do",
+            "ra"
+        ],
+        "Tilde": "0",
+        "Pos": 3
+    },
+    {
+        "Palabra": "problematico",
+        "palabraDiv": [
+            "pro",
+            "ble",
+            "ma",
+            "ti",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "telefono",
+        "palabraDiv": [
+            "te",
+            "le",
+            "fo",
+            "no"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "ilogico",
+        "palabraDiv": [
+            "i",
+            "lo",
+            "gi",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "magico",
+        "palabraDiv": [
+            "ma",
+            "gi",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "antidoto",
+        "palabraDiv": [
+            "an",
+            "ti",
+            "do",
+            "to"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "efimero",
+        "palabraDiv": [
+            "e",
+            "fi",
+            "me",
+            "ro"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "cinico",
+        "palabraDiv": [
+            "ci",
+            "ni",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "lagrima",
+        "palabraDiv": [
+            "la",
+            "gri",
+            "ma"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "hipotetico",
+        "palabraDiv": [
+            "hi",
+            "po",
+            "te",
+            "ti",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "autentico",
+        "palabraDiv": [
+            "au",
+            "ten",
+            "ti",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "matematicas",
+        "palabraDiv": [
+            "ma",
+            "te",
+            "ma",
+            "ti",
+            "cas"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "pagina",
+        "palabraDiv": [
+            "pa",
+            "gi",
+            "na"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "espiritu",
+        "palabraDiv": [
+            "es",
+            "pi",
+            "ri",
+            "tu"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "quimica",
+        "palabraDiv": [
+            "qui",
+            "mi",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "esporadico",
+        "palabraDiv": [
+            "es",
+            "po",
+            "ra",
+            "di",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "fragiles",
+        "palabraDiv": [
+            "fra",
+            "gi",
+            "les"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "complice",
+        "palabraDiv": [
+            "com",
+            "pli",
+            "ce"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "negandose",
+        "palabraDiv": [
+            "ne",
+            "gan",
+            "do",
+            "se"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "escondiendose",
+        "palabraDiv": [
+            "es",
+            "con",
+            "dien",
+            "do",
+            "se"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "retorica",
+        "palabraDiv": [
+            "re",
+            "to",
+            "ri",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "botanica",
+        "palabraDiv": [
+            "bo",
+            "ta",
+            "ni",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "aerostatico",
+        "palabraDiv": [
+            "a",
+            "e",
+            "ros",
+            "ta",
+            "ti",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 3
+    },
+    {
+        "Palabra": "filosofico",
+        "palabraDiv": [
+            "fi",
+            "lo",
+            "so",
+            "fi",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "fisica",
+        "palabraDiv": [
+            "fi",
+            "si",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "astronomo",
+        "palabraDiv": [
+            "as",
+            "tro",
+            "no",
+            "mo"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "politico",
+        "palabraDiv": [
+            "po",
+            "li",
+            "ti",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "cientifico",
+        "palabraDiv": [
+            "cien",
+            "ti",
+            "fi",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "preterito",
+        "palabraDiv": [
+            "pre",
+            "te",
+            "ri",
+            "to"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "poetica",
+        "palabraDiv": [
+            "po",
+            "e",
+            "ti",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "Ursula",
+        "palabraDiv": [
+            "Ur",
+            "su",
+            "la"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "esdrujula",
+        "palabraDiv": [
+            "es",
+            "dru",
+            "ju",
+            "la"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "describiendolos",
+        "palabraDiv": [
+            "des",
+            "cri",
+            "bien",
+            "do",
+            "los"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "catolico",
+        "palabraDiv": [
+            "ca",
+            "to",
+            "li",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "kilometro",
+        "palabraDiv": [
+            "ki",
+            "lo",
+            "me",
+            "tro"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "area",
+        "palabraDiv": [
+            "a",
+            "re",
+            "a"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "olvidame",
+        "palabraDiv": [
+            "ol",
+            "vi",
+            "da",
+            "me"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "contemporanea",
+        "palabraDiv": [
+            "con",
+            "tem",
+            "po",
+            "ra",
+            "ne",
+            "a"
+        ],
+        "Tilde": "1",
+        "Pos": 3
+    },
+    {
+        "Palabra": "particula",
+        "palabraDiv": [
+            "par",
+            "ti",
+            "cu",
+            "la"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "didactica",
+        "palabraDiv": [
+            "di",
+            "dac",
+            "ti",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "jovenes",
+        "palabraDiv": [
+            "jo",
+            "ve",
+            "nes"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "antropologo",
+        "palabraDiv": [
+            "an",
+            "tro",
+            "po",
+            "lo",
+            "go"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "basico",
+        "palabraDiv": [
+            "ba",
+            "si",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "musica",
+        "palabraDiv": [
+            "mu",
+            "si",
+            "ca"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "Mexico",
+        "palabraDiv": [
+            "Me",
+            "xi",
+            "co"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "principe",
+        "palabraDiv": [
+            "prin",
+            "ci",
+            "pe"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "aqui",
+        "palabraDiv": [
+            "a",
+            "qui"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "alimentacion",
+        "palabraDiv": [
+            "a",
+            "li",
+            "men",
+            "ta",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 4
+    },
+    {
+        "Palabra": "ocasion",
+        "palabraDiv": [
+            "o",
+            "ca",
+            "sion"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "imaginacion",
+        "palabraDiv": [
+            "i",
+            "ma",
+            "gi",
+            "na",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 4
+    },
+    {
+        "Palabra": "introduccion",
+        "palabraDiv": [
+            "in",
+            "tro",
+            "duc",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 3
+    },
+    {
+        "Palabra": "version",
+        "palabraDiv": [
+            "ver",
+            "sion"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "expansion",
+        "palabraDiv": [
+            "ex",
+            "pan",
+            "sion"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "empezo",
+        "palabraDiv": [
+            "em",
+            "pe",
+            "zo"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "quedaran",
+        "palabraDiv": [
+            "que",
+            "da",
+            "ran"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "educacion",
+        "palabraDiv": [
+            "e",
+            "du",
+            "ca",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 3
+    },
+    {
+        "Palabra": "conversacion",
+        "palabraDiv": [
+            "con",
+            "ver",
+            "sa",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 3
+    },
+    {
+        "Palabra": "direccion",
+        "palabraDiv": [
+            "di",
+            "rec",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "asi",
+        "palabraDiv": [
+            "a",
+            "si"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "extraccion",
+        "palabraDiv": [
+            "ex",
+            "trac",
+            "cion"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "Japon",
+        "palabraDiv": [
+            "Ja",
+            "pon"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "tomaran",
+        "palabraDiv": [
+            "to",
+            "ma",
+            "ran"
+        ],
+        "Tilde": "1",
+        "Pos": 2
+    },
+    {
+        "Palabra": "detras",
+        "palabraDiv": [
+            "de",
+            "tras"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "infantil",
+        "palabraDiv": [
+            "in",
+            "fan",
+            "til"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "documental",
+        "palabraDiv": [
+            "do",
+            "cu",
+            "men",
+            "tal"
+        ],
+        "Tilde": "0",
+        "Pos": 3
+    },
+    {
+        "Palabra": "comunidad",
+        "palabraDiv": [
+            "co",
+            "mu",
+            "ni",
+            "dad"
+        ],
+        "Tilde": "0",
+        "Pos": 3
+    },
+    {
+        "Palabra": "aprender",
+        "palabraDiv": [
+            "a",
+            "pren",
+            "der"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "investigar",
+        "palabraDiv": [
+            "in",
+            "ves",
+            "ti",
+            "gar"
+        ],
+        "Tilde": "0",
+        "Pos": 3
+    },
+    {
+        "Palabra": "humedad",
+        "palabraDiv": [
+            "hu",
+            "me",
+            "dad"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "espacial",
+        "palabraDiv": [
+            "es",
+            "pa",
+            "cial"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "material",
+        "palabraDiv": [
+            "ma",
+            "te",
+            "rial"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "oficial",
+        "palabraDiv": [
+            "o",
+            "fi",
+            "cial"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "agotador",
+        "palabraDiv": [
+            "a",
+            "go",
+            "ta",
+            "dor"
+        ],
+        "Tilde": "0",
+        "Pos": 3
+    },
+    {
+        "Palabra": "debil",
+        "palabraDiv": [
+            "de",
+            "bil"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "azucar",
+        "palabraDiv": [
+            "a",
+            "zu",
+            "car"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "tunel",
+        "palabraDiv": [
+            "tu",
+            "nel"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "cesped",
+        "palabraDiv": [
+            "ces",
+            "ped"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "util",
+        "palabraDiv": [
+            "u",
+            "til"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "lapiz",
+        "palabraDiv": [
+            "la",
+            "piz"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "dificil",
+        "palabraDiv": [
+            "di",
+            "fi",
+            "cil"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "super",
+        "palabraDiv": [
+            "su",
+            "per"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "facil",
+        "palabraDiv": [
+            "fa",
+            "cil"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "angel",
+        "palabraDiv": [
+            "an",
+            "gel"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "carcel",
+        "palabraDiv": [
+            "car",
+            "cel"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "record",
+        "palabraDiv": [
+            "re",
+            "cord"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "habil",
+        "palabraDiv": [
+            "ha",
+            "bil"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "martir",
+        "palabraDiv": [
+            "mar",
+            "tir"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "album",
+        "palabraDiv": [
+            "al",
+            "bum"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "ambar",
+        "palabraDiv": [
+            "am",
+            "bar"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "dolar",
+        "palabraDiv": [
+            "do",
+            "lar"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "onix",
+        "palabraDiv": [
+            "o",
+            "nix"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "Oscar",
+        "palabraDiv": [
+            "Os",
+            "car"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "poliester",
+        "palabraDiv": [
+            "po",
+            "lies",
+            "ter"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "portatil",
+        "palabraDiv": [
+            "por",
+            "ta",
+            "til"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "poster",
+        "palabraDiv": [
+            "pos",
+            "ter"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "Gutierrez",
+        "palabraDiv": [
+            "Gu",
+            "tie",
+            "rrez"
+        ],
+        "Tilde": "1",
+        "Pos": 1
+    },
+    {
+        "Palabra": "Sanchez",
+        "palabraDiv": [
+            "San",
+            "chez"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "Cesar",
+        "palabraDiv": [
+            "Ce",
+            "sar"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "simil",
+        "palabraDiv": [
+            "si",
+            "mil"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "Gomez",
+        "palabraDiv": [
+            "Go",
+            "mez"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "forceps",
+        "palabraDiv": [
+            "for",
+            "ceps"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "torax",
+        "palabraDiv": [
+            "to",
+            "rax"
+        ],
+        "Tilde": "1",
+        "Pos": 0
+    },
+    {
+        "Palabra": "examen",
+        "palabraDiv": [
+            "e",
+            "xa",
+            "men"
+        ],
+        "Tilde": "0",
+        "Pos": 1
+    },
+    {
+        "Palabra": "carne",
+        "palabraDiv": [
+            "car",
+            "ne"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "suficiente",
+        "palabraDiv": [
+            "su",
+            "fi",
+            "cien",
+            "te"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "hecho",
+        "palabraDiv": [
+            "he",
+            "cho"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "estrategia",
+        "palabraDiv": [
+            "es",
+            "tra",
+            "te",
+            "gia"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "esperanza",
+        "palabraDiv": [
+            "es",
+            "pe",
+            "ran",
+            "za"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "prisionero",
+        "palabraDiv": [
+            "pri",
+            "sio",
+            "ne",
+            "ro"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "diente",
+        "palabraDiv": [
+            "dien",
+            "te"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "sue\u00c3\u00b1a",
+        "palabraDiv": [
+            "sue",
+            "\u00c3\u00b1a"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "recuerdo",
+        "palabraDiv": [
+            "re",
+            "cuer",
+            "do"
+        ],
+        "Tilde": "0",
+        "Pos": 1
+    },
+    {
+        "Palabra": "segundo",
+        "palabraDiv": [
+            "se",
+            "gun",
+            "do"
+        ],
+        "Tilde": "0",
+        "Pos": 1
+    },
+    {
+        "Palabra": "posible",
+        "palabraDiv": [
+            "po",
+            "si",
+            "ble"
+        ],
+        "Tilde": "0",
+        "Pos": 1
+    },
+    {
+        "Palabra": "holograma",
+        "palabraDiv": [
+            "ho",
+            "lo",
+            "gra",
+            "ma"
+        ],
+        "Tilde": "0",
+        "Pos": 2
+    },
+    {
+        "Palabra": "estrella",
+        "palabraDiv": [
+            "es",
+            "tre",
+            "lla"
+        ],
+        "Tilde": "0",
+        "Pos": 1
+    },
+    {
+        "Palabra": "hambre",
+        "palabraDiv": [
+            "ham",
+            "bre"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "logran",
+        "palabraDiv": [
+            "lo",
+            "gran"
+        ],
+        "Tilde": "0",
+        "Pos": 0
+    },
+    {
+        "Palabra": "trajeron",
+        "palabraDiv": [
+            "tra",
+            "je",
+            "ron"
+        ],
+        "Tilde": "0",
+        "Pos": 1
+    }
+]

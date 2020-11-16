@@ -17,6 +17,8 @@
 		38A4CEF3255208320016865F /* PalabrasSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A4CEF2255208320016865F /* PalabrasSimple.swift */; };
 		38AFAA3E255358A6007676B9 /* ViewControllerExplicacionTexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */; };
 		38AFAA4025535E37007676B9 /* ViewControllerVideoExplicatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFAA3F25535E37007676B9 /* ViewControllerVideoExplicatorio.swift */; };
+		38CE2B052561E72C00794A31 /* palabrasGeneral.json in Resources */ = {isa = PBXBuildFile; fileRef = 38CE2B042561E72C00794A31 /* palabrasGeneral.json */; };
+		38CE2B102561F91100794A31 /* palabrasContexto.json in Resources */ = {isa = PBXBuildFile; fileRef = 38CE2B0F2561F91100794A31 /* palabrasContexto.json */; };
 		38FA42FD25531E9E008CBB51 /* ViewControllerReglaContexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */; };
 		38FA430025531F82008CBB51 /* PalabrasContexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */; };
 		8F569C1C25534F6200314A5E /* ViewControllerReglaHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */; };
@@ -36,6 +38,8 @@
 		38A4CEF2255208320016865F /* PalabrasSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasSimple.swift; sourceTree = "<group>"; };
 		38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExplicacionTexto.swift; sourceTree = "<group>"; };
 		38AFAA3F25535E37007676B9 /* ViewControllerVideoExplicatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVideoExplicatorio.swift; sourceTree = "<group>"; };
+		38CE2B042561E72C00794A31 /* palabrasGeneral.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasGeneral.json; sourceTree = "<group>"; };
+		38CE2B0F2561F91100794A31 /* palabrasContexto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasContexto.json; sourceTree = "<group>"; };
 		38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaContexto.swift; sourceTree = "<group>"; };
 		38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasContexto.swift; sourceTree = "<group>"; };
 		8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaHiato.swift; sourceTree = "<group>"; };
@@ -80,10 +84,12 @@
 				38AFAA3F25535E37007676B9 /* ViewControllerVideoExplicatorio.swift */,
 				38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */,
 				8F569C1E2553524A00314A5E /* PalabrasHiato.swift */,
+				38CE2B042561E72C00794A31 /* palabrasGeneral.json */,
 				38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */,
 				38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */,
 				38683F362550C7230030D01F /* ViewControllerReglaSimple.swift */,
 				38A4CEF2255208320016865F /* PalabrasSimple.swift */,
+				38CE2B0F2561F91100794A31 /* palabrasContexto.json */,
 				38209A6B2537CE8A00CA2E4F /* Assets.xcassets */,
 				38209A6D2537CE8A00CA2E4F /* LaunchScreen.storyboard */,
 				38209A702537CE8A00CA2E4F /* Info.plist */,
@@ -149,9 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CE2B052561E72C00794A31 /* palabrasGeneral.json in Resources */,
 				38209A6F2537CE8A00CA2E4F /* LaunchScreen.storyboard in Resources */,
 				38209A6C2537CE8A00CA2E4F /* Assets.xcassets in Resources */,
 				38209A6A2537CE8000CA2E4F /* Main.storyboard in Resources */,
+				38CE2B102561F91100794A31 /* palabrasContexto.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

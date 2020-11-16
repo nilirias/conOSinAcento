@@ -22,6 +22,8 @@ class ViewControllerReglaContexto: UIViewController {
     var myButtonArray : [String] = []
     var index: Int!
     var tiempoTotal = 0
+    var palCont = [PalCont]()
+    var palAleatorios = [PalCont]()
     
     // colores
     let colorFondo = UIColor(red:240/255, green: 244/255, blue: 245/255, alpha: 0)
@@ -32,13 +34,15 @@ class ViewControllerReglaContexto: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadJson()
+        functionRandomize()
         numPregunta = 0
         numAciertosInt = 0
         index = 0
-        for index in arrayContexto[0].arrayPalabras{
+        for index in palAleatorios[0].opciones{
             myButtonArray.append(index)
         }
-        tvContexto.text = arrayContexto[0].contexto
+        tvContexto.text = palAleatorios[0].contexto
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
@@ -51,7 +55,7 @@ class ViewControllerReglaContexto: UIViewController {
         counterSecs = tiempoTotal % 60
         counterMinutes = tiempoTotal / 60
 
-        print("\(counterMinutes):\(counterSecs)")
+        //print("\(counterMinutes):\(counterSecs)")
         
         lbTimer.text = String(format: "%d:%02d", counterMinutes, counterSecs)
     }
@@ -75,8 +79,47 @@ class ViewControllerReglaContexto: UIViewController {
                 return button
             }()
             buttonStack.addArrangedSubview(oneBtn)
+            print(myButtonArray)
             
         }
+    }
+    
+    func functionRandomize(){
+        var listIndices = Set<Int>()
+        for i in 0...9{
+            var number = Int.random(in: 0..<palCont.count)
+            while(listIndices.contains(number)){
+                number = Int.random(in: 0..<palCont.count)
+            }
+            listIndices.insert(number)
+        }
+        
+        for i in listIndices{
+            palAleatorios.append(palCont[i])
+        }
+        
+    }
+    //carga el struct
+    func loadJson(){
+        if let fileLocation = Bundle.main.url(forResource: "palabrasContexto", withExtension: "json")
+        {
+            do{
+                let data = try Data(contentsOf: fileLocation)
+                let jsonDecoder = JSONDecoder()
+                let dataFromJson = try jsonDecoder.decode([PalCont].self,from: data)
+                print(dataFromJson)
+                self.palCont = dataFromJson
+                
+                
+            }catch{
+                print("error")
+            }
+        }
+        else
+        {
+            print("error finding file")
+        }
+        
     }
     
     @IBAction func buttonAction(sender: UIButton){
@@ -85,7 +128,7 @@ class ViewControllerReglaContexto: UIViewController {
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
-            if sender.tag ==  arrayContexto[index].posicion{
+            if sender.tag ==  palCont[index].pos{
                 numAciertosInt = numAciertosInt + 1
                 lbAciertos.text = "\(numAciertosInt!)/10"
             }
@@ -94,19 +137,19 @@ class ViewControllerReglaContexto: UIViewController {
         }else{
             timer?.invalidate()
             timer = nil
-            print("aaaaaaaa")
+            //print("aaaaaaaa")
         }
     }
     
     func cambiaPalabra(){
         index = index + 1
-        if(index < arrayContexto.count){
+        if(index < palAleatorios.count){
             myButtonArray.removeAll()
             
-            for i in arrayContexto[index].arrayPalabras{
+            for i in palAleatorios[index].opciones{
                 myButtonArray.append(i)
             }
-            tvContexto.text = arrayContexto[index].contexto
+            tvContexto.text = palAleatorios[index].contexto
             createButtons()
         }
     }
@@ -120,4 +163,12 @@ class ViewControllerReglaContexto: UIViewController {
     }
     */
 
+}
+
+struct PalCont: Codable
+{
+    var Palabra: String
+    var opciones : [String]    
+    var pos: Int
+    var contexto: String
 }

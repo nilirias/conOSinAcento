@@ -15,7 +15,9 @@ class ViewControllerReglaSimple: UIViewController {
     //array de la clase de las palabras (mientras tanto tengo un array de puros strings para poder crear los botones)
     @IBOutlet weak var buttonStack : UIStackView!
     var myButtonArray : [String] = []
-    //var de numero de aciertos
+    var palSimple = [PalSimp]()
+    var palAleatorios = [PalSimp]()
+     //var de numero de aciertos
     @IBOutlet weak var lbTimer: UILabel!
     @IBOutlet weak var numAciertos: UILabel!
     var numAciertosInt : Int!
@@ -26,7 +28,7 @@ class ViewControllerReglaSimple: UIViewController {
     var timer: Timer!
     var index: Int!
     
-    var arrayPalabras = [PalabrasSimple(word: "Parro", arraySeparado: ["Pe", "rro"], pos: 0, acento: false, contexto: "nil"), PalabrasSimple(word: "manzana", arraySeparado: ["man", "za", "na"], pos: 1, acento: false, contexto: "nil")]
+    var arrayPalabras = [PalabrasSimple(word: "Parro", arraySeparado: ["Pe", "rro"], pos: 0, acento: false), PalabrasSimple(word: "manzana", arraySeparado: ["man", "za", "na"], pos: 1, acento: false)]
     
     // colores
     let colorFondo = UIColor(red:240/255, green: 244/255, blue: 245/255, alpha: 0)
@@ -35,10 +37,13 @@ class ViewControllerReglaSimple: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadJson()
+        functionRandomize()
         numAciertosInt = 0
         numPregunta = 0
         index = 0
-        for index in arrayPalabras[0].arraySeparado{
+    
+        for index in palAleatorios[0].palabraDiv{
             myButtonArray.append(index)
         }
         
@@ -53,7 +58,7 @@ class ViewControllerReglaSimple: UIViewController {
             counterSecs = tiempoTotal % 60
             counterMinutes = tiempoTotal / 60
 
-            print("\(counterMinutes):\(counterSecs)")
+            //print("\(counterMinutes):\(counterSecs)")
             
             lbTimer.text = String(format: "%d:%02d", counterMinutes, counterSecs)
         }
@@ -70,7 +75,7 @@ class ViewControllerReglaSimple: UIViewController {
                 button.setTitleColor(colorTexto, for: .normal)
                 button.contentHorizontalAlignment = .center
                 button.contentVerticalAlignment = .center
-                button.titleLabel?.font = UIFont(name: "Arial", size: 40)
+                button.titleLabel?.font = UIFont(name: "Arial", size: 30)
                 button.layer.cornerRadius = 5
                 button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
                 // button.addTarget(self, action: Selector(("holdRelease:")), for: UIControl.Event.touchUpInside);
@@ -85,6 +90,44 @@ class ViewControllerReglaSimple: UIViewController {
         
     }
     
+    //Aleatorio
+    func functionRandomize(){
+        var listIndices = Set<Int>()
+        for i in 0...9{
+            var number = Int.random(in: 0..<palSimple.count)
+            while(listIndices.contains(number)){
+                number = Int.random(in: 0..<palSimple.count)
+            }
+            listIndices.insert(number)
+        }
+        
+        for i in listIndices{
+            palAleatorios.append(palSimple[i])
+        }
+        
+    }
+    //carga el struct
+    func loadJson(){
+        if let fileLocation = Bundle.main.url(forResource: "palabrasGeneral", withExtension: "json")
+        {
+            do{
+                let data = try Data(contentsOf: fileLocation)
+                let jsonDecoder = JSONDecoder()
+                let dataFromJson = try jsonDecoder.decode([PalSimp].self,from: data)
+                
+                self.palSimple = dataFromJson
+                
+                
+            }catch{
+                print("error")
+            }
+        }
+        else
+        {
+            print("error finding file")
+        }
+        
+    }
     
     //funcion al darle click un boton
     
@@ -97,7 +140,11 @@ class ViewControllerReglaSimple: UIViewController {
                 for button in buttonStack.arrangedSubviews{
                     button.removeFromSuperview()
                 }
-                if sender.tag ==  arrayPalabras[index].posicion && opcion == arrayPalabras[index].acento{
+                var estado = false
+                if palAleatorios[index].Tilde == "1"{
+                    estado = true
+                }
+                if sender.tag ==  palAleatorios[index].Pos && opcion == estado{
                     
                     numAciertosInt = numAciertosInt + 1
                     numAciertos.text = "\(numAciertosInt!)/10"
@@ -133,10 +180,10 @@ class ViewControllerReglaSimple: UIViewController {
     
     func cambiaPalabra(){
         index = index + 1
-        if(index < arrayPalabras.count){
+        if(index < palAleatorios.count){
             myButtonArray.removeAll()
             
-            for i in arrayPalabras[index].arraySeparado{
+            for i in palAleatorios[index].palabraDiv{
                 myButtonArray.append(i)
             }
             createButtons()
@@ -154,4 +201,11 @@ class ViewControllerReglaSimple: UIViewController {
     }
     */
 
+}
+struct PalSimp: Codable
+{
+    var Palabra: String
+    var palabraDiv : [String]
+    var Tilde: String
+    var Pos: Int
 }

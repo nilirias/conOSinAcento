@@ -9,17 +9,15 @@
 import UIKit
 
 class PalabrasSimple: NSObject {
-    
+   
     var word: String
     var arraySeparado: [String]
     var posicion: Int
     var acento: Bool
-    var contexto:String
-    init(word: String, arraySeparado:[String], pos:Int, acento: Bool, contexto: String){
+    init(word: String, arraySeparado:[String], pos:Int, acento: Bool){
         self.word = word
         self.arraySeparado = arraySeparado
         self.posicion = pos
         self.acento = acento
-        self.contexto = contexto
     }
 }

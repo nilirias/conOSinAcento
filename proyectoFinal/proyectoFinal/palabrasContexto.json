@@ -1,0 +1,275 @@
+[
+    {
+        "Palabra": "ejercito",
+        "opciones": [
+            "ejército",
+            "ejercito",
+            "ejercitó"
+        ],
+        "pos": 1,
+        "contexto": "En las mañanas yo ____."
+    },
+    {
+        "Palabra": "ejercito",
+        "opciones": [
+            "ejército",
+            "ejercito",
+            "ejercitó"
+        ],
+        "pos": 2,
+        "contexto": "Él ____ ayer en el gimnasio."
+    },
+    {
+        "Palabra": "ejercito",
+        "opciones": [
+            "ejército",
+            "ejercito",
+            "ejercitó"
+        ],
+        "pos": 0,
+        "contexto": "El ____ mexicano esta preparado para ayudar."
+    },
+    {
+        "Palabra": "publico",
+        "opciones": [
+            "público",
+            "publico",
+            "publicó"
+        ],
+        "pos": 0,
+        "contexto": "El ____ le aplaudió."
+    },
+    {
+        "Palabra": "publico",
+        "opciones": [
+            "público",
+            "publico",
+            "publicó"
+        ],
+        "pos": 2,
+        "contexto": "El libro se _____."
+    },
+    {
+        "Palabra": "publico",
+        "opciones": [
+            "público",
+            "publico",
+            "publicó"
+        ],
+        "pos": 1,
+        "contexto": "Yo ____ mis propios libros."
+    },
+    {
+        "Palabra": "afectó",
+        "opciones": [
+            "afectó",
+            "afecto"
+        ],
+        "pos": 0,
+        "contexto": "El nuevo sistema de prestaciones _____ el comportamiento de las concesionarias."
+    },
+    {
+        "Palabra": "afetcto",
+        "opciones": [
+            "afectó ",
+            "afecto"
+        ],
+        "pos": 1,
+        "contexto": "Después de trabajar tanto tiempo juntos, siento _____ por ellos."
+    },
+    {
+        "Palabra": "cómo",
+        "opciones": [
+            "cómo",
+            "como"
+        ],
+        "pos": 0,
+        "contexto": "Analizaremos _____ el nuevo sistema de prestaciones afecto el comportamiento de las concesionarias"
+    },
+    {
+        "Palabra": "como",
+        "opciones": [
+            "cómo",
+            "como"
+        ],
+        "pos": 1,
+        "contexto": "Como el sistema de prestaciones es nuevo, el comportamiento de las concesionarias cambió."
+    },
+    {
+        "Palabra": "qué",
+        "opciones": [
+            "qué",
+            "que"
+        ],
+        "pos": 0,
+        "contexto": "Se debe especificar  _____  materiales reciclables deben ser o no utilizados, que sean sustentables y duraderos."
+    },
+    {
+        "Palabra": "que",
+        "opciones": [
+            "qué",
+            "que"
+        ],
+        "pos": 1,
+        "contexto": "Se debe especificar qué materiales reciclables deben ser o no utilizados, _____ sean sustentables y duraderos."
+    },
+    {
+        "Palabra": "artículo",
+        "opciones": [
+            "artículo",
+            "articulo",
+            "articuló"
+        ],
+        "pos": 0,
+        "contexto": "El _____ de Vélez  se refiere a cómo la iluminación, el ruido y la temperatura donde se crea la edificación deben de tomarse en cuenta para tomara decisiones sobre los materiales que se utilizarán"
+    },
+    {
+        "Palabra": "articulo",
+        "opciones": [
+            "artículo",
+            "articulo",
+            "articuló"
+        ],
+        "pos": 1,
+        "contexto": "He notado que _____ mejor desde que practico los ejercicios de dicción"
+    },
+    {
+        "Palabra": "articuló",
+        "opciones": [
+            "artículo",
+            "articulo",
+            "articuló"
+        ],
+        "pos": 2,
+        "contexto": "_____ un discurso claro y emotivo; consiguió su objetivo."
+    },
+    {
+        "Palabra": "donde",
+        "opciones": [
+            "donde",
+            "dónde"
+        ],
+        "pos": 0,
+        "contexto": "La iluminación, el ruido y la temperatura del sitio _____ se edificará deben de tomarse en cuenta para elegir los materiales"
+    },
+    {
+        "Palabra": "dónde",
+        "opciones": [
+            "donde",
+            "dónde"
+        ],
+        "pos": 1,
+        "contexto": "No tiene claro _____ se hará la edificación, por ese motivo todavía no puede hacer un proyecto."
+    },
+    {
+        "Palabra": "qué",
+        "opciones": [
+            "qué",
+            "que"
+        ],
+        "pos": 0,
+        "contexto": "Analizaremos en _____ maneras la pandemia mundial del COVID-19 ha afectado a las diferentes empresas."
+    },
+    {
+        "Palabra": "que",
+        "opciones": [
+            "qué",
+            "que"
+        ],
+        "pos": 1,
+        "contexto": "Algunas de las medidas de emergencia _____ tuvieron que tomar los gobiernos fueron muy drásticas."
+    },
+    {
+        "Palabra": "está",
+        "opciones": [
+            "está",
+            "esta"
+        ],
+        "pos": 0,
+        "contexto": "La crisis económica originada por la pandemia _____ afectando a los dos tercios de los habitantes del mundo."
+    },
+    {
+        "Palabra": "esta",
+        "opciones": [
+            "está",
+            "esta"
+        ],
+        "pos": 1,
+        "contexto": "_____ crisis ha afectado a dos tercios de los habitantes del planeta."
+    },
+    {
+        "Palabra": "disminuyó",
+        "opciones": [
+            "disminuyó",
+            "disminuyo"
+        ],
+        "pos": 0,
+        "contexto": "Hubo disminución en la capacidad productiva y _____ la demanda interna, además de que cayó el precio del petróleo en los mercados internacionales."
+    },
+    {
+        "Palabra": "disminuyo",
+        "opciones": [
+            "disminuyó",
+            "disminuyo"
+        ],
+        "pos": 1,
+        "contexto": "Por seguridad, _____ la velocidad cuando voy a girar."
+    },
+    {
+        "Palabra": "último",
+        "opciones": [
+            "último",
+            "ultimo",
+            "ultimó"
+        ],
+        "pos": 0,
+        "contexto": " El beneficio del videojuego abarca varios ámbitos:  desarrollo motor y la mejora de las habilidades psicomotrices, desarrollo intelectual o cognitivo, capacidad de motivación al aprender y, por _____, las destrezas sociales, la capacidad de negociación, adaptarse para improvisar y el trabajo en equipo."
+    },
+    {
+        "Palabra": "ultimo",
+        "opciones": [
+            "último",
+            "ultimo",
+            "ultimó"
+        ],
+        "pos": 1,
+        "contexto": "______ un par de detalles y estaré lista."
+    },
+    {
+        "Palabra": "ultimó",
+        "opciones": [
+            "último",
+            "ultimo",
+            "ultimó"
+        ],
+        "pos": 2,
+        "contexto": "El asesino _____ a la víctima a las 11:20 pm."
+    },
+    {
+        "Palabra": "fascinó",
+        "opciones": [
+            "fascinó",
+            "fascino"
+        ],
+        "pos": 0,
+        "contexto": "A la mayoría de los alumnos encuestados les _____ la nueva opción de juegos."
+    },
+    {
+        "Palabra": "gráficas",
+        "opciones": [
+            "gráficas",
+            "graficas"
+        ],
+        "pos": 0,
+        "contexto": "El artículo incluye _____ que muestran un análisis detallado de la relación costo-beneficio."
+    },
+    {
+        "Palabra": "graficas",
+        "opciones": [
+            "gráficas",
+            "graficas"
+        ],
+        "pos": 1,
+        "contexto": "Cuando _____ los resultados de la  ecuación, ¿cuáles son los pasos que sigues?"
+    }
+]
