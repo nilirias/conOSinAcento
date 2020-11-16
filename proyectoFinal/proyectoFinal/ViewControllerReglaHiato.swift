@@ -12,7 +12,7 @@ class ViewControllerReglaHiato: UIViewController {
 
     var myButtonArray : [String] = []
     @IBOutlet weak var buttonStack: UIStackView!
-    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, contexto: "nill", cantSilabas: 3)]
+    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3)]
     var numAciertosInt : Int!
     var numPregunta : Int!
     var tiempoTotal = 0
@@ -41,10 +41,19 @@ class ViewControllerReglaHiato: UIViewController {
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
+        showAlertSilabas(i: 0)
+        
         //llamar funcion que crea los botones
     }
     
-
+    func showAlertSilabas(i: Int){
+        var numerotextfield : UITextField?
+        
+        let alertController = UIAlertController(
+            title: "Cantidad de silabas", message: "Cuatas silabas tiene la palabra\(arrayPalabras[i].word)", preferredStyle: .alert
+        )
+        
+    }
     @objc func updateCounter(){
         tiempoTotal += 1
         

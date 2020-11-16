@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381C5FFE2563079700D74696 /* ViewControllerFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C5FFD2563079700D74696 /* ViewControllerFinal.swift */; };
 		38209A632537CE8000CA2E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38209A622537CE8000CA2E4F /* AppDelegate.swift */; };
 		38209A652537CE8000CA2E4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38209A642537CE8000CA2E4F /* SceneDelegate.swift */; };
 		38209A672537CE8000CA2E4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38209A662537CE8000CA2E4F /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381C5FFD2563079700D74696 /* ViewControllerFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFinal.swift; sourceTree = "<group>"; };
 		38209A5F2537CE8000CA2E4F /* proyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38209A622537CE8000CA2E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38209A642537CE8000CA2E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				38209A642537CE8000CA2E4F /* SceneDelegate.swift */,
 				38209A662537CE8000CA2E4F /* ViewController.swift */,
 				38209A682537CE8000CA2E4F /* Main.storyboard */,
+				381C5FFD2563079700D74696 /* ViewControllerFinal.swift */,
 				38AFAA3F25535E37007676B9 /* ViewControllerVideoExplicatorio.swift */,
 				38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */,
 				8F569C1E2553524A00314A5E /* PalabrasHiato.swift */,
@@ -175,6 +178,7 @@
 				38209A632537CE8000CA2E4F /* AppDelegate.swift in Sources */,
 				8F569C1F2553524A00314A5E /* PalabrasHiato.swift in Sources */,
 				38683F372550C7230030D01F /* ViewControllerReglaSimple.swift in Sources */,
+				381C5FFE2563079700D74696 /* ViewControllerFinal.swift in Sources */,
 				38AFAA3E255358A6007676B9 /* ViewControllerExplicacionTexto.swift in Sources */,
 				38A4CEF3255208320016865F /* PalabrasSimple.swift in Sources */,
 				38AFAA4025535E37007676B9 /* ViewControllerVideoExplicatorio.swift in Sources */,

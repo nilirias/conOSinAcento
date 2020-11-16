@@ -107,7 +107,7 @@ class ViewControllerReglaContexto: UIViewController {
                 let data = try Data(contentsOf: fileLocation)
                 let jsonDecoder = JSONDecoder()
                 let dataFromJson = try jsonDecoder.decode([PalCont].self,from: data)
-                print(dataFromJson)
+                //print(dataFromJson)
                 self.palCont = dataFromJson
                 
                 
@@ -124,7 +124,7 @@ class ViewControllerReglaContexto: UIViewController {
     
     @IBAction func buttonAction(sender: UIButton){
         numPregunta += 1
-        if numPregunta <= 11{
+        if numPregunta < 10{
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
@@ -138,6 +138,7 @@ class ViewControllerReglaContexto: UIViewController {
             timer?.invalidate()
             timer = nil
             //print("aaaaaaaa")
+            self.performSegue(withIdentifier: "final", sender: sender)
         }
     }
     
@@ -153,15 +154,21 @@ class ViewControllerReglaContexto: UIViewController {
             createButtons()
         }
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "final"{
+            let finalScene = segue.destination as! ViewControllerFinal
+            finalScene.aciertosNum = numAciertosInt
+            finalScene.counterSecs = counterSecs
+            finalScene.counterMinutes = counterMinutes
+        }
     }
-    */
+    
 
 }
 

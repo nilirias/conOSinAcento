@@ -133,9 +133,9 @@ class ViewControllerReglaSimple: UIViewController {
     
     func doStuff(opcion: Bool,sender: UIButton)
     {
-            print("Button tapped \(sender.tag)")
+            //print("Button tapped \(sender.tag)")
             numPregunta = numPregunta + 1
-            if numPregunta <= 10{
+            if numPregunta < 10{
                 //hacer segue
                 for button in buttonStack.arrangedSubviews{
                     button.removeFromSuperview()
@@ -159,6 +159,7 @@ class ViewControllerReglaSimple: UIViewController {
                 timer?.invalidate()
                 timer = nil
                 print("aaaaaaaa")
+                self.performSegue(withIdentifier: "final", sender: sender)
             }
 
     }
@@ -191,15 +192,21 @@ class ViewControllerReglaSimple: UIViewController {
     }
     
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "final"{
+            let finalScene = segue.destination as! ViewControllerFinal
+            finalScene.aciertosNum = numAciertosInt
+            finalScene.counterSecs = counterSecs
+            finalScene.counterMinutes = counterMinutes
+        }
     }
-    */
+    
 
 }
 struct PalSimp: Codable
