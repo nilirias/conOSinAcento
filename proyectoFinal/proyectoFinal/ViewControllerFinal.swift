@@ -16,6 +16,7 @@ class ViewControllerFinal: UIViewController {
     var counterSecs = 0
     var counterMinutes = 0
     var path = "Game"
+    var tipo = 0
     @IBOutlet weak var lbTiempo: UILabel!
     @IBOutlet weak var lbPuntaje: UILabel!
     @IBOutlet weak var lbAciertos: UILabel!
@@ -27,9 +28,29 @@ class ViewControllerFinal: UIViewController {
         puntaje = aciertosNum * ((Int(counterMinutes)*60) + Int(counterSecs))
         lbPuntaje.text = "\(puntaje)"
         // Do any additional setup after loading the view.
+        
+        if(tipo == 1)
+        {
+            path = path + "Simple"
+        }
+        else if(tipo == 2)
+        {
+            path = path + "Contexto"
+
+        }
+        else if(tipo == 3)
+        {
+            path = path + "Hiato"
+
+        }
+        else
+        {
+            print("sin ruta")
+        }
         loadJson()
         saveInJson()
         loadJson()
+
     }
     
     func loadJson()
@@ -61,27 +82,28 @@ class ViewControllerFinal: UIViewController {
     {
         
         game.append(Game(date: "215",score: lbPuntaje.text! ,aciertos: lbAciertos.text!,time: lbTiempo.text!))
-                
-        do{
-            let jsonData = try JSONEncoder().encode(game)
-            let jsonString = String(data: jsonData, encoding: .utf8)!
+
+        //encode data
+        let encoder = JSONEncoder()
+        let jsonEncodeData =  try! encoder.encode(game)
+        
+        var jsonString = String(data: jsonEncodeData, encoding: .utf8)
+        
+
+        let url = Bundle.main.url(forResource: path, withExtension: "json")
+        
+        let data = Data(jsonString!.utf8)
+        do
+        {
+            try data.write(to: url!,options: .atomic)
+            try print(String(contentsOf: url!))
             
-            if let documentDirectory = FileManager.default.urls(for: .documentDirectory,in: .userDomainMask).first {
-                
-                let pathWithFilename = documentDirectory.appendingPathComponent("\(path).json")
-            
-                    try jsonString.write(to: pathWithFilename,
-                                         atomically: true,
-                                         encoding: .utf8)
-                
-            }
         }
-        catch {
-            print("Error: \(error)")
-            }
-        
-    
-        
+        catch
+        {
+            print("error")
+        }
+         
     }
     @IBAction func RegresarButton(_ sender: UIButton) {
     }

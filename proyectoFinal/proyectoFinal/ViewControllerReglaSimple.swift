@@ -201,6 +201,7 @@ class ViewControllerReglaSimple: UIViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "final"{
             let finalScene = segue.destination as! ViewControllerFinal
+            //finalScene.tipo = 1
             finalScene.aciertosNum = numAciertosInt
             finalScene.counterSecs = counterSecs
             finalScene.counterMinutes = counterMinutes
