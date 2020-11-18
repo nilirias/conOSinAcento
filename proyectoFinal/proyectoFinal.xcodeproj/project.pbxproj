@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38122A85256592510003D1D3 /* ViewControllerExplicacionVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38122A84256592510003D1D3 /* ViewControllerExplicacionVideo.swift */; };
 		381C5FFE2563079700D74696 /* ViewControllerFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C5FFD2563079700D74696 /* ViewControllerFinal.swift */; };
 		38209A632537CE8000CA2E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38209A622537CE8000CA2E4F /* AppDelegate.swift */; };
 		38209A652537CE8000CA2E4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38209A642537CE8000CA2E4F /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38122A84256592510003D1D3 /* ViewControllerExplicacionVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExplicacionVideo.swift; sourceTree = "<group>"; };
 		381C5FFD2563079700D74696 /* ViewControllerFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFinal.swift; sourceTree = "<group>"; };
 		38209A5F2537CE8000CA2E4F /* proyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38209A622537CE8000CA2E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		38209A612537CE8000CA2E4F /* proyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				38122A84256592510003D1D3 /* ViewControllerExplicacionVideo.swift */,
 				8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */,
 				38209A622537CE8000CA2E4F /* AppDelegate.swift */,
 				38209A642537CE8000CA2E4F /* SceneDelegate.swift */,
@@ -179,6 +182,7 @@
 			files = (
 				8F569C1C25534F6200314A5E /* ViewControllerReglaHiato.swift in Sources */,
 				38209A672537CE8000CA2E4F /* ViewController.swift in Sources */,
+				38122A85256592510003D1D3 /* ViewControllerExplicacionVideo.swift in Sources */,
 				38209A632537CE8000CA2E4F /* AppDelegate.swift in Sources */,
 				8F569C1F2553524A00314A5E /* PalabrasHiato.swift in Sources */,
 				38683F372550C7230030D01F /* ViewControllerReglaSimple.swift in Sources */,

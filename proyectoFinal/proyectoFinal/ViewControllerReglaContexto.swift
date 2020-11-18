@@ -43,7 +43,8 @@ class ViewControllerReglaContexto: UIViewController {
             myButtonArray.append(index)
         }
         tvContexto.text = palAleatorios[0].contexto
-        
+        tvContexto.sizeToFit()
+        tvContexto.layoutIfNeeded()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         createButtons()
         // Do any additional setup after loading the view.
@@ -151,6 +152,8 @@ class ViewControllerReglaContexto: UIViewController {
                 myButtonArray.append(i)
             }
             tvContexto.text = palAleatorios[index].contexto
+            tvContexto.sizeToFit()
+            tvContexto.layoutIfNeeded()
             createButtons()
         }
     }
