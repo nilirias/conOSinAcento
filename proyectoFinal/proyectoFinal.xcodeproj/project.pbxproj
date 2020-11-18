@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380C5A9E2565B75C008595C1 /* ViewControllerScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C5A9D2565B75C008595C1 /* ViewControllerScore.swift */; };
 		38122A85256592510003D1D3 /* ViewControllerExplicacionVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38122A84256592510003D1D3 /* ViewControllerExplicacionVideo.swift */; };
 		381C5FFE2563079700D74696 /* ViewControllerFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C5FFD2563079700D74696 /* ViewControllerFinal.swift */; };
 		38209A632537CE8000CA2E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38209A622537CE8000CA2E4F /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380C5A9D2565B75C008595C1 /* ViewControllerScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScore.swift; sourceTree = "<group>"; };
 		38122A84256592510003D1D3 /* ViewControllerExplicacionVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExplicacionVideo.swift; sourceTree = "<group>"; };
 		381C5FFD2563079700D74696 /* ViewControllerFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFinal.swift; sourceTree = "<group>"; };
 		38209A5F2537CE8000CA2E4F /* proyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				38209A642537CE8000CA2E4F /* SceneDelegate.swift */,
 				38209A662537CE8000CA2E4F /* ViewController.swift */,
 				38209A682537CE8000CA2E4F /* Main.storyboard */,
+				380C5A9D2565B75C008595C1 /* ViewControllerScore.swift */,
 				381C5FFD2563079700D74696 /* ViewControllerFinal.swift */,
 				8F1F33F025633BF30054E24D /* Game.json */,
 				38AFAA3F25535E37007676B9 /* ViewControllerVideoExplicatorio.swift */,
@@ -193,6 +196,7 @@
 				38FA42FD25531E9E008CBB51 /* ViewControllerReglaContexto.swift in Sources */,
 				38FA430025531F82008CBB51 /* PalabrasContexto.swift in Sources */,
 				38209A652537CE8000CA2E4F /* SceneDelegate.swift in Sources */,
+				380C5A9E2565B75C008595C1 /* ViewControllerScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

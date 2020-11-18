@@ -632,10 +632,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="1286"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Score-->
         <scene sceneID="HM8-z7-18E">
             <objects>
-                <viewController id="QbJ-Gc-b49" sceneMemberID="viewController">
+                <viewController id="QbJ-Gc-b49" customClass="ViewControllerScore" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9B0-rX-ycq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -705,6 +705,62 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="385" id="aHU-I7-oBm"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" rowHeight="47" id="SY7-K9-71b" customClass="customTableViewCell" customModule="proyectoFinal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="47"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SY7-K9-71b" id="7e2-5I-Kxl">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="47"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="LPE-FN-Qf0" userLabel="scoreStack">
+                                                    <rect key="frame" x="16.5" y="11" width="310" height="23"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-HG-Khe" userLabel="lbfecha">
+                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCX-jm-175" userLabel="lbTiempo">
+                                                            <rect key="frame" x="88" y="0.0" width="46" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ans-z2-z5u" userLabel="lbPuntaje">
+                                                            <rect key="frame" x="176" y="0.0" width="46" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFt-bV-yEs" userLabel="lbAciertos">
+                                                            <rect key="frame" x="264" y="0.0" width="46" height="23"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LPE-FN-Qf0" firstAttribute="leading" secondItem="7e2-5I-Kxl" secondAttribute="leadingMargin" constant="0.5" id="doM-tv-xTV"/>
+                                                <constraint firstItem="LPE-FN-Qf0" firstAttribute="top" secondItem="7e2-5I-Kxl" secondAttribute="topMargin" id="fBQ-5M-LA1"/>
+                                                <constraint firstItem="LPE-FN-Qf0" firstAttribute="centerX" secondItem="7e2-5I-Kxl" secondAttribute="centerX" id="fTs-5W-khR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbaciertos" destination="wFt-bV-yEs" id="ZOe-MP-Eat"/>
+                                            <outlet property="lbfecha" destination="ugU-HG-Khe" id="L0d-Tr-YBA"/>
+                                            <outlet property="lbpuntaje" destination="Ans-z2-z5u" id="RHm-NZ-Vfq"/>
+                                            <outlet property="lbtiempo" destination="mCX-jm-175" id="A0T-pI-AFg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QbJ-Gc-b49" id="yHe-yf-Ttf"/>
+                                    <outlet property="delegate" destination="QbJ-Gc-b49" id="hpx-tz-M6M"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GeT-CR-qSZ"/>
@@ -795,7 +851,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FRL-GU-hGH"/>
+        <segue reference="lvb-pi-MhA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
