@@ -101,6 +101,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logofinal-1" translatesAutoresizingMaskIntoConstraints="NO" id="sRv-Jd-3cj">
                                 <rect key="frame" x="225" y="586" width="150" height="81"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKn-GY-NIE">
+                                <rect key="frame" x="0.0" y="599" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" image="info.circle" catalog="system">
+                                    <color key="titleColor" red="0.047058823530000002" green="0.38431372549999998" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <segue destination="prD-GA-Sek" kind="show" id="Ce1-y5-oHa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
@@ -591,6 +603,7 @@
                         <viewLayoutGuide key="safeArea" id="c8r-Cb-Oga"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ThD-oa-XFE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaO-bH-8OM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -906,6 +919,7 @@
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="blanconegroredondo" width="608" height="515"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="logofinal-1" width="2419" height="1224"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
         <image name="video" catalog="system" width="128" height="83"/>

@@ -13,7 +13,7 @@ class ViewControllerExplicacionVideo: UIViewController {
     @IBOutlet weak var lbRegla: UILabel!
     @IBOutlet weak var videoExplicativo: UIImageView!
     let listaDeReglas = ["Regla general", "Palabras en contexto", "Hiatos y diptongos"]
-    
+    let listaVideos = ["SEGA", "Contexto", "Hiato"]
     var i = 0
     override func viewDidLoad() {
         super.viewDidLoad()
