@@ -81,16 +81,16 @@ class ViewControllerReglaHiato: UIViewController {
         }))
                                         
         alert.addAction(UIAlertAction (title: "No", style: .default, handler:{ [self]_ in
-            if(arrayPalabras[i].acento){
+            if(self.arrayPalabras[i].acento){
                 correcto = false
                 
             }
             else
             {
-                numAciertosInt = numAciertosInt + 1
-                lbAciertos.text = "\(numAciertosInt!)/10"
+                self.numAciertosInt = self.numAciertosInt + 1
+                self.lbAciertos.text = "\(self.numAciertosInt!)/10"
             }
-            for button in buttonStack.arrangedSubviews{
+            for button in self.buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
             self.cambiaPalabra()
@@ -246,7 +246,7 @@ class ViewControllerReglaHiato: UIViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "final"{
             let finalScene = segue.destination as! ViewControllerFinal
-            //finalScene.tipo = 3
+            finalScene.tipo = 3
             finalScene.aciertosNum = numAciertosInt
             finalScene.counterSecs = counterSecs
             finalScene.counterMinutes = counterMinutes

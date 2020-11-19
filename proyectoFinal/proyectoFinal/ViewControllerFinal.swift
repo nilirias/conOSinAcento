@@ -15,7 +15,7 @@ class ViewControllerFinal: UIViewController {
     var puntaje = 0
     var counterSecs = 0
     var counterMinutes = 0
-    var path = "Game"
+    var pathFinal = "Game"
     var tipo = 0
     @IBOutlet weak var lbTiempo: UILabel!
     @IBOutlet weak var lbPuntaje: UILabel!
@@ -31,16 +31,17 @@ class ViewControllerFinal: UIViewController {
         
         if(tipo == 1)
         {
-            path = path + "Simple"
+            pathFinal = pathFinal + "Simple.json"
+            
         }
         else if(tipo == 2)
         {
-            path = path + "Contexto"
+            pathFinal = pathFinal + "Contexto.json"
 
         }
         else if(tipo == 3)
         {
-            path = path + "Hiato"
+            pathFinal = pathFinal + "Hiato.json"
 
         }
         else
@@ -52,13 +53,23 @@ class ViewControllerFinal: UIViewController {
         loadJson()
 
     }
-    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    return paths[0]
+}
     func loadJson()
     {
-        if let fileLocation = Bundle.main.url(forResource: path, withExtension: "json")
+       // if let fileLocation = Bundle.main.url(forResource: path, withExtension: "json")
+        let path = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent(pathFinal)
+        //print((path?.path)!)
+        
+        if(!FileManager.default.fileExists(atPath: (path?.path)!))
         {
+            FileManager.default.createFile(atPath: (path?.path)!, contents: nil, attributes: nil)
+        }
+        
             do{
-                let data = try Data(contentsOf: fileLocation)
+                let data = try Data(contentsOf: path!)
                 let jsonDecoder = JSONDecoder()
                 let dataFromJson = try jsonDecoder.decode([Game].self,from: data)
                 
@@ -66,13 +77,10 @@ class ViewControllerFinal: UIViewController {
                 
                 print(game)
             }catch{
-                print("error")
+                print("file not exist")
             }
-        }
-        else
-        {
-            print("error finding file")
-        }
+        
+        
         
         
         
@@ -90,13 +98,13 @@ class ViewControllerFinal: UIViewController {
         var jsonString = String(data: jsonEncodeData, encoding: .utf8)
         
 
-        let url = Bundle.main.url(forResource: path, withExtension: "json")
+        let path = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).last?.appendingPathComponent(pathFinal)
         
         let data = Data(jsonString!.utf8)
         do
         {
-            try data.write(to: url!,options: .atomic)
-            try print(String(contentsOf: url!))
+            try data.write(to: path!,options: .atomic)
+            try print(String(contentsOf: path!))
             
         }
         catch
