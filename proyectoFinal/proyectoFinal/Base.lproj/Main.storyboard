@@ -327,6 +327,9 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yXH-LG-dHz" firstAttribute="leading" secondItem="RCz-vQ-7iE" secondAttribute="leading" constant="243.5" id="cIR-X4-D0u"/>
+                                        </constraints>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bo-sE-yc0">
                                         <rect key="frame" x="0.0" y="126" width="307" height="46"/>
@@ -654,6 +657,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="19.5" height="28"/>
                                         <color key="tintColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="arrow.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="seleccionIzquierda:" destination="QbJ-Gc-b49" eventType="touchUpInside" id="cPN-dc-493"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regla general" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5L-WP-yqX">
                                         <rect key="frame" x="44.5" y="0.0" width="149.5" height="28"/>
@@ -665,6 +671,9 @@
                                         <rect key="frame" x="219" y="0.0" width="19.5" height="28"/>
                                         <color key="tintColor" red="0.65098039215686276" green="0.20392156862745098" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="arrow.right" catalog="system"/>
+                                        <connections>
+                                            <action selector="seleccionDerecha:" destination="QbJ-Gc-b49" eventType="touchUpInside" id="KGr-av-OLN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -777,6 +786,10 @@
                         <viewLayoutGuide key="safeArea" id="GeT-CR-qSZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q6t-nf-pTC"/>
+                    <connections>
+                        <outlet property="lbSeleccionRegla" destination="M5L-WP-yqX" id="Iwy-aM-Mbz"/>
+                        <outlet property="tbScores" destination="lbo-Ks-IXB" id="5ee-Y3-YZi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nur-1g-nY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -80,10 +80,6 @@ class ViewControllerFinal: UIViewController {
                 print("file not exist")
             }
         
-        
-        
-        
-        
     }
     
     func saveInJson()
