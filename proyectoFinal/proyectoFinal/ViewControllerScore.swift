@@ -30,6 +30,8 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         loadJsonSimple()
+        loadJsonHiato()
+        loadJsonContexto()
         // Do any additional setup after loading the view.
     }
     
@@ -55,11 +57,11 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
                     
                     self.scoresimple = dataFromJson
                     
-                    print(scoresimple)
+                    //print(scoresimple)
                 }catch{
                     print("file not exist")
                 }
-            tbScores.reloadData()
+            //tbScores.reloadData()
         }
         func loadJsonContexto()
         {
@@ -79,11 +81,11 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
                     
                     self.scorecontexto = dataFromJson
                     
-                    print(scorecontexto)
+                    //print(scorecontexto)
                 }catch{
                     print("file not exist")
                 }
-            tbScores.reloadData()
+            //tbScores.reloadData()
         }
     func loadJsonHiato()
     {
@@ -103,11 +105,11 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
                 
                 self.scorehiatos = dataFromJson
                 
-                print(scorehiatos)
+                //print(scorehiatos)
             }catch{
                 print("file not exist")
             }
-        tbScores.reloadData()
+        //tbScores.reloadData()
     }
     /*
     // MARK: - Navigation
@@ -127,14 +129,7 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
             i += 1
         }
         lbSeleccionRegla.text = listaDeReglas[i]
-        if i == 0 {
-            loadJsonSimple()
-        }else if i == 1{
-            loadJsonContexto()
-        }else{
-            loadJsonHiato()
-            //self.tableView.reloadData()
-        }
+        tbScores.reloadData()
     }
     
     @IBAction func seleccionIzquierda(_ sender: UIButton) {
@@ -144,14 +139,7 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
             i -= 1
         }
         lbSeleccionRegla.text = listaDeReglas[i]
-        if i == 0 {
-            loadJsonSimple()
-            
-        }else if i == 1{
-            loadJsonContexto()
-        }else{
-            loadJsonHiato()
-        }
+        tbScores.reloadData()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if i == 0{
