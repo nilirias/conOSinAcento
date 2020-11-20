@@ -32,6 +32,7 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
         loadJsonSimple()
         loadJsonHiato()
         loadJsonContexto()
+
         // Do any additional setup after loading the view.
     }
     
@@ -151,11 +152,17 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if i == 0{
-           return scoresimple.count
+            self.scoresimple.sort(by: {Int($0.score) ?? 0 > Int($1.score) ?? 0 })
+            var space = scoresimple.count > 9 ? 10 : scoresimple.count
+            return space
         }else if i == 1{
-            return scorecontexto.count
+            self.scorecontexto.sort(by: {Int($0.score) ?? 0 > Int($1.score) ?? 0 })
+            var space1 = scorecontexto.count > 9 ? 10 : scorecontexto.count
+            return space1
         }else{
-            return scorehiatos.count
+            self.scorehiatos.sort(by: {Int($0.score) ?? 0 > Int($1.score) ?? 0 })
+            var space2 = scorehiatos.count > 9 ? 10 : scorehiatos.count
+            return space2
         }
          //scoreArr.count
     }
