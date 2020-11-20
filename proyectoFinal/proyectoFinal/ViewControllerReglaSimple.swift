@@ -13,6 +13,12 @@ import Foundation
 class ViewControllerReglaSimple: UIViewController {
     
     //array de la clase de las palabras (mientras tanto tengo un array de puros strings para poder crear los botones)
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
     @IBOutlet weak var buttonStack : UIStackView!
     var myButtonArray : [String] = []
     var palSimple = [PalSimp]()

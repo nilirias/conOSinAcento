@@ -24,7 +24,12 @@ class ViewControllerReglaContexto: UIViewController {
     var tiempoTotal = 0
     var palCont = [PalCont]()
     var palAleatorios = [PalCont]()
-    
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
     // colores
     let colorFondo = UIColor(red:240/255, green: 244/255, blue: 245/255, alpha: 0)
     let colorTexto = UIColor(red: 35/255, green: 2/255, blue: 46/255, alpha: 1)

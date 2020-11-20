@@ -628,14 +628,30 @@
                     <view key="view" contentMode="scaleToFill" id="cmX-oc-vPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-iV-w5W">
+                                <rect key="frame" x="67" y="199" width="240" height="287"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">¿Con o sin Tilde? ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2020, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.                                                 Desarrolladores: Paola Maciel Rijo, Juan Carlos Garza y Nina Sepúlveda Conde.                                                   ¿Con o sin Tilde? se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="c8r-Cb-Oga"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xgQ-iV-w5W" firstAttribute="leading" secondItem="c8r-Cb-Oga" secondAttribute="leading" constant="67" id="6FX-RR-6Ip"/>
+                            <constraint firstItem="c8r-Cb-Oga" firstAttribute="trailing" secondItem="xgQ-iV-w5W" secondAttribute="trailing" constant="68" id="WML-bA-QGG"/>
+                            <constraint firstItem="xgQ-iV-w5W" firstAttribute="top" secondItem="c8r-Cb-Oga" secondAttribute="top" constant="155" id="Y79-NH-hGl"/>
+                            <constraint firstItem="c8r-Cb-Oga" firstAttribute="bottom" secondItem="xgQ-iV-w5W" secondAttribute="bottom" constant="181" id="cwk-8H-0ud"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Creditos" id="ThD-oa-XFE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaO-bH-8OM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-679" y="850"/>
+            <point key="canvasLocation" x="-679.20000000000005" y="849.62518740629696"/>
         </scene>
         <!--Explicacion Detallada-->
         <scene sceneID="ZVf-y6-6e5">
@@ -651,7 +667,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-4H-cUK">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="321"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">La regla general también es conocida como SEGA, la palabra se tiene que dividir en sílabas. Empezando de derecha a izquierda: La palabra es aguda si la sílaba tónica recae en la última sílaba. La palabra es grave si la sílaba tónica recae en la penúltima sílaba. La palabra es esdrújula si la sílaba tónica recae en la antepenúltima sílaba. La palabra es sobresdrújula si la sílaba tónica recae antes de la antepenúltima sílaba. Las palabras agudas llevan tilde si acaban en n, s, o vocal. Las palabras graves llevan tilde si no acaban en n, s, o vocal. Las palabras esdrújulas y sobresdrújulas siempre llevan tilde.</string>
+                                        <mutableString key="text">La regla general también es conocida como SEGA, la palabra se tiene que dividir en sílabas. Empezando de derecha a izquierda: La palabra es aguda si la sílaba tónica recae en la última sílaba. La palabra es grave si la sílaba tónica recae en la penúltima sílaba. La palabra es esdrújula si la sílaba tónica recae en la antepenúltima sílaba. La palabra es sobresdrújula si la sílaba tónica recae antes de la antepenúltima sílaba. Las palabras agudas llevan tilde si acaban en n, s, o vocal. Las palabras graves llevan tilde si no acaban en n, s, o vocal. Las palabras esdrújulas y sobresdrújulas siempre llevan tilde.</mutableString>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -939,14 +955,14 @@
         <segue reference="a9y-S0-Wt9"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
-        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="arrow.left" catalog="system" width="32" height="32"/>
+        <image name="arrow.right" catalog="system" width="32" height="32"/>
         <image name="blanconegroredondo" width="608" height="515"/>
-        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
-        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="doc.plaintext" catalog="system" width="32" height="32"/>
+        <image name="info.circle.fill" catalog="system" width="32" height="32"/>
         <image name="logofinal-1" width="2419" height="1224"/>
-        <image name="rosette" catalog="system" width="106" height="128"/>
-        <image name="video" catalog="system" width="128" height="83"/>
+        <image name="rosette" catalog="system" width="32" height="32"/>
+        <image name="video" catalog="system" width="32" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

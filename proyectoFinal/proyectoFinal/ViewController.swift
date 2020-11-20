@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     var seleccion : Int!
     
     let listaDeReglas = ["Regla general", "Palabras en contexto", "Hiatos y diptongos"]
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,6 +21,12 @@ class ViewControllerFinal: UIViewController {
     @IBOutlet weak var lbPuntaje: UILabel!
     @IBOutlet weak var lbAciertos: UILabel!
     var game = [Game]()
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         lbAciertos.text = "\(aciertosNum)/10"

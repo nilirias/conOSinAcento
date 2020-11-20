@@ -39,6 +39,14 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
             let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
+    
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
+    
     func loadJsonSimple()
         {
            // if let fileLocation = Bundle.main.url(forResource: path, withExtension: "json")

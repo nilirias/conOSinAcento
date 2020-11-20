@@ -70,7 +70,12 @@ class ViewControllerReglaHiato: UIViewController {
         //llamar funcion que crea los botones
     }
     
-    
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
     
     func showAlertAcento(i: Int) ->Bool
     {

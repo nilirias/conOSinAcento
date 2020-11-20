@@ -60,7 +60,12 @@ class ViewControllerExplicacionVideo: UIViewController {
             lbRegla.text = listaDeReglas[i]
             //tvExplicacion.text = listaDeExplicacion[i]
     }
-    
+    override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.portrait
+    }
+    override var shouldAutorotate: Bool{
+        return false
+    }
     /*
     // MARK: - Navigation
 
