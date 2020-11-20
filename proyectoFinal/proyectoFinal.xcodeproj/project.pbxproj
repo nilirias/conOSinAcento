@@ -27,6 +27,9 @@
 		8F1F33F125633BF30054E24D /* Game.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F1F33F025633BF30054E24D /* Game.json */; };
 		8F569C1C25534F6200314A5E /* ViewControllerReglaHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */; };
 		8F569C1F2553524A00314A5E /* PalabrasHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1E2553524A00314A5E /* PalabrasHiato.swift */; };
+		A7871AC525673BFB0068CC48 /* Hiato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A7871AC325673BE40068CC48 /* Hiato.mp4 */; };
+		A7871AC725673C020068CC48 /* Contexto.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A7871AC425673BE40068CC48 /* Contexto.mp4 */; };
+		A7871AC925673C080068CC48 /* SEGA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A7871AC225673BE30068CC48 /* SEGA.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		8F1F33F025633BF30054E24D /* Game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Game.json; sourceTree = SOURCE_ROOT; };
 		8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaHiato.swift; sourceTree = "<group>"; };
 		8F569C1E2553524A00314A5E /* PalabrasHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasHiato.swift; sourceTree = "<group>"; };
+		A7871AC225673BE30068CC48 /* SEGA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SEGA.mp4; path = "../../../../../Downloads/drive-download-20201119T174414Z-001/SEGA.mp4"; sourceTree = "<group>"; };
+		A7871AC325673BE40068CC48 /* Hiato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hiato.mp4; path = "../../../../../Downloads/drive-download-20201119T174414Z-001/Hiato.mp4"; sourceTree = "<group>"; };
+		A7871AC425673BE40068CC48 /* Contexto.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Contexto.mp4; path = "../../../../../Downloads/drive-download-20201119T174414Z-001/Contexto.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				38683F362550C7230030D01F /* ViewControllerReglaSimple.swift */,
 				38A4CEF2255208320016865F /* PalabrasSimple.swift */,
 				38CE2B0F2561F91100794A31 /* palabrasContexto.json */,
+				A7871AC325673BE40068CC48 /* Hiato.mp4 */,
+				A7871AC425673BE40068CC48 /* Contexto.mp4 */,
+				A7871AC225673BE30068CC48 /* SEGA.mp4 */,
 				38209A6B2537CE8A00CA2E4F /* Assets.xcassets */,
 				38209A6D2537CE8A00CA2E4F /* LaunchScreen.storyboard */,
 				38209A702537CE8A00CA2E4F /* Info.plist */,
@@ -167,6 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7871AC925673C080068CC48 /* SEGA.mp4 in Resources */,
+				A7871AC725673C020068CC48 /* Contexto.mp4 in Resources */,
+				A7871AC525673BFB0068CC48 /* Hiato.mp4 in Resources */,
 				38CE2B052561E72C00794A31 /* palabrasGeneral.json in Resources */,
 				38209A6F2537CE8A00CA2E4F /* LaunchScreen.storyboard in Resources */,
 				38209A6C2537CE8A00CA2E4F /* Assets.xcassets in Resources */,

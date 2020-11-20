@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import AVFoundation
+import AVKit
 class ViewControllerVideoExplicatorio: UIViewController {
 
     @IBOutlet weak var btnContinuarSEGA: UIButton!
@@ -15,6 +16,26 @@ class ViewControllerVideoExplicatorio: UIViewController {
     @IBOutlet weak var btnContinuarHiato: UIButton!
     
     var seleccion = 0
+
+    @IBAction func playVideoSelec(_ sender: UIButton) {
+        var video:String
+        if seleccion == 0{
+            video = "SEGA"
+        }else if seleccion == 1{
+            video = "Contexto"
+        }else{
+           video = "Hiato"
+        }
+        guard let path = Bundle.main.path(forResource: video, ofType: "mp4")else{return}
+        let videoURL = URL(fileURLWithPath: path)
+        let player = AVPlayer(url: videoURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player?.play()
+        }
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

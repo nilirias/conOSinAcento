@@ -101,24 +101,44 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logofinal-1" translatesAutoresizingMaskIntoConstraints="NO" id="sRv-Jd-3cj">
                                 <rect key="frame" x="225" y="586" width="150" height="81"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKn-GY-NIE">
-                                <rect key="frame" x="0.0" y="599" width="64" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" image="info.circle" catalog="system">
-                                    <color key="titleColor" red="0.047058823530000002" green="0.38431372549999998" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjJ-J9-0Vx">
+                                <rect key="frame" x="16" y="606" width="25" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" image="info.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <connections>
-                                    <segue destination="prD-GA-Sek" kind="show" id="Ce1-y5-oHa"/>
+                                    <segue destination="prD-GA-Sek" kind="show" id="dAP-yI-bbA"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nSs-Cg-oM6">
+                                <rect key="frame" x="50" y="86" width="291.5" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-Tt-PaD">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="30"/>
+                                        <state key="normal" title="Button" image="video" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEQ-N8-OPF">
+                                        <rect key="frame" x="103.5" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-gX-nLp">
+                                        <rect key="frame" x="174.5" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX9-kw-ToF">
+                                        <rect key="frame" x="245.5" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.16078431369999999" green="0.1960784314" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="KjJ-J9-0Vx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1tc-2t-XDz"/>
                             <constraint firstItem="Y1q-VX-p9L" firstAttribute="top" secondItem="baC-HA-EfG" secondAttribute="bottom" constant="63" id="6Ri-Qp-8DG"/>
                             <constraint firstItem="Y1q-VX-p9L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gqe-Cq-okE"/>
                             <constraint firstItem="baC-HA-EfG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="HKg-PJ-RM1"/>
@@ -130,6 +150,7 @@
                             <constraint firstItem="sRv-Jd-3cj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="225" id="vBg-9Z-St4"/>
                             <constraint firstAttribute="bottom" secondItem="sRv-Jd-3cj" secondAttribute="bottom" id="xKj-Rz-9sx"/>
                             <constraint firstItem="Y1q-VX-p9L" firstAttribute="centerX" secondItem="baC-HA-EfG" secondAttribute="centerX" id="z8y-SV-QCs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KjJ-J9-0Vx" secondAttribute="bottom" constant="20" id="zmb-Lh-XUM"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="JOl-aJ-V5t" appends="YES" id="7hd-iF-zug"/>
@@ -168,11 +189,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="NBq-Ds-Yae" userLabel="verticalStack">
                                 <rect key="frame" x="71.5" y="145" width="232" height="377"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RbK-Ms-AwB">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="163"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDB-1K-rqz">
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="171"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Button" image="blanconegroredondo">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playVideoSelec:" destination="uvC-nM-ugg" eventType="touchUpInside" id="c4H-F1-Wis"/>
+                                        </connections>
+                                    </button>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="IjS-wF-eQ3" userLabel="ContinuarStacks">
-                                        <rect key="frame" x="0.0" y="283" width="232" height="94"/>
+                                        <rect key="frame" x="0.0" y="291" width="232" height="86"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfZ-kr-o3y">
                                                 <rect key="frame" x="82.5" y="0.0" width="67" height="30"/>
@@ -182,7 +210,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxx-yX-gf7">
-                                                <rect key="frame" x="82.5" y="32" width="67" height="30"/>
+                                                <rect key="frame" x="82.5" y="28" width="67" height="30"/>
                                                 <color key="tintColor" red="0.65098039220000004" green="0.20392156859999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Continuar"/>
                                                 <connections>
@@ -190,7 +218,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbd-MY-NUH">
-                                                <rect key="frame" x="82.5" y="64" width="67" height="30"/>
+                                                <rect key="frame" x="82.5" y="56" width="67" height="30"/>
                                                 <color key="tintColor" red="0.65098039220000004" green="0.20392156859999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Continuar"/>
                                                 <connections>
@@ -306,7 +334,7 @@
             </objects>
             <point key="canvasLocation" x="2109.5999999999999" y="-149.77511244377811"/>
         </scene>
-        <!--View Controller Regla Contexto-->
+        <!--Contexto-->
         <scene sceneID="Ams-Oq-wjZ">
             <objects>
                 <viewController id="rQp-Ve-FCX" customClass="ViewControllerReglaContexto" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,7 +416,7 @@
                             <constraint firstItem="KLl-Nd-BnJ" firstAttribute="bottom" secondItem="zO8-Fx-Ucz" secondAttribute="bottom" constant="200" id="yWW-fc-O5d"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J34-8Z-j8q"/>
+                    <navigationItem key="navigationItem" title="Contexto" id="J34-8Z-j8q"/>
                     <connections>
                         <outlet property="buttonStack" destination="zO8-Fx-Ucz" id="XaW-ft-0Rn"/>
                         <outlet property="lbAciertos" destination="qIp-Av-wNV" id="XPH-cM-tAO"/>
@@ -593,7 +621,7 @@
             </objects>
             <point key="canvasLocation" x="-791" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--Creditos-->
         <scene sceneID="MGI-bJ-wo0">
             <objects>
                 <viewController id="prD-GA-Sek" sceneMemberID="viewController">
@@ -603,7 +631,7 @@
                         <viewLayoutGuide key="safeArea" id="c8r-Cb-Oga"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ThD-oa-XFE"/>
+                    <navigationItem key="navigationItem" title="Creditos" id="ThD-oa-XFE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaO-bH-8OM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -677,7 +705,7 @@
             </objects>
             <point key="canvasLocation" x="138" y="1286"/>
         </scene>
-        <!--View Controller Score-->
+        <!--Tabla de clasificacion-->
         <scene sceneID="HM8-z7-18E">
             <objects>
                 <viewController id="QbJ-Gc-b49" customClass="ViewControllerScore" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -829,7 +857,7 @@
                             <constraint firstItem="lbo-Ks-IXB" firstAttribute="centerX" secondItem="9B0-rX-ycq" secondAttribute="centerX" id="umM-HB-c3B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Q6t-nf-pTC"/>
+                    <navigationItem key="navigationItem" title="Tabla de clasificacion" id="Q6t-nf-pTC"/>
                     <connections>
                         <outlet property="lbSeleccionRegla" destination="M5L-WP-yqX" id="Iwy-aM-Mbz"/>
                         <outlet property="tbScores" destination="lbo-Ks-IXB" id="5ee-Y3-YZi"/>
@@ -847,19 +875,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="DMl-V5-svY" userLabel="VerticalStack">
-                                <rect key="frame" x="72.5" y="221.5" width="230" height="224"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIu-qN-o8u">
-                                        <rect key="frame" x="0.0" y="0.0" width="230" height="224"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="224" id="eUJ-kI-jnS"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-tM-3GC">
+                                <rect key="frame" x="67" y="183" width="241.5" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="ZiG-DD-dRd"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="blanconegroredondo"/>
+                                <connections>
+                                    <action selector="payVideoSele:" destination="ZLw-xZ-Ulk" eventType="touchUpInside" id="pjY-z1-8TF"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-h1-7Q7" userLabel="ReglaStack">
-                                <rect key="frame" x="100" y="516" width="175" height="55.5"/>
+                                <rect key="frame" x="100" y="516" width="175.5" height="55.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oI-Xf-tVn">
                                         <rect key="frame" x="0.0" y="0.0" width="19.5" height="55.5"/>
@@ -870,14 +897,14 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="254" horizontalCompressionResistancePriority="749" text="Regla general" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="103" translatesAutoresizingMaskIntoConstraints="NO" id="m0U-XR-jdM">
-                                        <rect key="frame" x="47.5" y="0.0" width="80" height="55.5"/>
+                                        <rect key="frame" x="47.5" y="0.0" width="80.5" height="55.5"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                         <color key="textColor" red="0.13725490200000001" green="0.0078431372550000003" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRO-7h-tuP">
-                                        <rect key="frame" x="155.5" y="0.0" width="19.5" height="55.5"/>
+                                        <rect key="frame" x="156" y="0.0" width="19.5" height="55.5"/>
                                         <color key="tintColor" red="0.65098039220000004" green="0.20392156859999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="arrow.right" catalog="system"/>
                                         <connections>
@@ -890,20 +917,17 @@
                         <viewLayoutGuide key="safeArea" id="AmN-3t-du9"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="DMl-V5-svY" firstAttribute="centerX" secondItem="bkv-ix-3dM" secondAttribute="centerX" id="0CW-jV-tnm"/>
-                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="top" secondItem="DMl-V5-svY" secondAttribute="bottom" constant="70.5" id="Abx-YC-XzB"/>
-                            <constraint firstItem="DMl-V5-svY" firstAttribute="leading" secondItem="AmN-3t-du9" secondAttribute="leading" constant="72.5" id="KfP-Ky-wIr"/>
-                            <constraint firstItem="AmN-3t-du9" firstAttribute="bottom" secondItem="qwE-h1-7Q7" secondAttribute="bottom" constant="95.5" id="fm7-N8-Te2"/>
-                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="leading" secondItem="AmN-3t-du9" secondAttribute="leading" constant="100" id="jii-u0-ckm"/>
-                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="centerX" secondItem="DMl-V5-svY" secondAttribute="centerX" id="rWQ-eC-XbA"/>
-                            <constraint firstItem="DMl-V5-svY" firstAttribute="centerY" secondItem="bkv-ix-3dM" secondAttribute="centerY" id="rir-5H-LJ4"/>
-                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="centerX" secondItem="bkv-ix-3dM" secondAttribute="centerX" id="vOe-at-8gt"/>
+                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="leading" secondItem="bkv-ix-3dM" secondAttribute="leadingMargin" constant="84" id="8Qa-YC-olj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qwE-h1-7Q7" secondAttribute="bottom" constant="95.5" id="RWb-78-V1E"/>
+                            <constraint firstItem="ELP-tM-3GC" firstAttribute="leading" secondItem="AmN-3t-du9" secondAttribute="leading" constant="67" id="Rp2-dn-SOU"/>
+                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="top" secondItem="ELP-tM-3GC" secondAttribute="bottom" constant="90" id="gUG-IA-6Km"/>
+                            <constraint firstItem="ELP-tM-3GC" firstAttribute="centerX" secondItem="qwE-h1-7Q7" secondAttribute="centerX" id="v8U-YF-MsF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qwE-h1-7Q7" secondAttribute="trailing" constant="83.5" id="xmh-BZ-rKE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Video Explicatorio" id="XBw-gb-hfN"/>
                     <connections>
                         <outlet property="lbRegla" destination="m0U-XR-jdM" id="wSR-65-saq"/>
-                        <outlet property="videoExplicativo" destination="GIu-qN-o8u" id="XJU-E3-c8z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXQ-4t-5th" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -912,14 +936,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lvb-pi-MhA"/>
+        <segue reference="a9y-S0-Wt9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="blanconegroredondo" width="608" height="515"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logofinal-1" width="2419" height="1224"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
         <image name="video" catalog="system" width="128" height="83"/>

@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import AVFoundation
+import AVKit
 class ViewControllerExplicacionVideo: UIViewController {
 
     @IBOutlet weak var lbRegla: UILabel!
@@ -22,6 +23,24 @@ class ViewControllerExplicacionVideo: UIViewController {
     }
     
 
+    @IBAction func payVideoSele(_ sender: UIButton) {
+        var video:String
+        if i == 0{
+            video = "SEGA"
+        }else if i == 1{
+            video = "Contexto"
+        }else{
+           video = "Hiato"
+        }
+        guard let path = Bundle.main.path(forResource: video, ofType: "mp4")else{return}
+        let videoURL = URL(fileURLWithPath: path)
+        let player = AVPlayer(url: videoURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player?.play()
+        }
+    }
     @IBAction func seleccionarDerecha(_ sender: UIButton) {
         if i == listaDeReglas.count-1 {
             i = 0
