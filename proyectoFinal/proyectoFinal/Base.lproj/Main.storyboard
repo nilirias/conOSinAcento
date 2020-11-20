@@ -345,13 +345,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="FNo-1C-iq7">
                                 <rect key="frame" x="34" y="74" width="307" height="172"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="RCz-vQ-7iE" userLabel="controltsack">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="RCz-vQ-7iE" userLabel="controltsack">
                                         <rect key="frame" x="0.0" y="0.0" width="307" height="46"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uWo-7G-W4l" userLabel="timerStack">
                                                 <rect key="frame" x="0.0" y="0.0" width="43.5" height="46"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-kB-ye9">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-kB-ye9">
                                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.13725490200000001" green="0.0078431372550000003" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -534,20 +534,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-8O-BfU">
-                                <rect key="frame" x="38.5" y="61" width="298.5" height="41"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-8O-BfU">
+                                <rect key="frame" x="33" y="61" width="309" height="41"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-qb-bd4" userLabel="TimerStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="41"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-qb-bd4" userLabel="TimerStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFN-OA-qaL">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.13725490196078433" green="0.0078431372549019607" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUo-O7-42x">
-                                                <rect key="frame" x="0.0" y="20.5" width="44" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="54.5" height="20.5"/>
                                                 <color key="tintColor" red="0.65098039220000004" green="0.20392156859999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.3411764705882353" green="0.19607843137254902" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
@@ -556,7 +556,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GsE-LH-mAD" userLabel="AciertosStack">
-                                        <rect key="frame" x="244" y="0.0" width="54.5" height="41"/>
+                                        <rect key="frame" x="254.5" y="0.0" width="54.5" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acierto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKZ-d5-W09">
                                                 <rect key="frame" x="0.0" y="0.0" width="54.5" height="20.5"/>
@@ -664,10 +664,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="SFA-Wx-J3d" userLabel="VerticalStack">
                                 <rect key="frame" x="67.5" y="102" width="240" height="463"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-4H-cUK">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-4H-cUK">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="321"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <mutableString key="text">La regla general también es conocida como SEGA, la palabra se tiene que dividir en sílabas. Empezando de derecha a izquierda: La palabra es aguda si la sílaba tónica recae en la última sílaba. La palabra es grave si la sílaba tónica recae en la penúltima sílaba. La palabra es esdrújula si la sílaba tónica recae en la antepenúltima sílaba. La palabra es sobresdrújula si la sílaba tónica recae antes de la antepenúltima sílaba. Las palabras agudas llevan tilde si acaban en n, s, o vocal. Las palabras graves llevan tilde si no acaban en n, s, o vocal. Las palabras esdrújulas y sobresdrújulas siempre llevan tilde.</mutableString>
+                                        <string key="text">La regla general también es conocida como SEGA, la palabra se tiene que dividir en sílabas. Empezando de derecha a izquierda: La palabra es aguda si la sílaba tónica recae en la última sílaba. La palabra es grave si la sílaba tónica recae en la penúltima sílaba. La palabra es esdrújula si la sílaba tónica recae en la antepenúltima sílaba. La palabra es sobresdrújula si la sílaba tónica recae antes de la antepenúltima sílaba. Las palabras agudas llevan tilde si acaban en n, s, o vocal. Las palabras graves llevan tilde si no acaban en n, s, o vocal. Las palabras esdrújulas y sobresdrújulas siempre llevan tilde.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -683,7 +683,7 @@
                                                     <action selector="seleccionIzquierda:" destination="oT7-2p-bmw" eventType="touchUpInside" id="Sus-qV-Kvc"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regla general" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O1-a9-s6z">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regla general" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9O1-a9-s6z">
                                                 <rect key="frame" x="82.5" y="0.0" width="75" height="22"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                                 <color key="textColor" red="0.13725490196078433" green="0.0078431372549019607" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -796,7 +796,7 @@
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lbo-Ks-IXB">
                                 <rect key="frame" x="16" y="126" width="343" height="385"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="385" id="aHU-I7-oBm"/>
                                 </constraints>
@@ -808,29 +808,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="LPE-FN-Qf0" userLabel="scoreStack">
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LPE-FN-Qf0" userLabel="scoreStack">
                                                     <rect key="frame" x="16.5" y="11" width="310" height="23"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugU-HG-Khe" userLabel="lbfecha">
-                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="76" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="highlightedColor" systemColor="systemGrayColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCX-jm-175" userLabel="lbTiempo">
-                                                            <rect key="frame" x="88" y="0.0" width="46" height="23"/>
+                                                            <rect key="frame" x="78" y="0.0" width="76" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ans-z2-z5u" userLabel="lbPuntaje">
-                                                            <rect key="frame" x="176" y="0.0" width="46" height="23"/>
+                                                            <rect key="frame" x="156" y="0.0" width="76" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFt-bV-yEs" userLabel="lbAciertos">
-                                                            <rect key="frame" x="264" y="0.0" width="46" height="23"/>
+                                                            <rect key="frame" x="234" y="0.0" width="76" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -844,6 +844,7 @@
                                                 <constraint firstItem="LPE-FN-Qf0" firstAttribute="centerX" secondItem="7e2-5I-Kxl" secondAttribute="centerX" id="fTs-5W-khR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="lbaciertos" destination="wFt-bV-yEs" id="ZOe-MP-Eat"/>
                                             <outlet property="lbfecha" destination="ugU-HG-Khe" id="L0d-Tr-YBA"/>
@@ -952,22 +953,25 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a9y-S0-Wt9"/>
+        <segue reference="lvb-pi-MhA"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="arrow.left" catalog="system" width="32" height="32"/>
-        <image name="arrow.right" catalog="system" width="32" height="32"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="blanconegroredondo" width="608" height="515"/>
-        <image name="doc.plaintext" catalog="system" width="32" height="32"/>
-        <image name="info.circle.fill" catalog="system" width="32" height="32"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logofinal-1" width="2419" height="1224"/>
-        <image name="rosette" catalog="system" width="32" height="32"/>
-        <image name="video" catalog="system" width="32" height="32"/>
+        <image name="rosette" catalog="system" width="106" height="128"/>
+        <image name="video" catalog="system" width="128" height="83"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

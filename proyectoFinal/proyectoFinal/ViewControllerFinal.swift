@@ -20,7 +20,10 @@ class ViewControllerFinal: UIViewController {
     @IBOutlet weak var lbTiempo: UILabel!
     @IBOutlet weak var lbPuntaje: UILabel!
     @IBOutlet weak var lbAciertos: UILabel!
+    let date = Date()
+    let formatter = DateFormatter()
     var game = [Game]()
+    var resultDate: String!
     override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
         return UIInterfaceOrientationMask.portrait
     }
@@ -29,6 +32,8 @@ class ViewControllerFinal: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        formatter.dateFormat = "dd.MM.yy"
+        resultDate = formatter.string(from: date)
         lbAciertos.text = "\(aciertosNum)/10"
         lbTiempo.text = String(format: "%d:%02d", counterMinutes, counterSecs)
         puntaje = aciertosNum * ((Int(counterMinutes)*60) + Int(counterSecs))
@@ -91,7 +96,7 @@ class ViewControllerFinal: UIViewController {
     func saveInJson()
     {
         
-        game.append(Game(date: "215",score: lbPuntaje.text! ,aciertos: lbAciertos.text!,time: lbTiempo.text!))
+        game.append(Game(date: resultDate,score: lbPuntaje.text! ,aciertos: lbAciertos.text!,time: lbTiempo.text!))
 
         //encode data
         let encoder = JSONEncoder()
