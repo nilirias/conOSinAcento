@@ -2,29 +2,29 @@
     {
         "Palabra": "ejercito",
         "opciones": [
-            "ej√©rcito",
+            "ejército",
             "ejercito",
-            "ejercit√≥"
+            "ejercitó"
         ],
         "pos": 1,
-        "contexto": "En las ma√±anas yo ____."
+        "contexto": "En las maÒanas yo ____."
     },
     {
         "Palabra": "ejercito",
         "opciones": [
-            "ej√©rcito",
+            "ejército",
             "ejercito",
-            "ejercit√≥"
+            "ejercitó"
         ],
         "pos": 2,
-        "contexto": "√âl ____ ayer en el gimnasio."
+        "contexto": "…l ____ ayer en el gimnasio."
     },
     {
         "Palabra": "ejercito",
         "opciones": [
-            "ej√©rcito",
+            "ejército",
             "ejercito",
-            "ejercit√≥"
+            "ejercitó"
         ],
         "pos": 0,
         "contexto": "El ____ mexicano esta preparado para ayudar."
@@ -32,19 +32,19 @@
     {
         "Palabra": "publico",
         "opciones": [
-            "p√∫blico",
+            "público",
             "publico",
-            "public√≥"
+            "publicó"
         ],
         "pos": 0,
-        "contexto": "El ____ le aplaudi√≥."
+        "contexto": "El ____ le aplaudió."
     },
     {
         "Palabra": "publico",
         "opciones": [
-            "p√∫blico",
+            "público",
             "publico",
-            "public√≥"
+            "publicó"
         ],
         "pos": 2,
         "contexto": "El libro se _____."
@@ -52,17 +52,17 @@
     {
         "Palabra": "publico",
         "opciones": [
-            "p√∫blico",
+            "público",
             "publico",
-            "public√≥"
+            "publicó"
         ],
         "pos": 1,
         "contexto": "Yo ____ mis propios libros."
     },
     {
-        "Palabra": "afect√≥",
+        "Palabra": "afectó",
         "opciones": [
-            "afect√≥",
+            "afectó",
             "afecto"
         ],
         "pos": 0,
@@ -71,16 +71,16 @@
     {
         "Palabra": "afetcto",
         "opciones": [
-            "afect√≥ ",
+            "afectó",
             "afecto"
         ],
         "pos": 1,
-        "contexto": "Despu√©s de trabajar tanto tiempo juntos, siento _____ por ellos."
+        "contexto": "Después de trabajar tanto tiempo juntos, siento _____ por ellos."
     },
     {
-        "Palabra": "c√≥mo",
+        "Palabra": "cómo",
         "opciones": [
-            "c√≥mo",
+            "cómo",
             "como"
         ],
         "pos": 0,
@@ -89,82 +89,82 @@
     {
         "Palabra": "como",
         "opciones": [
-            "c√≥mo",
+            "cómo",
             "como"
         ],
         "pos": 1,
-        "contexto": "Como el sistema de prestaciones es nuevo, el comportamiento de las concesionarias cambi√≥."
+        "contexto": "Como el sistema de prestaciones es nuevo, el comportamiento de las concesionarias cambió."
     },
     {
-        "Palabra": "qu√©",
+        "Palabra": "qué",
         "opciones": [
-            "qu√©",
+            "qué",
             "que"
         ],
         "pos": 0,
-        "contexto": "Se debe especificar  _____  materiales reciclables deben ser o no utilizados, que sean sustentables y duraderos."
+        "contexto": "Se debe especificar _____ materiales reciclables deben ser o no utilizados, que sean sustentables y duraderos."
     },
     {
         "Palabra": "que",
         "opciones": [
-            "qu√©",
+            "qué",
             "que"
         ],
         "pos": 1,
-        "contexto": "Se debe especificar qu√© materiales reciclables deben ser o no utilizados, _____ sean sustentables y duraderos."
+        "contexto": "Se debe especificar qué materiales reciclables deben ser o no utilizados, _____ sean sustentables y duraderos."
     },
     {
-        "Palabra": "art√≠culo",
+        "Palabra": "artículo",
         "opciones": [
-            "art√≠culo",
+            "artículo",
             "articulo",
-            "articul√≥"
+            "articuló"
         ],
         "pos": 0,
-        "contexto": "El _____ de V√©lez  se refiere a c√≥mo la iluminaci√≥n, el ruido y la temperatura donde se crea la edificaci√≥n deben de tomarse en cuenta para tomara decisiones sobre los materiales que se utilizar√°n"
+        "contexto": "El _____ de Vélez se refiere a la iluminación, el ruido y la temperatura en edificaciones."
     },
     {
         "Palabra": "articulo",
         "opciones": [
-            "art√≠culo",
+            "artículo",
             "articulo",
-            "articul√≥"
+            "articuló"
         ],
         "pos": 1,
-        "contexto": "He notado que _____ mejor desde que practico los ejercicios de dicci√≥n"
+        "contexto": "He notado que _____ mejor desde que practico los ejercicios de dicción"
     },
     {
-        "Palabra": "articul√≥",
+        "Palabra": "articuló",
         "opciones": [
-            "art√≠culo",
+            "artículo",
             "articulo",
-            "articul√≥"
+            "articuló"
         ],
         "pos": 2,
-        "contexto": "_____ un discurso claro y emotivo; consigui√≥ su objetivo."
+        "contexto": "_____ un discurso claro y emotivo; consiguió su objetivo."
     },
     {
         "Palabra": "donde",
         "opciones": [
             "donde",
-            "d√≥nde"
+            "dónde"
         ],
         "pos": 0,
-        "contexto": "La iluminaci√≥n, el ruido y la temperatura del sitio _____ se edificar√° deben de tomarse en cuenta para elegir los materiales"
+        "contexto": "La iluminación, el ruido y la temperatura del sitio _____ se edificará deben de tomarse en cuenta para elegir los materiales"
     },
     {
-        "Palabra": "d√≥nde",
+        "Palabra": "dónde",
         "opciones": [
             "donde",
-            "d√≥nde"
+            "dónde"
         ],
         "pos": 1,
-        "contexto": "No tiene claro _____ se har√° la edificaci√≥n, por ese motivo todav√≠a no puede hacer un proyecto."
+        "contexto": "No tiene claro _____ se hará la edificación, por ese motivo todavía no puede hacer un proyecto."
     },
     {
-        "Palabra": "qu√©",
+        "Palabra": "qué",
         "opciones": [
-            "qu√©",
+            "qué",
             "que"
         ],
         "pos": 0,
@@ -173,103 +173,764 @@
     {
         "Palabra": "que",
         "opciones": [
-            "qu√©",
+            "qué",
             "que"
         ],
         "pos": 1,
-        "contexto": "Algunas de las medidas de emergencia _____ tuvieron que tomar los gobiernos fueron muy dr√°sticas."
+        "contexto": "Algunas de las medidas de emergencia _____ tuvieron que tomar los gobiernos fueron muy drásticas."
     },
     {
-        "Palabra": "est√°",
+        "Palabra": "está",
         "opciones": [
-            "est√°",
+            "está",
             "esta"
         ],
         "pos": 0,
-        "contexto": "La crisis econ√≥mica originada por la pandemia _____ afectando a los dos tercios de los habitantes del mundo."
+        "contexto": "La crisis económica originada por la pandemia _____ afectando a los dos tercios de los habitantes del mundo."
     },
     {
         "Palabra": "esta",
         "opciones": [
-            "est√°",
+            "está",
             "esta"
         ],
         "pos": 1,
         "contexto": "_____ crisis ha afectado a dos tercios de los habitantes del planeta."
     },
     {
-        "Palabra": "disminuy√≥",
+        "Palabra": "disminuyó",
         "opciones": [
-            "disminuy√≥",
+            "disminuyó",
             "disminuyo"
         ],
         "pos": 0,
-        "contexto": "Hubo disminuci√≥n en la capacidad productiva y _____ la demanda interna, adem√°s de que cay√≥ el precio del petr√≥leo en los mercados internacionales."
+        "contexto": "Hubo disminución en la capacidad productiva y _____ la demanda interna, además de que cayó el precio del petróleo en los mercados internacionales."
     },
     {
         "Palabra": "disminuyo",
         "opciones": [
-            "disminuy√≥",
+            "disminuyó",
             "disminuyo"
         ],
         "pos": 1,
         "contexto": "Por seguridad, _____ la velocidad cuando voy a girar."
     },
     {
-        "Palabra": "√∫ltimo",
+        "Palabra": "último",
         "opciones": [
-            "√∫ltimo",
+            "último",
             "ultimo",
-            "ultim√≥"
+            "ultimó"
         ],
         "pos": 0,
-        "contexto": " El beneficio del videojuego abarca varios √°mbitos:  desarrollo motor y la mejora de las habilidades psicomotrices, desarrollo intelectual o cognitivo, capacidad de motivaci√≥n al aprender y, por _____, las destrezas sociales, la capacidad de negociaci√≥n, adaptarse para improvisar y el trabajo en equipo."
+        "contexto": "El ________ examen es el viernes."
     },
     {
         "Palabra": "ultimo",
         "opciones": [
-            "√∫ltimo",
+            "último",
             "ultimo",
-            "ultim√≥"
+            "ultimó"
         ],
         "pos": 1,
-        "contexto": "______ un par de detalles y estar√© lista."
+        "contexto": "______ un par de detalles y estaré lista."
     },
     {
-        "Palabra": "ultim√≥",
+        "Palabra": "ultimó",
         "opciones": [
-            "√∫ltimo",
+            "último",
             "ultimo",
-            "ultim√≥"
+            "ultimó"
         ],
         "pos": 2,
-        "contexto": "El asesino _____ a la v√≠ctima a las 11:20 pm."
+        "contexto": "El asesino _____ a la víctima a las 11:20 pm."
     },
     {
-        "Palabra": "fascin√≥",
+        "Palabra": "fascinó",
         "opciones": [
-            "fascin√≥",
+            "fascinó",
             "fascino"
         ],
         "pos": 0,
-        "contexto": "A la mayor√≠a de los alumnos encuestados les _____ la nueva opci√≥n de juegos."
+        "contexto": "A la mayoría de los alumnos encuestados les _____ la nueva opción de juegos."
     },
     {
-        "Palabra": "gr√°ficas",
+        "Palabra": "gráficas",
         "opciones": [
-            "gr√°ficas",
+            "gráficas",
             "graficas"
         ],
         "pos": 0,
-        "contexto": "El art√≠culo incluye _____ que muestran un an√°lisis detallado de la relaci√≥n costo-beneficio."
+        "contexto": "El artículo incluye _____ que muestran un análisis detallado de la relación costo-beneficio."
     },
     {
         "Palabra": "graficas",
         "opciones": [
-            "gr√°ficas",
+            "gráficas",
             "graficas"
         ],
         "pos": 1,
-        "contexto": "Cuando _____ los resultados de la  ecuaci√≥n, ¬øcu√°les son los pasos que sigues?"
+        "contexto": "Cuando _____ los resultados de la ecuación, øcuáles son los pasos que sigues?"
+    },
+    {
+        "Palabra": "titulo",
+        "opciones": [
+            "titulo",
+            "título",
+            "tituló"
+        ],
+        "pos": 0,
+        "contexto": "Yo _______ mis trabajos de forma breve"
+    },
+    {
+        "Palabra": "título",
+        "opciones": [
+            "titulo",
+            "título",
+            "tituló"
+        ],
+        "pos": 1,
+        "contexto": "El ___________ de un artículo debe ser claro"
+    },
+    {
+        "Palabra": "tituló",
+        "opciones": [
+            "titulo",
+            "título",
+            "tituló"
+        ],
+        "pos": 2,
+        "contexto": "Después de que terminó su trabajo, _______ la obra."
+    },
+    {
+        "Palabra": "evaluara",
+        "opciones": [
+            "evaluara",
+            "evaluará"
+        ],
+        "pos": 0,
+        "contexto": "Si el profesor _________ siempre con rúbricas, sería más justo"
+    },
+    {
+        "Palabra": "evaluará",
+        "opciones": [
+            "evaluara",
+            "evaluará"
+        ],
+        "pos": 1,
+        "contexto": "El trabajo se ____________ según la rúbrica"
+    },
+    {
+        "Palabra": "criticas",
+        "opciones": [
+            "criticas",
+            "críticas",
+            "criticás"
+        ],
+        "pos": 0,
+        "contexto": "_______ el trabajo, pero no hiciste un análisis previo del mismo."
+    },
+    {
+        "Palabra": "críticas",
+        "opciones": [
+            "criticas",
+            "críticas",
+            "criticás"
+        ],
+        "pos": 1,
+        "contexto": "Las _________ bien fundamentadas, ayudan a encotrar áreas de mejora"
+    },
+    {
+        "Palabra": "criticás",
+        "opciones": [
+            "criticas",
+            "críticas",
+            "criticás"
+        ],
+        "pos": 2,
+        "contexto": "Vos __________ el trabajo, pero no hacés un análisis previo."
+    },
+    {
+        "Palabra": "presentara",
+        "opciones": [
+            "presentara",
+            "presentará"
+        ],
+        "pos": 0,
+        "contexto": "Si él se ____________ sin que lo hayas invitado, ølo recibirías?"
+    },
+    {
+        "Palabra": "presentará",
+        "opciones": [
+            "presentara",
+            "presentará"
+        ],
+        "pos": 1,
+        "contexto": "La obra se _________ en abril próximo."
+    },
+    {
+        "Palabra": "transito",
+        "opciones": [
+            "transito",
+            "tránsito",
+            "transitó"
+        ],
+        "pos": 0,
+        "contexto": "Yo ______ por esa avenida muy frecuentemente."
+    },
+    {
+        "Palabra": "tránsito",
+        "opciones": [
+            "transito",
+            "tránsito",
+            "transitó"
+        ],
+        "pos": 1,
+        "contexto": "øEl proceso de _____________ de un lugar de residencia a otro se considera migración?"
+    },
+    {
+        "Palabra": "transitó",
+        "opciones": [
+            "transito",
+            "tránsito",
+            "transitó"
+        ],
+        "pos": 2,
+        "contexto": "Ella __________ por esa avenida muchas veces"
+    },
+    {
+        "Palabra": "mas",
+        "opciones": [
+            "mas",
+            "más"
+        ],
+        "pos": 0,
+        "contexto": "Usualmente los videojuegos no son vistos como material educativo, _____ esta es una opción real."
+    },
+    {
+        "Palabra": "más",
+        "opciones": [
+            "mas",
+            "más"
+        ],
+        "pos": 1,
+        "contexto": "Las empresas pequeÒas son las que se han visto ____ afectadas por la pandemia."
+    },
+    {
+        "Palabra": "estos",
+        "opciones": [
+            "estos",
+            "éstos"
+        ],
+        "pos": 0,
+        "contexto": "El autor presenta una serie de dilemas éticos e invita al lector a reflexionar sobre _____"
+    },
+    {
+        "Palabra": "si",
+        "opciones": [
+            "si",
+            "sí"
+        ],
+        "pos": 0,
+        "contexto": "__ tienes tiempo, øpuedes pasar por un café para mí?"
+    },
+    {
+        "Palabra": "sí",
+        "opciones": [
+            "si",
+            "sí"
+        ],
+        "pos": 1,
+        "contexto": "Tuvo un breve desvanecimiento, pero volvió en ___ y se ha sentido bien desde entonces."
+    },
+    {
+        "Palabra": "sí",
+        "opciones": [
+            "si",
+            "sí"
+        ],
+        "pos": 1,
+        "contexto": "___, ese es el procedimiento correcto."
+    },
+    {
+        "Palabra": "el",
+        "opciones": [
+            "el",
+            "él"
+        ],
+        "pos": 0,
+        "contexto": "___ impacto político sobre la arquitectura ha sido analizado a detalle por el autor."
+    },
+    {
+        "Palabra": "él",
+        "opciones": [
+            "el",
+            "él"
+        ],
+        "pos": 1,
+        "contexto": "La lectura del artículo es necesaria para los productores de geopolímeros, ya que en___ se analizan las características fisicoquímicas e hidrofóbicas de este material."
+    },
+    {
+        "Palabra": "fisicoquímicas",
+        "opciones": [
+            "fisicoquímicas",
+            "físicoquímicas"
+        ],
+        "pos": 0,
+        "contexto": "La lectura del artículo es necesaria para los productores de geopolímeros, ya que en él se analizan las características __________ e hidrofóbicas de este material."
+    },
+    {
+        "Palabra": "perdida",
+        "opciones": [
+            "perdida",
+            "pérdida"
+        ],
+        "pos": 0,
+        "contexto": "No tuvimos los resultados esperados, podemos dar por _________ la inversión inicial."
+    },
+    {
+        "Palabra": "pérdida",
+        "opciones": [
+            "perdida",
+            "pérdida"
+        ],
+        "pos": 1,
+        "contexto": "Para el estudio, realizaron pruebas físicas para obtener el porcentaje de _____ de agua respecto al tiempo durante el secado."
+    },
+    {
+        "Palabra": "porque",
+        "opciones": [
+            "porque",
+            "porqué",
+            "por qué"
+        ],
+        "pos": 0,
+        "contexto": "Seguimos estudiando la obra de los grandes arquitectos _______ seguimos disfrutando de sus ideas en los espacios que habitamos."
+    },
+    {
+        "Palabra": "porqué",
+        "opciones": [
+            "porque",
+            "porqué",
+            "por qué"
+        ],
+        "pos": 1,
+        "contexto": "Las propuestas estéticas y funcionales que han hecho son el __________ de que sigamos estudiando la obra de los grandes arquitectos."
+    },
+    {
+        "Palabra": "por que",
+        "opciones": [
+            "por que",
+            "por qué",
+            "porque"
+        ],
+        "pos": 0,
+        "contexto": "Eres la razon _______me he quedado"
+    },
+    {
+        "Palabra": "por qué",
+        "opciones": [
+            "por que",
+            "por qué",
+            "porque"
+        ],
+        "pos": 1,
+        "contexto": "øQuieres saber _______ me he quedado?"
+    },
+    {
+        "Palabra": "vinculo",
+        "opciones": [
+            "vinculo",
+            "vínculo",
+            "vinculó"
+        ],
+        "pos": 0,
+        "contexto": "Al estudiar, __________ los conocimientos nuevos con los que me resultan ya conocidos y así puedo aprenderlos mejor."
+    },
+    {
+        "Palabra": "vínculo",
+        "opciones": [
+            "vinculo",
+            "vínculo",
+            "vinculó"
+        ],
+        "pos": 1,
+        "contexto": "Estudiaremos el ________ entre las migraciones y las personas migrantes y su comunidad de origen."
+    },
+    {
+        "Palabra": "vinculó",
+        "opciones": [
+            "vinculo",
+            "vínculo",
+            "vinculó"
+        ],
+        "pos": 2,
+        "contexto": "El análisis _______ al culpable con las evidencias que ya se tenían."
+    },
+    {
+        "Palabra": "formulas",
+        "opciones": [
+            "formulas",
+            "fórmulas"
+        ],
+        "pos": 0,
+        "contexto": "Si _________ con claridad tu propuesta desde el inicio, estoy segura de que los vas a convencer."
+    },
+    {
+        "Palabra": "fórmulas",
+        "opciones": [
+            "formulas",
+            "fórmulas"
+        ],
+        "pos": 1,
+        "contexto": "El texto no aclara con qué ____________ se obtuvieron esos resultados."
+    },
+    {
+        "Palabra": "publica",
+        "opciones": [
+            "publica",
+            "pública"
+        ],
+        "pos": 0,
+        "contexto": "Las Secretaría de Salud ________ por estos días mucha información valiosa"
+    },
+    {
+        "Palabra": "pública",
+        "opciones": [
+            "publica",
+            "pública"
+        ],
+        "pos": 1,
+        "contexto": "Las instituciones de salud ___________ avalan esa información."
+    },
+    {
+        "Palabra": "diagnostico",
+        "opciones": [
+            "diagnostico",
+            "diagnóstico",
+            "diagnosticó"
+        ],
+        "pos": 0,
+        "contexto": "Lo siento, no hago consultas ni ________ por teléfono."
+    },
+    {
+        "Palabra": "diagnóstico",
+        "opciones": [
+            "diagnostico",
+            "diagnóstico",
+            "diagnosticó"
+        ],
+        "pos": 1,
+        "contexto": "Ya tenemos los resultados de los análisis, el __________ es favorable."
+    },
+    {
+        "Palabra": "diagnosticó",
+        "opciones": [
+            "diagnostico",
+            "diagnóstico",
+            "diagnosticó"
+        ],
+        "pos": 2,
+        "contexto": "El doctor lo __________ después de revisar cuidadosamente los resultados de los exámenes."
+    },
+    {
+        "Palabra": "hacia",
+        "opciones": [
+            "hacia",
+            "hacía"
+        ],
+        "pos": 0,
+        "contexto": "Tiene un interés muy definido, se inclina ________ el área de ciencias de la salud."
+    },
+    {
+        "Palabra": "hacía",
+        "opciones": [
+            "hacia",
+            "hacía"
+        ],
+        "pos": 1,
+        "contexto": "Su interés por el tema ________ que aprendiera datos nuevos todo el tiempo."
+    },
+    {
+        "Palabra": "animo",
+        "opciones": [
+            "animo",
+            "ánimo"
+        ],
+        "pos": 0,
+        "contexto": "Procuro llamarle por teléfono con frecuencia porque creo que la _______."
+    },
+    {
+        "Palabra": "ánimo",
+        "opciones": [
+            "animo",
+            "ánimo"
+        ],
+        "pos": 1,
+        "contexto": "Debes mantener el ________ firme en esta dificultad."
+    },
+    {
+        "Palabra": "interprete",
+        "opciones": [
+            "interprete",
+            "interpreté",
+            "intérprete"
+        ],
+        "pos": 0,
+        "contexto": "____________ por favor \"Caruso\", amo esa canción."
+    },
+    {
+        "Palabra": "interpreté",
+        "opciones": [
+            "interprete",
+            "interpreté",
+            "intérprete"
+        ],
+        "pos": 1,
+        "contexto": "_____________ el papel lo mejor que pude, pero estaba muy nerviosa, no estoy segura de haberlo hecho bien."
+    },
+    {
+        "Palabra": "intérprete",
+        "opciones": [
+            "interprete",
+            "interpreté",
+            "intérprete"
+        ],
+        "pos": 2,
+        "contexto": "…l es el famoso ______________ de esa canción."
+    },
+    {
+        "Palabra": "involucraran",
+        "opciones": [
+            "involucraran",
+            "involucrarán"
+        ],
+        "pos": 0,
+        "contexto": "Les pedí que por favor no se ______________."
+    },
+    {
+        "Palabra": "involucrarán",
+        "opciones": [
+            "involucraran",
+            "involucrarán"
+        ],
+        "pos": 1,
+        "contexto": "Estos retos _______________ un gran esfuerzo por parte de todos los equipos."
+    },
+    {
+        "Palabra": "tomaran",
+        "opciones": [
+            "tomaran",
+            "tomarán"
+        ],
+        "pos": 0,
+        "contexto": "No pensé que se lo _______________ tan en serio hasta que los vi llegar."
+    },
+    {
+        "Palabra": "tomarán",
+        "opciones": [
+            "tomaran",
+            "tomarán"
+        ],
+        "pos": 1,
+        "contexto": "Los resultados que van a obtener ______ aÒos en verse reflejados."
+    },
+    {
+        "Palabra": "cual",
+        "opciones": [
+            "cual",
+            "cuál"
+        ],
+        "pos": 0,
+        "contexto": "Trabaja en una institución pública, la ______ es responsable del área de salud."
+    },
+    {
+        "Palabra": "cuál",
+        "opciones": [
+            "cual",
+            "cuál"
+        ],
+        "pos": 1,
+        "contexto": "Necesito saber ______ es tu opinión sobre el tema."
+    },
+    {
+        "Palabra": "alimentaria",
+        "opciones": [
+            "alimentaria",
+            "alimentaría"
+        ],
+        "pos": 0,
+        "contexto": "Debemos buscar erradicar la inseguridad _________________."
+    },
+    {
+        "Palabra": "alimentaría",
+        "opciones": [
+            "alimentaria",
+            "alimentaría"
+        ],
+        "pos": 1,
+        "contexto": "Nunca se imaginó que con su empresa __________ a más de 90 familias."
+    },
+    {
+        "Palabra": "río",
+        "opciones": [
+            "rio",
+            "río"
+        ],
+        "pos": 0,
+        "contexto": "Estoy segura de que se _______ cuando supo la historia."
+    },
+    {
+        "Palabra": "rio",
+        "opciones": [
+            "rio",
+            "río"
+        ],
+        "pos": 1,
+        "contexto": "El _________ San Juan está cerca de Cadereyta."
+    },
+    {
+        "Palabra": "cuando",
+        "opciones": [
+            "cuando",
+            "cuándo"
+        ],
+        "pos": 0,
+        "contexto": "_______ tengas tiempo, debes de ver la película que te dije"
+    },
+    {
+        "Palabra": "cuándo",
+        "opciones": [
+            "cuando",
+            "cuándo"
+        ],
+        "pos": 1,
+        "contexto": "Todavía no aclaran ______ será el lanzamiento de la campaÒa."
+    },
+    {
+        "Palabra": "quien",
+        "opciones": [
+            "quien",
+            "quién"
+        ],
+        "pos": 0,
+        "contexto": "_______ toma agua de las fuentes de Barcelona, se enamora de la ciudad y vuelve."
+    },
+    {
+        "Palabra": "quién",
+        "opciones": [
+            "quien",
+            "quién"
+        ],
+        "pos": 1,
+        "contexto": "ø_________ diseÒó el edificio del museo MARCO?"
+    },
+    {
+        "Palabra": "se",
+        "opciones": [
+            "se",
+            "sé"
+        ],
+        "pos": 0,
+        "contexto": "_____ ha hecho un gran esfuerzo para concluir con éxito este trabajo"
+    },
+    {
+        "Palabra": "sé",
+        "opciones": [
+            "se",
+            "sé"
+        ],
+        "pos": 1,
+        "contexto": "Ni siquiera ____ cuándo se entrega este trabajo"
+    },
+    {
+        "Palabra": "deposito",
+        "opciones": [
+            "deposito",
+            "depósito",
+            "depositó"
+        ],
+        "pos": 0,
+        "contexto": "Te _______ tu dinero hoy mismo."
+    },
+    {
+        "Palabra": "depósito",
+        "opciones": [
+            "deposito",
+            "depósito",
+            "depositó"
+        ],
+        "pos": 1,
+        "contexto": "El ___________ se hizo a las 13:25 hrs."
+    },
+    {
+        "Palabra": "depositó",
+        "opciones": [
+            "deposito",
+            "depósito",
+            "depositó"
+        ],
+        "pos": 2,
+        "contexto": "¡ngela ________ la carta en el buzón con la seguridad de que enviaba buenas noticias."
+    },
+    {
+        "Palabra": "habito",
+        "opciones": [
+            "habito",
+            "hábito",
+            "habitó"
+        ],
+        "pos": 0,
+        "contexto": "______ junto con mi familia en una casa de dos plantas."
+    },
+    {
+        "Palabra": "hábito",
+        "opciones": [
+            "habito",
+            "hábito",
+            "habitó"
+        ],
+        "pos": 1,
+        "contexto": "Dicen que 21 días son suficientes para generar un __________."
+    },
+    {
+        "Palabra": "habitó",
+        "opciones": [
+            "habito",
+            "hábito",
+            "habitó"
+        ],
+        "pos": 2,
+        "contexto": "Don Venustiano Carranza _________ una casa del centro de Saltillo."
+    },
+    {
+        "Palabra": "numero",
+        "opciones": [
+            "numero",
+            "número",
+            "numeró"
+        ],
+        "pos": 0,
+        "contexto": "Usualmente ___________ por orden de prioridad, las tareas pendientes de mi agenda."
+    },
+    {
+        "Palabra": "número",
+        "opciones": [
+            "numero",
+            "número",
+            "numeró"
+        ],
+        "pos": 1,
+        "contexto": "El ____________ musical es un éxito."
+    },
+    {
+        "Palabra": "numeró",
+        "opciones": [
+            "numero",
+            "número",
+            "numeró"
+        ],
+        "pos": 2,
+        "contexto": "Elena ________ todos los archivos."
     }
 ]

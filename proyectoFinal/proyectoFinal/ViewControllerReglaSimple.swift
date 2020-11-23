@@ -140,7 +140,7 @@ class ViewControllerReglaSimple: UIViewController {
     func doStuff(opcion: Bool,sender: UIButton)
     {
             //print("Button tapped \(sender.tag)")
-            numPregunta = numPregunta + 1
+        numPregunta = numPregunta + 1
             if numPregunta < 10{
                 //hacer segue
                 for button in buttonStack.arrangedSubviews{
@@ -165,8 +165,19 @@ class ViewControllerReglaSimple: UIViewController {
                 timer?.invalidate()
                 timer = nil
                 print("aaaaaaaa")
+                var estado = false
+                if palAleatorios[index].Tilde == "1"{
+                    estado = true
+                }
+                if sender.tag ==  palAleatorios[index].Pos && opcion == estado{
+                    
+                    numAciertosInt = numAciertosInt + 1
+                    numAciertos.text = "\(numAciertosInt!)/10"
+                }
                 self.performSegue(withIdentifier: "final", sender: sender)
+                
             }
+        
 
     }
     

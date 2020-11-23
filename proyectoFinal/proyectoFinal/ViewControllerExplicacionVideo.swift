@@ -11,14 +11,15 @@ import AVFoundation
 import AVKit
 class ViewControllerExplicacionVideo: UIViewController {
 
+    @IBOutlet weak var btvideo: UIButton!
     @IBOutlet weak var lbRegla: UILabel!
     @IBOutlet weak var videoExplicativo: UIImageView!
-    let listaDeReglas = ["Regla general", "Palabras en contexto", "Hiatos y diptongos"]
+    let listaDeReglas = ["Regla general", "¡Manos a la obra!", "La fuerza de la tilde"]
     let listaVideos = ["SEGA", "Contexto", "Hiato"]
     var i = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btvideo?.contentMode = .scaleAspectFit
         // Do any additional setup after loading the view.
     }
     

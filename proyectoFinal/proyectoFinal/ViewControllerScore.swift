@@ -21,7 +21,7 @@ class ViewControllerScore: UIViewController,UITableViewDelegate,UITableViewDataS
     var i = 0
     var pathFinal = "Game"
     var tipo = 0
-    let listaDeReglas = ["Regla general", "Palabras en contexto", "Hiatos y diptongos"]
+    let listaDeReglas = ["Regla general", "¡Manos a la obra!", "La fuerza de la tilde"]
     var pathSimple = "GameSimple.json"
     var pathContexto = "GameContexto.json"
     var pathHiatos = "GameHiato.json"

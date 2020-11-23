@@ -16,6 +16,7 @@
 		38209A6A2537CE8000CA2E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38209A682537CE8000CA2E4F /* Main.storyboard */; };
 		38209A6C2537CE8A00CA2E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38209A6B2537CE8A00CA2E4F /* Assets.xcassets */; };
 		38209A6F2537CE8A00CA2E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38209A6D2537CE8A00CA2E4F /* LaunchScreen.storyboard */; };
+		38458F47256B5433005A27F8 /* palabrasContexto.json in Resources */ = {isa = PBXBuildFile; fileRef = 38458F46256B5433005A27F8 /* palabrasContexto.json */; };
 		38683F372550C7230030D01F /* ViewControllerReglaSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38683F362550C7230030D01F /* ViewControllerReglaSimple.swift */; };
 		38A4CEF3255208320016865F /* PalabrasSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A4CEF2255208320016865F /* PalabrasSimple.swift */; };
 		38AFAA3E255358A6007676B9 /* ViewControllerExplicacionTexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */; };
@@ -24,9 +25,7 @@
 		38B5683225686E98001AB3F8 /* Hiato.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38B5682F25686E98001AB3F8 /* Hiato.mp4 */; };
 		38B5683325686E98001AB3F8 /* SEGA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38B5683025686E98001AB3F8 /* SEGA.mp4 */; };
 		38CE2B052561E72C00794A31 /* palabrasGeneral.json in Resources */ = {isa = PBXBuildFile; fileRef = 38CE2B042561E72C00794A31 /* palabrasGeneral.json */; };
-		38CE2B102561F91100794A31 /* palabrasContexto.json in Resources */ = {isa = PBXBuildFile; fileRef = 38CE2B0F2561F91100794A31 /* palabrasContexto.json */; };
 		38FA42FD25531E9E008CBB51 /* ViewControllerReglaContexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */; };
-		38FA430025531F82008CBB51 /* PalabrasContexto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */; };
 		8F1F33F125633BF30054E24D /* Game.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F1F33F025633BF30054E24D /* Game.json */; };
 		8F569C1C25534F6200314A5E /* ViewControllerReglaHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */; };
 		8F569C1F2553524A00314A5E /* PalabrasHiato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F569C1E2553524A00314A5E /* PalabrasHiato.swift */; };
@@ -44,6 +43,7 @@
 		38209A6B2537CE8A00CA2E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38209A6E2537CE8A00CA2E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38209A702537CE8A00CA2E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38458F46256B5433005A27F8 /* palabrasContexto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasContexto.json; sourceTree = "<group>"; };
 		38683F362550C7230030D01F /* ViewControllerReglaSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaSimple.swift; sourceTree = "<group>"; };
 		38A4CEF2255208320016865F /* PalabrasSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasSimple.swift; sourceTree = "<group>"; };
 		38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExplicacionTexto.swift; sourceTree = "<group>"; };
@@ -52,9 +52,7 @@
 		38B5682F25686E98001AB3F8 /* Hiato.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hiato.mp4; sourceTree = "<group>"; };
 		38B5683025686E98001AB3F8 /* SEGA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGA.mp4; sourceTree = "<group>"; };
 		38CE2B042561E72C00794A31 /* palabrasGeneral.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasGeneral.json; sourceTree = "<group>"; };
-		38CE2B0F2561F91100794A31 /* palabrasContexto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasContexto.json; sourceTree = "<group>"; };
 		38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaContexto.swift; sourceTree = "<group>"; };
-		38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasContexto.swift; sourceTree = "<group>"; };
 		8F1F33F025633BF30054E24D /* Game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Game.json; sourceTree = SOURCE_ROOT; };
 		8F569C1B25534F6200314A5E /* ViewControllerReglaHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglaHiato.swift; sourceTree = "<group>"; };
 		8F569C1E2553524A00314A5E /* PalabrasHiato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalabrasHiato.swift; sourceTree = "<group>"; };
@@ -103,11 +101,10 @@
 				38AFAA3D255358A6007676B9 /* ViewControllerExplicacionTexto.swift */,
 				8F569C1E2553524A00314A5E /* PalabrasHiato.swift */,
 				38CE2B042561E72C00794A31 /* palabrasGeneral.json */,
+				38458F46256B5433005A27F8 /* palabrasContexto.json */,
 				38FA42FC25531E9E008CBB51 /* ViewControllerReglaContexto.swift */,
-				38FA42FF25531F82008CBB51 /* PalabrasContexto.swift */,
 				38683F362550C7230030D01F /* ViewControllerReglaSimple.swift */,
 				38A4CEF2255208320016865F /* PalabrasSimple.swift */,
-				38CE2B0F2561F91100794A31 /* palabrasContexto.json */,
 				38209A6B2537CE8A00CA2E4F /* Assets.xcassets */,
 				38B5682E25686E97001AB3F8 /* Contexto.mp4 */,
 				38B5682F25686E98001AB3F8 /* Hiato.mp4 */,
@@ -183,8 +180,8 @@
 				38209A6A2537CE8000CA2E4F /* Main.storyboard in Resources */,
 				38B5683325686E98001AB3F8 /* SEGA.mp4 in Resources */,
 				38B5683225686E98001AB3F8 /* Hiato.mp4 in Resources */,
-				38CE2B102561F91100794A31 /* palabrasContexto.json in Resources */,
 				8F1F33F125633BF30054E24D /* Game.json in Resources */,
+				38458F47256B5433005A27F8 /* palabrasContexto.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +203,6 @@
 				38A4CEF3255208320016865F /* PalabrasSimple.swift in Sources */,
 				38AFAA4025535E37007676B9 /* ViewControllerVideoExplicatorio.swift in Sources */,
 				38FA42FD25531E9E008CBB51 /* ViewControllerReglaContexto.swift in Sources */,
-				38FA430025531F82008CBB51 /* PalabrasContexto.swift in Sources */,
 				38209A652537CE8000CA2E4F /* SceneDelegate.swift in Sources */,
 				380C5A9E2565B75C008595C1 /* ViewControllerScore.swift in Sources */,
 			);

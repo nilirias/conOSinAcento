@@ -35,7 +35,7 @@ class ViewControllerReglaContexto: UIViewController {
     let colorTexto = UIColor(red: 35/255, green: 2/255, blue: 46/255, alpha: 1)
     let colorOrilla = UIColor(red: 166/255, green: 52/255, blue: 70/255, alpha: 1)
     @IBOutlet weak var tvContexto: UITextView!
-    var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejército"], pos: 0, contexto: "En las mañana yo me _____."), PalabrasContexto(word: "Publico", arrayPalabras: ["público","publico","publicó"], pos: 0, contexto: "El ____ le aplaudió.")]
+    //var arrayContexto = [PalabrasContexto(word: "ejercito", arrayPalabras: ["ejercito","ejército"], pos: 0, contexto: "En las mañana yo me _____."), PalabrasContexto(word: "Publico", arrayPalabras: ["público","publico","publicó"], pos: 0, contexto: "El ____ le aplaudió.")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,7 +118,7 @@ class ViewControllerReglaContexto: UIViewController {
                 
                 
             }catch{
-                print("error")
+                print(error)
             }
         }
         else
@@ -134,7 +134,8 @@ class ViewControllerReglaContexto: UIViewController {
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
-            if sender.tag ==  palCont[index].pos{
+            if sender.tag ==  palAleatorios[index].pos{
+               
                 numAciertosInt = numAciertosInt + 1
                 lbAciertos.text = "\(numAciertosInt!)/10"
             }
@@ -143,6 +144,11 @@ class ViewControllerReglaContexto: UIViewController {
         }else{
             timer?.invalidate()
             timer = nil
+            if sender.tag ==  palAleatorios[index].pos{
+               
+                numAciertosInt = numAciertosInt + 1
+                lbAciertos.text = "\(numAciertosInt!)/10"
+            }
             //print("aaaaaaaa")
             self.performSegue(withIdentifier: "final", sender: sender)
         }

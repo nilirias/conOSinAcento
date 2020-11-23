@@ -31,6 +31,7 @@ class ViewControllerFinal: UIViewController {
         return false
     }
     override func viewDidLoad() {
+        self.navigationItem.setHidesBackButton(true, animated: true);
         super.viewDidLoad()
         formatter.dateFormat = "dd.MM.yy"
         resultDate = formatter.string(from: date)
@@ -85,8 +86,7 @@ class ViewControllerFinal: UIViewController {
                 let dataFromJson = try jsonDecoder.decode([Game].self,from: data)
                 
                 self.game = dataFromJson
-                
-                print(game)
+                //print(game)
             }catch{
                 print("file not exist")
             }

@@ -41,8 +41,8 @@
                                                     <action selector="seleccionIzquierda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffp-d0-hMd"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="254" text="Regla general" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="103" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-1b-coN">
-                                                <rect key="frame" x="79" y="0.0" width="80.5" height="55.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="254" text="Regla general y su aplicación" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="103" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-1b-coN">
+                                                <rect key="frame" x="71" y="0.0" width="96.5" height="55.5"/>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                                 <color key="textColor" red="0.13725490196078433" green="0.0078431372549019607" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,27 +111,6 @@
                                     <segue destination="prD-GA-Sek" kind="show" id="dAP-yI-bbA"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nSs-Cg-oM6">
-                                <rect key="frame" x="50" y="86" width="291.5" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-Tt-PaD">
-                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="30"/>
-                                        <state key="normal" title="Button" image="video" catalog="system"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEQ-N8-OPF">
-                                        <rect key="frame" x="103.5" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-gX-nLp">
-                                        <rect key="frame" x="174.5" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX9-kw-ToF">
-                                        <rect key="frame" x="245.5" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
@@ -186,15 +165,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="NBq-Ds-Yae" userLabel="verticalStack">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="NBq-Ds-Yae" userLabel="verticalStack">
                                 <rect key="frame" x="71.5" y="145" width="232" height="377"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDB-1K-rqz">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="171"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Button" image="blanconegroredondo">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
-                                        </state>
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="TT7-rf-D9l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Button" image="botonPlay"/>
                                         <connections>
                                             <action selector="playVideoSelec:" destination="uvC-nM-ugg" eventType="touchUpInside" id="c4H-F1-Wis"/>
                                         </connections>
@@ -301,7 +281,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona la silaba tonica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6Y-xi-4jS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona la sílaba tónica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6Y-xi-4jS">
                                 <rect key="frame" x="73" y="165" width="229" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -526,7 +506,7 @@
             </objects>
             <point key="canvasLocation" x="3076" y="836"/>
         </scene>
-        <!--View Controller Regla Hiato-->
+        <!--Hiatos y diptongos-->
         <scene sceneID="3H0-Da-lUg">
             <objects>
                 <viewController id="kRq-ze-ZGg" customClass="ViewControllerReglaHiato" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -577,19 +557,27 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="egO-5j-U54">
                                 <rect key="frame" x="16" y="294" width="343" height="79"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el caracter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K9-iV-5Ev">
+                                <rect key="frame" x="88.5" y="145" width="198" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gzt-z9-m9Z"/>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3HV-8O-BfU" firstAttribute="centerX" secondItem="whs-zZ-vga" secondAttribute="centerX" id="AAP-60-0O3"/>
+                            <constraint firstItem="1K9-iV-5Ev" firstAttribute="centerX" secondItem="whs-zZ-vga" secondAttribute="centerX" id="CNm-ad-yza"/>
                             <constraint firstItem="3HV-8O-BfU" firstAttribute="top" secondItem="gzt-z9-m9Z" secondAttribute="top" constant="17" id="IBi-hH-84W"/>
                             <constraint firstItem="egO-5j-U54" firstAttribute="centerX" secondItem="whs-zZ-vga" secondAttribute="centerX" id="JSo-AZ-jht"/>
                             <constraint firstItem="egO-5j-U54" firstAttribute="centerY" secondItem="whs-zZ-vga" secondAttribute="centerY" id="go6-K0-OBy"/>
                             <constraint firstItem="egO-5j-U54" firstAttribute="leading" secondItem="whs-zZ-vga" secondAttribute="leadingMargin" id="m8x-5B-Fz9"/>
+                            <constraint firstItem="1K9-iV-5Ev" firstAttribute="top" secondItem="3HV-8O-BfU" secondAttribute="bottom" constant="43" id="xnc-3c-ziU"/>
                             <constraint firstItem="gzt-z9-m9Z" firstAttribute="bottom" secondItem="egO-5j-U54" secondAttribute="bottom" constant="294" id="yex-XY-9Jb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="EE1-lQ-vxD"/>
+                    <navigationItem key="navigationItem" title="Hiatos y diptongos" id="EE1-lQ-vxD"/>
                     <connections>
                         <outlet property="buttonStack" destination="egO-5j-U54" id="Pay-N2-mpD"/>
                         <outlet property="lbAciertos" destination="a5R-re-wXx" id="nOd-5D-ext"/>
@@ -621,7 +609,7 @@
             </objects>
             <point key="canvasLocation" x="-791" y="130"/>
         </scene>
-        <!--Creditos-->
+        <!--Créditos-->
         <scene sceneID="MGI-bJ-wo0">
             <objects>
                 <viewController id="prD-GA-Sek" sceneMemberID="viewController">
@@ -631,15 +619,15 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-iV-w5W">
                                 <rect key="frame" x="67" y="199" width="240" height="287"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">¿Con o sin Tilde? ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2020, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.                                                 Desarrolladores: Paola Maciel Rijo, Juan Carlos Garza y Nina Sepúlveda Conde.                                                   ¿Con o sin Tilde? se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c8r-Cb-Oga"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xgQ-iV-w5W" firstAttribute="leading" secondItem="c8r-Cb-Oga" secondAttribute="leading" constant="67" id="6FX-RR-6Ip"/>
                             <constraint firstItem="c8r-Cb-Oga" firstAttribute="trailing" secondItem="xgQ-iV-w5W" secondAttribute="trailing" constant="68" id="WML-bA-QGG"/>
@@ -647,13 +635,13 @@
                             <constraint firstItem="c8r-Cb-Oga" firstAttribute="bottom" secondItem="xgQ-iV-w5W" secondAttribute="bottom" constant="181" id="cwk-8H-0ud"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Creditos" id="ThD-oa-XFE"/>
+                    <navigationItem key="navigationItem" title="Créditos" id="ThD-oa-XFE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaO-bH-8OM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-679.20000000000005" y="849.62518740629696"/>
         </scene>
-        <!--Explicacion Detallada-->
+        <!--Explicación Detallada-->
         <scene sceneID="ZVf-y6-6e5">
             <objects>
                 <viewController id="oT7-2p-bmw" customClass="ViewControllerExplicacionTexto" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -667,12 +655,12 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-4H-cUK">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="321"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">La regla general también es conocida como SEGA, la palabra se tiene que dividir en sílabas. Empezando de derecha a izquierda: La palabra es aguda si la sílaba tónica recae en la última sílaba. La palabra es grave si la sílaba tónica recae en la penúltima sílaba. La palabra es esdrújula si la sílaba tónica recae en la antepenúltima sílaba. La palabra es sobresdrújula si la sílaba tónica recae antes de la antepenúltima sílaba. Las palabras agudas llevan tilde si acaban en n, s, o vocal. Las palabras graves llevan tilde si no acaban en n, s, o vocal. Las palabras esdrújulas y sobresdrújulas siempre llevan tilde.</string>
+                                        <mutableString key="text">La regla general también es conocida como SEGA, la palabra se tiene que dividir en sílabas. Empezando de derecha a izquierda: La palabra es aguda si la sílaba tónica recae en la última sílaba. La palabra es grave si la sílaba tónica recae en la penúltima sílaba. La palabra es esdrújula si la sílaba tónica recae en la antepenúltima sílaba. La palabra es sobresdrújula si la sílaba tónica recae antes de la antepenúltima sílaba. Las palabras agudas llevan tilde si acaban en n, s, o vocal. Las palabras graves llevan tilde si no acaban en n, s, o vocal. Las palabras esdrújulas y sobresdrújulas siempre llevan tilde.</mutableString>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oLf-tu-m4Q" userLabel="reglaStack">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="oLf-tu-m4Q" userLabel="reglaStack">
                                         <rect key="frame" x="0.0" y="441" width="240" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo2-4c-WBq" userLabel="leftBT">
@@ -684,7 +672,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regla general" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9O1-a9-s6z">
-                                                <rect key="frame" x="82.5" y="0.0" width="75" height="22"/>
+                                                <rect key="frame" x="89.5" y="0.0" width="61" height="22"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                                 <color key="textColor" red="0.13725490196078433" green="0.0078431372549019607" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -711,7 +699,7 @@
                             <constraint firstItem="SFA-Wx-J3d" firstAttribute="top" secondItem="1gX-qZ-ZqA" secondAttribute="top" constant="58" id="yo1-dC-8zu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Explicacion Detallada" id="dTz-jN-jJv"/>
+                    <navigationItem key="navigationItem" title="Explicación Detallada" id="dTz-jN-jJv"/>
                     <connections>
                         <outlet property="lbSeleccionRegla" destination="9O1-a9-s6z" id="BRM-fs-QVS"/>
                         <outlet property="tvExplicacion" destination="M6U-4H-cUK" id="hpk-eg-pzO"/>
@@ -721,7 +709,7 @@
             </objects>
             <point key="canvasLocation" x="138" y="1286"/>
         </scene>
-        <!--Tabla de clasificacion-->
+        <!--Tabla de clasificación-->
         <scene sceneID="HM8-z7-18E">
             <objects>
                 <viewController id="QbJ-Gc-b49" customClass="ViewControllerScore" customModule="proyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -874,7 +862,7 @@
                             <constraint firstItem="lbo-Ks-IXB" firstAttribute="centerX" secondItem="9B0-rX-ycq" secondAttribute="centerX" id="umM-HB-c3B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tabla de clasificacion" id="Q6t-nf-pTC"/>
+                    <navigationItem key="navigationItem" title="Tabla de clasificación" id="Q6t-nf-pTC"/>
                     <connections>
                         <outlet property="lbSeleccionRegla" destination="M5L-WP-yqX" id="Iwy-aM-Mbz"/>
                         <outlet property="tbScores" destination="lbo-Ks-IXB" id="5ee-Y3-YZi"/>
@@ -892,18 +880,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-tM-3GC">
-                                <rect key="frame" x="67" y="183" width="241.5" height="243"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-tM-3GC">
+                                <rect key="frame" x="34.5" y="192.5" width="306" height="282"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="ZiG-DD-dRd"/>
+                                    <constraint firstAttribute="width" constant="306" id="jq6-Ec-ekO"/>
+                                    <constraint firstAttribute="height" constant="282" id="wxi-H9-yrF"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="blanconegroredondo"/>
+                                <state key="normal" title="Button" image="botonPlay"/>
                                 <connections>
                                     <action selector="payVideoSele:" destination="ZLw-xZ-Ulk" eventType="touchUpInside" id="pjY-z1-8TF"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-h1-7Q7" userLabel="ReglaStack">
-                                <rect key="frame" x="100" y="516" width="175.5" height="55.5"/>
+                                <rect key="frame" x="100" y="520" width="175" height="55.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oI-Xf-tVn">
                                         <rect key="frame" x="0.0" y="0.0" width="19.5" height="55.5"/>
@@ -914,14 +903,14 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="254" horizontalCompressionResistancePriority="749" text="Regla general" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="103" translatesAutoresizingMaskIntoConstraints="NO" id="m0U-XR-jdM">
-                                        <rect key="frame" x="47.5" y="0.0" width="80.5" height="55.5"/>
+                                        <rect key="frame" x="47.5" y="0.0" width="80" height="55.5"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                         <color key="textColor" red="0.13725490200000001" green="0.0078431372550000003" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRO-7h-tuP">
-                                        <rect key="frame" x="156" y="0.0" width="19.5" height="55.5"/>
+                                        <rect key="frame" x="155.5" y="0.0" width="19.5" height="55.5"/>
                                         <color key="tintColor" red="0.65098039220000004" green="0.20392156859999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="arrow.right" catalog="system"/>
                                         <connections>
@@ -934,16 +923,16 @@
                         <viewLayoutGuide key="safeArea" id="AmN-3t-du9"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="leading" secondItem="bkv-ix-3dM" secondAttribute="leadingMargin" constant="84" id="8Qa-YC-olj"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="qwE-h1-7Q7" secondAttribute="bottom" constant="95.5" id="RWb-78-V1E"/>
-                            <constraint firstItem="ELP-tM-3GC" firstAttribute="leading" secondItem="AmN-3t-du9" secondAttribute="leading" constant="67" id="Rp2-dn-SOU"/>
-                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="top" secondItem="ELP-tM-3GC" secondAttribute="bottom" constant="90" id="gUG-IA-6Km"/>
-                            <constraint firstItem="ELP-tM-3GC" firstAttribute="centerX" secondItem="qwE-h1-7Q7" secondAttribute="centerX" id="v8U-YF-MsF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qwE-h1-7Q7" secondAttribute="trailing" constant="83.5" id="xmh-BZ-rKE"/>
+                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="top" secondItem="ELP-tM-3GC" secondAttribute="bottom" constant="45.5" id="97x-yY-zHf"/>
+                            <constraint firstItem="ELP-tM-3GC" firstAttribute="centerY" secondItem="bkv-ix-3dM" secondAttribute="centerY" id="ILI-iI-Uni"/>
+                            <constraint firstItem="ELP-tM-3GC" firstAttribute="centerX" secondItem="bkv-ix-3dM" secondAttribute="centerX" id="Mpp-OB-DYh"/>
+                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="leading" secondItem="AmN-3t-du9" secondAttribute="leading" constant="100" id="dGY-sC-7z2"/>
+                            <constraint firstItem="qwE-h1-7Q7" firstAttribute="centerX" secondItem="ELP-tM-3GC" secondAttribute="centerX" id="sSe-yQ-Hc0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Video Explicatorio" id="XBw-gb-hfN"/>
                     <connections>
+                        <outlet property="btvideo" destination="ELP-tM-3GC" id="JVw-Ii-2IC"/>
                         <outlet property="lbRegla" destination="m0U-XR-jdM" id="wSR-65-saq"/>
                     </connections>
                 </viewController>
@@ -953,12 +942,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lvb-pi-MhA"/>
+        <segue reference="a9y-S0-Wt9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="blanconegroredondo" width="608" height="515"/>
+        <image name="botonPlay" width="471" height="461"/>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logofinal-1" width="2419" height="1224"/>
@@ -966,9 +956,6 @@
         <image name="video" catalog="system" width="128" height="83"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

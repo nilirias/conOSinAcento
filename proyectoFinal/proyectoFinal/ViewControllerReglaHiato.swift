@@ -12,16 +12,16 @@ class ViewControllerReglaHiato: UIViewController {
 
     var myButtonArray : [String] = []
     @IBOutlet weak var buttonStack: UIStackView!
-    var arrayPalabras = [PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Ciudadania", arraySeparado: ["C","i","u","d","a","d","a","n","i","a"], pos: 8, acento: true, cantSilabas: 5),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
-                         PalabrasHiato(word: "Sandia", arraySeparado: ["S","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3)
+    var arrayPalabras = [PalabrasHiato(word: "sandia", arraySeparado: ["s","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
+                         PalabrasHiato(word: "ciudadania", arraySeparado: ["c","i","u","d","a","d","a","n","i","a"], pos: 8, acento: true, cantSilabas: 5),
+                         PalabrasHiato(word: "Chihuahua", arraySeparado: ["C","h","i","h","u","a","h","u","a"], pos: 1, acento: false, cantSilabas: 3),
+                         PalabrasHiato(word: "Maria", arraySeparado: ["M","a","r","i","a"], pos: 3, acento: true, cantSilabas: 3),
+                         PalabrasHiato(word: "hielo", arraySeparado: ["H","i","e","l","o"], pos: 0, acento: false, cantSilabas: 2),
+                          PalabrasHiato(word: "sonrio", arraySeparado: ["S","o","n","r","i","o"], pos: 4, acento: true, cantSilabas: 3),
+                          PalabrasHiato(word: "bambues", arraySeparado: ["b","a","m","b","u","e","s"], pos: 4, acento: true, cantSilabas: 3),
+                          PalabrasHiato(word: "pais", arraySeparado: ["p","a","i","s"], pos: 2, acento: true, cantSilabas: 2),
+                          PalabrasHiato(word: "oimos", arraySeparado: ["o","i","m","o","s"], pos: 1, acento: true, cantSilabas: 3),
+                          PalabrasHiato(word: "eucalipto", arraySeparado: ["e","u","c","a","l","i","p","t","o"], pos: 0, acento: false, cantSilabas: 4)
                          
     ]
     var numAciertosInt : Int!
@@ -108,7 +108,7 @@ class ViewControllerReglaHiato: UIViewController {
         var numerotextfield : UITextField?
         var correcto = true
         let alertController = UIAlertController(
-            title: "Cantidad de silabas", message: "Cuantas silabas tiene la palabra\(arrayPalabras[i].word)", preferredStyle: .alert
+            title: "Cantidad de silabas", message: "Cuantas silabas tiene la palabra \(arrayPalabras[i].word)", preferredStyle: .alert
         )
         alertasList.append(alertController)
 

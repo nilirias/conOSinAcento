@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var i = 0
     var seleccion : Int!
     
-    let listaDeReglas = ["Regla general", "Palabras en contexto", "Hiatos y diptongos"]
+    let listaDeReglas = ["Regla general y su aplicación", "¡Manos a la obra!", "La fuerza de la tilde"]
     override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
         return UIInterfaceOrientationMask.portrait
     }
