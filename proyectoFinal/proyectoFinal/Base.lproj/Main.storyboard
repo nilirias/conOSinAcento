@@ -617,7 +617,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-iV-w5W">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-iV-w5W">
                                 <rect key="frame" x="67" y="199" width="240" height="287"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">¿Con o sin Tilde? ha sido desarrollado por estudiantes del Tecnológico de Monterrey durante el semestre Agosto Diciembre de 2020, como parte del curso Desarrollo de Aplicaciones para Dispositivos Móviles y asesorados por la maestra Yolanda Martínez Treviño.                                                 Desarrolladores: Paola Maciel Rijo, Juan Carlos Garza y Nina Sepúlveda Conde.                                                   ¿Con o sin Tilde? se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.</string>
