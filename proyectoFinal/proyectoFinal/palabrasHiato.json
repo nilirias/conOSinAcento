@@ -111,19 +111,6 @@
         "posLetra": 0
     },
     {
-        "Palabra": "inteligencia",
-        "palabraDiv": [
-            "in",
-            "te",
-            "li",
-            "gen",
-            "cia"
-        ],
-        "posSilaba": 5,
-        "posTilde": "0",
-        "posLetra": 3
-    },
-    {
         "Palabra": "artificial",
         "palabraDiv": [
             "ar",
@@ -221,7 +208,7 @@
         "palabraDiv": [
             "a",
             "le",
-            "gr\u00c3\u00ad",
+            "gri",
             "a"
         ],
         "posSilaba": 4,
@@ -265,20 +252,7 @@
         "posTilde": "1",
         "posLetra": 2
     },
-    {
-        "Palabra": "arqueologia",
-        "palabraDiv": [
-            "ar",
-            "que",
-            "o",
-            "lo",
-            "gi",
-            "a"
-        ],
-        "posSilaba": 6,
-        "posTilde": "1",
-        "posLetra": 4
-    },
+
     {
         "Palabra": "fotografia",
         "palabraDiv": [
@@ -410,7 +384,7 @@
         "Palabra": "oir",
         "palabraDiv": [
             "o",
-            "\u00c3\u00adr"
+            "ir"
         ],
         "posSilaba": 2,
         "posTilde": "1",
@@ -480,7 +454,7 @@
         "Palabra": "raiz",
         "palabraDiv": [
             "ra",
-            "\u00c3\u00adz"
+            "iz"
         ],
         "posSilaba": 2,
         "posTilde": "1",
@@ -696,7 +670,7 @@
         "Palabra": "navio",
         "palabraDiv": [
             "na",
-            "v\u00c3\u00ad",
+            "vi",
             "o"
         ],
         "posSilaba": 3,

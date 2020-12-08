@@ -33,6 +33,7 @@ class ViewControllerReglaHiato: UIViewController {
     var counterMinutes = 0
     var timer: Timer!
     var index: Int!
+    var estadoGlobal : Bool!
     var indeicePalabras = 0
     @IBOutlet weak var lbAciertos: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
@@ -58,8 +59,8 @@ class ViewControllerReglaHiato: UIViewController {
         createButtons()
         
         
-        
-        if(showAlertSilabas(i: indeicePalabras))
+        estadoGlobal = showAlertSilabas(i: indeicePalabras)
+        if(estadoGlobal)
         {
             alertasList[0].dismiss(animated: true) {
                 print("salio el dismiss")
@@ -117,23 +118,21 @@ class ViewControllerReglaHiato: UIViewController {
         return false
     }
     
-    func showAlertAcento(i: Int) ->Bool
+    func showAlertAcento(i: Int, estado: Bool) ->Bool
     {
         var correcto = true
         let alert = UIAlertController(title: "Lleva tilde la silaba", message: "¿Lleva tilde la silaba?", preferredStyle: .alert)
         alert.addAction(UIAlertAction (title: "Sí", style: .default, handler:{_ in
             
+            if(self.palAleatorios[i].posTilde == "0"){
+                correcto = false
+                
+            }
         }))
                                         
         alert.addAction(UIAlertAction (title: "No", style: .default, handler:{ [self]_ in
             if(self.palAleatorios[i].posTilde == "1"){
                 correcto = false
-                
-            }
-            else
-            {
-                self.numAciertosInt = self.numAciertosInt + 1
-                self.lbAciertos.text = "\(self.numAciertosInt!)/10"
             }
             for button in self.buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
@@ -141,7 +140,6 @@ class ViewControllerReglaHiato: UIViewController {
             self.cambiaPalabra()
         }))
         present(alert,animated: true)
-        
         return correcto
     }
     func showAlertSilabas(i: Int) -> Bool{
@@ -156,23 +154,27 @@ class ViewControllerReglaHiato: UIViewController {
         { [self] (action) -> Void in
             if let  numero = Int((numerotextfield?.text)!)
             {
-                print(" numero = \(numero)")
                 if(numero != self.palAleatorios[i].posSilaba)
                 {
                     correcto = false
                 }
-                if(!self.showAlertAcento(i: i))
-                {
-                    correcto = false
-                    print("es correcto")
-                }
+                var estadoDeAcento = self.showAlertAcento(i: i, estado: correcto)
                 
+                if(estadoDeAcento && correcto)
+                {
+                    estadoGlobal = true
+                    
+                }
+                else
+                {
+                    estadoGlobal = false
+                }
             }
             else
             {
                 print("No number entered")
                 correcto = false
-                if(!self.showAlertAcento(i: i))
+                if(!self.showAlertAcento(i: i, estado: correcto))
                 {
                     correcto = false
 
@@ -190,8 +192,6 @@ class ViewControllerReglaHiato: UIViewController {
            }
         alertController.addAction(actionSilabas)
         present(alertController, animated: true, completion: nil)
-
-        
         return correcto
     }
     @objc func updateCounter(){
@@ -228,12 +228,15 @@ class ViewControllerReglaHiato: UIViewController {
             
         }
     }
+    
+
     @IBAction func buttonAction(sender: UIButton){
         if numPregunta < 10{
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
-            if sender.tag ==  palAleatorios[index].posLetra{
+            print("estadoGlobal: \(estadoGlobal)")
+            if sender.tag ==  palAleatorios[index].posLetra && estadoGlobal{
                 numAciertosInt = numAciertosInt + 1
                 lbAciertos.text = "\(numAciertosInt!)/10"
             }
@@ -256,8 +259,8 @@ class ViewControllerReglaHiato: UIViewController {
             }
             createButtons()
         }
-            
-        if(showAlertSilabas(i: index))
+        estadoGlobal = showAlertSilabas(i: index)
+        if(estadoGlobal)
         {
             alertasList[0].dismiss(animated: true) {
                 print("salio el dismiss")

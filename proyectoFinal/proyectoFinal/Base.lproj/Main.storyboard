@@ -554,15 +554,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="egO-5j-U54">
-                                <rect key="frame" x="16" y="294" width="343" height="79"/>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el caracter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K9-iV-5Ev">
                                 <rect key="frame" x="88.5" y="145" width="198" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="egO-5j-U54">
+                                <rect key="frame" x="16" y="294" width="343" height="79"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gzt-z9-m9Z"/>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
