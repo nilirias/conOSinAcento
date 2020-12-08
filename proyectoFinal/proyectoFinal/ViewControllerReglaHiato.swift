@@ -34,6 +34,7 @@ class ViewControllerReglaHiato: UIViewController {
     var timer: Timer!
     var index: Int!
     var estadoGlobal : Bool!
+    var estadoAcentoGlobal : Bool!
     var indeicePalabras = 0
     @IBOutlet weak var lbAciertos: UILabel!
     @IBOutlet weak var lbTimer: UILabel!
@@ -118,21 +119,29 @@ class ViewControllerReglaHiato: UIViewController {
         return false
     }
     
-    func showAlertAcento(i: Int, estado: Bool) ->Bool
+    func showAlertAcento(i: Int,estadoAnt:Bool)
     {
-        var correcto = true
+        estadoAcentoGlobal = true
         let alert = UIAlertController(title: "Lleva tilde la silaba", message: "¿Lleva tilde la silaba?", preferredStyle: .alert)
         alert.addAction(UIAlertAction (title: "Sí", style: .default, handler:{_ in
             
             if(self.palAleatorios[i].posTilde == "0"){
-                correcto = false
+                self.estadoAcentoGlobal = false
                 
             }
+            
         }))
                                         
         alert.addAction(UIAlertAction (title: "No", style: .default, handler:{ [self]_ in
             if(self.palAleatorios[i].posTilde == "1"){
-                correcto = false
+                estadoAcentoGlobal = false
+            }else
+            {
+                if(estadoAnt){
+                    numAciertosInt = numAciertosInt + 1
+                    lbAciertos.text = "\(numAciertosInt!)/10"
+                }
+
             }
             for button in self.buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
@@ -140,7 +149,7 @@ class ViewControllerReglaHiato: UIViewController {
             self.cambiaPalabra()
         }))
         present(alert,animated: true)
-        return correcto
+        
     }
     func showAlertSilabas(i: Int) -> Bool{
         var numerotextfield : UITextField?
@@ -158,9 +167,9 @@ class ViewControllerReglaHiato: UIViewController {
                 {
                     correcto = false
                 }
-                var estadoDeAcento = self.showAlertAcento(i: i, estado: correcto)
+                self.showAlertAcento(i: i,estadoAnt: correcto)
                 
-                if(estadoDeAcento && correcto)
+                if(estadoAcentoGlobal && correcto)
                 {
                     estadoGlobal = true
                     
@@ -174,7 +183,8 @@ class ViewControllerReglaHiato: UIViewController {
             {
                 print("No number entered")
                 correcto = false
-                if(!self.showAlertAcento(i: i, estado: correcto))
+                self.showAlertAcento(i: i,estadoAnt: correcto)
+                if(estadoAcentoGlobal)
                 {
                     correcto = false
 
@@ -263,10 +273,7 @@ class ViewControllerReglaHiato: UIViewController {
         if(estadoGlobal)
         {
             alertasList[0].dismiss(animated: true) {
-                print("salio el dismiss")
             }
-            print("es correcto")
-            
             
         }
         }else{
