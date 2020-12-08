@@ -1,0 +1,1146 @@
+[
+    {
+        "Palabra": "sandia",
+        "palabraDiv": [
+            "san",
+            "di",
+            "a"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "adios",
+        "palabraDiv": [
+            "a",
+            "dios"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "aereo",
+        "palabraDiv": [
+            "a",
+            "e",
+            "re",
+            "o"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "migratorio",
+        "palabraDiv": [
+            "mi",
+            "gra",
+            "to",
+            "rio"
+        ],
+        "posSilaba": 4,
+        "posTilde": "0",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "actual",
+        "palabraDiv": [
+            "ac",
+            "tual"
+        ],
+        "posSilaba": 2,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "carestia",
+        "palabraDiv": [
+            "ca",
+            "res",
+            "ti",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "comercio",
+        "palabraDiv": [
+            "co",
+            "mer",
+            "cio"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "feria",
+        "palabraDiv": [
+            "fe",
+            "ria"
+        ],
+        "posSilaba": 2,
+        "posTilde": "0",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "notaria",
+        "palabraDiv": [
+            "no",
+            "ta",
+            "ri",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "cuidate",
+        "palabraDiv": [
+            "cui",
+            "da",
+            "te"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "inteligencia",
+        "palabraDiv": [
+            "in",
+            "te",
+            "li",
+            "gen",
+            "cia"
+        ],
+        "posSilaba": 5,
+        "posTilde": "0",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "artificial",
+        "palabraDiv": [
+            "ar",
+            "ti",
+            "fi",
+            "cial"
+        ],
+        "posSilaba": 4,
+        "posTilde": "0",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "mediano",
+        "palabraDiv": [
+            "me",
+            "dia",
+            "no"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "autor",
+        "palabraDiv": [
+            "au",
+            "tor"
+        ],
+        "posSilaba": 2,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "demencia",
+        "palabraDiv": [
+            "de",
+            "men",
+            "cia"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "terapia",
+        "palabraDiv": [
+            "te",
+            "ra",
+            "pia"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "agronomia",
+        "palabraDiv": [
+            "a",
+            "gro",
+            "no",
+            "mi",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "albedrio",
+        "palabraDiv": [
+            "al",
+            "be",
+            "dri",
+            "o"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "alegoria",
+        "palabraDiv": [
+            "a",
+            "le",
+            "go",
+            "ri",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "alegria",
+        "palabraDiv": [
+            "a",
+            "le",
+            "gr\u00c3\u00ad",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "amnistia",
+        "palabraDiv": [
+            "am",
+            "nis",
+            "ti",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "anomalia",
+        "palabraDiv": [
+            "a",
+            "no",
+            "ma",
+            "li",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "apatia",
+        "palabraDiv": [
+            "a",
+            "pa",
+            "ti",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "arqueologia",
+        "palabraDiv": [
+            "ar",
+            "que",
+            "o",
+            "lo",
+            "gi",
+            "a"
+        ],
+        "posSilaba": 6,
+        "posTilde": "1",
+        "posLetra": 4
+    },
+    {
+        "Palabra": "fotografia",
+        "palabraDiv": [
+            "fo",
+            "to",
+            "gra",
+            "fi",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "gentio",
+        "palabraDiv": [
+            "gen",
+            "ti",
+            "o"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "hastio",
+        "palabraDiv": [
+            "has",
+            "ti",
+            "o"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "arcaismo",
+        "palabraDiv": [
+            "ar",
+            "ca",
+            "is",
+            "mo"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "caido",
+        "palabraDiv": [
+            "ca",
+            "i",
+            "do"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "egoista",
+        "palabraDiv": [
+            "e",
+            "go",
+            "is",
+            "ta"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "desoir",
+        "palabraDiv": [
+            "de",
+            "so",
+            "ir"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "freir",
+        "palabraDiv": [
+            "fre",
+            "ir"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "engreido",
+        "palabraDiv": [
+            "en",
+            "gre",
+            "i",
+            "do"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "increible",
+        "palabraDiv": [
+            "in",
+            "cre",
+            "i",
+            "ble"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "judaismo",
+        "palabraDiv": [
+            "ju",
+            "da",
+            "is",
+            "mo"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "oir",
+        "palabraDiv": [
+            "o",
+            "\u00c3\u00adr"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "pais",
+        "palabraDiv": [
+            "pa",
+            "is"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "politeismo",
+        "palabraDiv": [
+            "po",
+            "li",
+            "te",
+            "is",
+            "mo"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "paraiso",
+        "palabraDiv": [
+            "pa",
+            "ra",
+            "i",
+            "so"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "paracaidas",
+        "palabraDiv": [
+            "pa",
+            "ra",
+            "ca",
+            "i",
+            "das"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "proteina",
+        "palabraDiv": [
+            "pro",
+            "te",
+            "i",
+            "na"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "raiz",
+        "palabraDiv": [
+            "ra",
+            "\u00c3\u00adz"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "recaida",
+        "palabraDiv": [
+            "re",
+            "ca",
+            "i",
+            "da"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "prohibe",
+        "palabraDiv": [
+            "pro",
+            "hi",
+            "be"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "bateria",
+        "palabraDiv": [
+            "ba",
+            "te",
+            "ri",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "distraido",
+        "palabraDiv": [
+            "dis",
+            "tra",
+            "i",
+            "do"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "cafeina",
+        "palabraDiv": [
+            "ca",
+            "fe",
+            "i",
+            "na"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "psicologia",
+        "palabraDiv": [
+            "psi",
+            "co",
+            "lo",
+            "gi",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "baul",
+        "palabraDiv": [
+            "ba",
+            "ul"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "maiz",
+        "palabraDiv": [
+            "ma",
+            "iz"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "baldio",
+        "palabraDiv": [
+            "bal",
+            "di",
+            "o"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "biografia",
+        "palabraDiv": [
+            "bio",
+            "gra",
+            "fi",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "bujia",
+        "palabraDiv": [
+            "bu",
+            "ji",
+            "a"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "sinfonia",
+        "palabraDiv": [
+            "sin",
+            "fo",
+            "ni",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "sintonia",
+        "palabraDiv": [
+            "sin",
+            "to",
+            "ni",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "ataud",
+        "palabraDiv": [
+            "a",
+            "ta",
+            "ud"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "lejia",
+        "palabraDiv": [
+            "le",
+            "ji",
+            "a"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "lio",
+        "palabraDiv": [
+            "li",
+            "o"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "maestria",
+        "palabraDiv": [
+            "ma",
+            "es",
+            "tri",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "melodia",
+        "palabraDiv": [
+            "me",
+            "lo",
+            "di",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "navio",
+        "palabraDiv": [
+            "na",
+            "v\u00c3\u00ad",
+            "o"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "paises",
+        "palabraDiv": [
+            "pa",
+            "i",
+            "ses"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "puas",
+        "palabraDiv": [
+            "pu",
+            "a"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "sequia",
+        "palabraDiv": [
+            "se",
+            "qui",
+            "a"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "sonrie",
+        "palabraDiv": [
+            "son",
+            "ri",
+            "e"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "tio",
+        "palabraDiv": [
+            "ti",
+            "o"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "zoologia",
+        "palabraDiv": [
+            "zo",
+            "o",
+            "lo",
+            "gi",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "heroismo",
+        "palabraDiv": [
+            "he",
+            "ro",
+            "is",
+            "mo"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "grua",
+        "palabraDiv": [
+            "gru",
+            "a"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "geografia",
+        "palabraDiv": [
+            "ge",
+            "o",
+            "gra",
+            "fi",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "galeria",
+        "palabraDiv": [
+            "ga",
+            "le",
+            "ri",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "ganzua",
+        "palabraDiv": [
+            "gan",
+            "zu",
+            "a"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "egoismo",
+        "palabraDiv": [
+            "e",
+            "go",
+            "is",
+            "mo"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "duo",
+        "palabraDiv": [
+            "du",
+            "o"
+        ],
+        "posSilaba": 2,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "categoria",
+        "palabraDiv": [
+            "ca",
+            "te",
+            "go",
+            "ri",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "afonia",
+        "palabraDiv": [
+            "a",
+            "fo",
+            "ni",
+            "a"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "apoplejia",
+        "palabraDiv": [
+            "a",
+            "po",
+            "ple",
+            "ji",
+            "a"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "bacalao",
+        "palabraDiv": [
+            "ba",
+            "ca",
+            "la",
+            "o"
+        ],
+        "posSilaba": 4,
+        "posTilde": "0",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "boa",
+        "palabraDiv": [
+            "bo",
+            "a"
+        ],
+        "posSilaba": 2,
+        "posTilde": "0",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "beato",
+        "palabraDiv": [
+            "be",
+            "a",
+            "to"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "hexaedro",
+        "palabraDiv": [
+            "he",
+            "xa",
+            "e",
+            "dro"
+        ],
+        "posSilaba": 4,
+        "posTilde": "0",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "cohete",
+        "palabraDiv": [
+            "co",
+            "he",
+            "te"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "coercitivo",
+        "palabraDiv": [
+            "co",
+            "er",
+            "ci",
+            "ti",
+            "vo"
+        ],
+        "posSilaba": 5,
+        "posTilde": "0",
+        "posLetra": 4
+    },
+    {
+        "Palabra": "coartada",
+        "palabraDiv": [
+            "co",
+            "ar",
+            "ta",
+            "da"
+        ],
+        "posSilaba": 4,
+        "posTilde": "0",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "proeza",
+        "palabraDiv": [
+            "pro",
+            "e",
+            "za"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "teorema",
+        "palabraDiv": [
+            "te",
+            "o",
+            "re",
+            "ma"
+        ],
+        "posSilaba": 4,
+        "posTilde": "0",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "campeon",
+        "palabraDiv": [
+            "cam",
+            "pe",
+            "on"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "acordeon",
+        "palabraDiv": [
+            "a",
+            "cor",
+            "de",
+            "on"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 3
+    },
+    {
+        "Palabra": "tuetano",
+        "palabraDiv": [
+            "tue",
+            "ta",
+            "no"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "contraer",
+        "palabraDiv": [
+            "con",
+            "tra",
+            "er"
+        ],
+        "posSilaba": 3,
+        "posTilde": "0",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "cuantico",
+        "palabraDiv": [
+            "cuan",
+            "ti",
+            "co"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "caotico",
+        "palabraDiv": [
+            "ca",
+            "o",
+            "ti",
+            "co"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "teorico",
+        "palabraDiv": [
+            "te",
+            "o",
+            "ri",
+            "co"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "oceano",
+        "palabraDiv": [
+            "o",
+            "ce",
+            "a",
+            "no"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "zoologico",
+        "palabraDiv": [
+            "zo",
+            "o",
+            "lo",
+            "go"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "eolico",
+        "palabraDiv": [
+            "e",
+            "o",
+            "li",
+            "co"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 1
+    },
+    {
+        "Palabra": "homogeneo",
+        "palabraDiv": [
+            "ho",
+            "mo",
+            "ge",
+            "ne",
+            "o"
+        ],
+        "posSilaba": 5,
+        "posTilde": "1",
+        "posLetra": 2
+    },
+    {
+        "Palabra": "naufrago",
+        "palabraDiv": [
+            "nau",
+            "fra",
+            "go"
+        ],
+        "posSilaba": 3,
+        "posTilde": "1",
+        "posLetra": 0
+    },
+    {
+        "Palabra": "mediatico",
+        "palabraDiv": [
+            "me",
+            "dia",
+            "ti",
+            "co"
+        ],
+        "posSilaba": 4,
+        "posTilde": "1",
+        "posLetra": 1
+    }
+]

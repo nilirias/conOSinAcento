@@ -12,6 +12,8 @@ class ViewControllerReglaHiato: UIViewController {
 
     var myButtonArray : [String] = []
     @IBOutlet weak var buttonStack: UIStackView!
+    var arrP = [PalHiato]()
+    var palAleatorios = [PalHiato]()
     var arrayPalabras = [PalabrasHiato(word: "sandia", arraySeparado: ["s","a","n","d","i","a"], pos: 4, acento: true, cantSilabas: 3),
                          PalabrasHiato(word: "ciudadania", arraySeparado: ["c","i","u","d","a","d","a","n","i","a"], pos: 8, acento: true, cantSilabas: 5),
                          PalabrasHiato(word: "Chihuahua", arraySeparado: ["C","h","i","h","u","a","h","u","a"], pos: 1, acento: false, cantSilabas: 3),
@@ -42,10 +44,12 @@ class ViewControllerReglaHiato: UIViewController {
     var alertasList = [UIAlertController]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadJson()
+        functionRandomize()
         numAciertosInt = 0
         numPregunta = 0
         index = 0
-        for index in arrayPalabras[0].arraySeparado{
+        for index in palAleatorios[0].palabraDiv{
             myButtonArray.append(index)
         }
         lbAciertos.text = "0/10"
@@ -69,6 +73,42 @@ class ViewControllerReglaHiato: UIViewController {
         
         //llamar funcion que crea los botones
     }
+    func functionRandomize(){
+        var listIndices = Set<Int>()
+        for i in 0...9{
+            var number = Int.random(in: 0..<arrP.count)
+            while(listIndices.contains(number)){
+                number = Int.random(in: 0..<arrP.count)
+            }
+            listIndices.insert(number)
+        }
+        
+        for i in listIndices{
+            palAleatorios.append(arrP[i])
+        }
+        
+    }
+    func loadJson(){
+        if let fileLocation = Bundle.main.url(forResource: "palabrasHiato", withExtension: "json")
+        {
+            do{
+                let data = try Data(contentsOf: fileLocation)
+                let jsonDecoder = JSONDecoder()
+                let dataFromJson = try jsonDecoder.decode([PalHiato].self,from: data)
+                //print(dataFromJson)
+                self.arrP = dataFromJson
+                
+                
+            }catch{
+                print(error)
+            }
+        }
+        else
+        {
+            print("error finding file")
+        }
+        
+    }
     
     override var supportedInterfaceOrientations:  UIInterfaceOrientationMask{
         return UIInterfaceOrientationMask.portrait
@@ -86,7 +126,7 @@ class ViewControllerReglaHiato: UIViewController {
         }))
                                         
         alert.addAction(UIAlertAction (title: "No", style: .default, handler:{ [self]_ in
-            if(self.arrayPalabras[i].acento){
+            if(self.palAleatorios[i].posTilde == "1"){
                 correcto = false
                 
             }
@@ -108,7 +148,7 @@ class ViewControllerReglaHiato: UIViewController {
         var numerotextfield : UITextField?
         var correcto = true
         let alertController = UIAlertController(
-            title: "Cantidad de silabas", message: "Cuantas silabas tiene la palabra \(arrayPalabras[i].word)", preferredStyle: .alert
+            title: "Cantidad de silabas", message: "Cuantas silabas tiene la palabra \(palAleatorios[i].Palabra)", preferredStyle: .alert
         )
         alertasList.append(alertController)
 
@@ -117,7 +157,7 @@ class ViewControllerReglaHiato: UIViewController {
             if let  numero = Int((numerotextfield?.text)!)
             {
                 print(" numero = \(numero)")
-                if(numero != self.arrayPalabras[i].cantSilabas)
+                if(numero != self.palAleatorios[i].posSilaba)
                 {
                     correcto = false
                 }
@@ -193,7 +233,7 @@ class ViewControllerReglaHiato: UIViewController {
             for button in buttonStack.arrangedSubviews{
                 button.removeFromSuperview()
             }
-            if sender.tag ==  arrayPalabras[index].posicion{
+            if sender.tag ==  palAleatorios[index].posLetra{
                 numAciertosInt = numAciertosInt + 1
                 lbAciertos.text = "\(numAciertosInt!)/10"
             }
@@ -208,10 +248,10 @@ class ViewControllerReglaHiato: UIViewController {
         index = index + 1
         numPregunta = numPregunta + 1
         if numPregunta < 10{
-            if(index < arrayPalabras.count){
+            if(index < palAleatorios.count){
             myButtonArray.removeAll()
             
-            for i in arrayPalabras[index].arraySeparado{
+            for i in palAleatorios[index].palabraDiv{
                 myButtonArray.append(i)
             }
             createButtons()
@@ -259,3 +299,12 @@ class ViewControllerReglaHiato: UIViewController {
     }
 
 }
+struct PalHiato: Codable
+{
+    var Palabra: String
+    var palabraDiv : [String]
+    var posSilaba: Int
+    var posTilde: String
+    var posLetra: Int
+}
+
