@@ -37,7 +37,7 @@ class ViewControllerFinal: UIViewController {
         resultDate = formatter.string(from: date)
         lbAciertos.text = "\(aciertosNum)/10"
         lbTiempo.text = String(format: "%d:%02d", counterMinutes, counterSecs)
-        puntaje = aciertosNum * ((Int(counterMinutes)*60) + Int(counterSecs))
+        puntaje = aciertosNum * (2000 - ((Int(counterMinutes)*60) + Int(counterSecs)))
         lbPuntaje.text = "\(puntaje)"
         // Do any additional setup after loading the view.
         
